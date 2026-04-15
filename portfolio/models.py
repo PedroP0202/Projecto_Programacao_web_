@@ -52,3 +52,34 @@ class Projeto(models.Model):
 
     def __str__(self):
         return self.nome
+
+class TFC(models.Model):
+    titulo = models.CharField(max_length=200)
+    autores = models.CharField(max_length=200)
+    orientadores = models.CharField(max_length=200)
+    ano = models.IntegerField()
+    resumo = models.TextField()
+    imagem = models.ImageField(upload_to='tfcs/', null=True, blank=True)
+    destaque = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.titulo
+
+class Competencia(models.Model):
+    titulo = models.CharField(max_length=100)
+    categoria = models.CharField(max_length=50) # ex: Soft Skill, Hard Skill
+    descricao = models.TextField()
+
+    def __str__(self):
+        return self.titulo
+
+class Formacao(models.Model):
+    titulo = models.CharField(max_length=100)
+    instituicao = models.CharField(max_length=100)
+    data_inicio = models.DateField()
+    data_fim = models.DateField(null=True, blank=True)
+    descricao = models.TextField()
+    local = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.titulo
