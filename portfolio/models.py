@@ -29,3 +29,26 @@ class UnidadeCurricular(models.Model):
 
     def __str__(self):
         return f"{self.nome} ({self.sigla})"
+
+class Tecnologia(models.Model):
+    nome = models.CharField(max_length=50)
+    logo = models.ImageField(upload_to='tecnologias/', null=True, blank=True)
+    link_oficial = models.URLField()
+    descricao = models.TextField()
+    nivel_interesse = models.IntegerField(default=1)
+
+    def __str__(self):
+        return self.nome
+
+class Projeto(models.Model):
+    nome = models.CharField(max_length=100)
+    descricao = models.TextField()
+    conceitos_aplicados = models.TextField()
+    tecnologias = models.ManyToManyField(Tecnologia, related_name='projetos')
+    unidade_curricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE, related_name='projetos')
+    imagem = models.ImageField(upload_to='projetos/', null=True, blank=True)
+    video_link = models.URLField(null=True, blank=True)
+    repositorio_git = models.URLField()
+
+    def __str__(self):
+        return self.nome
