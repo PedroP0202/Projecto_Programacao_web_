@@ -83,3 +83,23 @@ class Formacao(models.Model):
 
     def __str__(self):
         return self.titulo
+
+class MakingOf(models.Model):
+    data = models.DateTimeField(auto_now_add=True)
+    titulo = models.CharField(max_length=100)
+    descricao = models.TextField()
+    imagem_caderno = models.ImageField(upload_to='makingof/')
+    decisoes_tomadas = models.TextField()
+    erros_e_correcoes = models.TextField()
+    uso_ia = models.TextField()
+
+    def __str__(self):
+        return f"{self.titulo} - {self.data.strftime('%d/%m/%Y')}"
+
+class Interesse(models.Model):
+    titulo = models.CharField(max_length=100)
+    descricao = models.TextField()
+    imagem = models.ImageField(upload_to='interesses/', null=True, blank=True)
+
+    def __str__(self):
+        return self.titulo
