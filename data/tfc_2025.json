@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Implementação de um Sistema de Domótica Seguro",
+        "autores": "João Silva, Maria Santos",
+        "orientadores": "Dr. Carlos Oliveira",
+        "ano": 2025,
+        "resumo": "Este projeto explora a segurança em sistemas IoT residenciais...",
+        "destaque": true
+    },
+    {
+        "titulo": "Análise de Sentimento em Redes Sociais com IA",
+        "autores": "Ana Pereira",
+        "orientadores": "Dra. Luísa Costa",
+        "ano": 2025,
+        "resumo": "Utilização de modelos de linguagem para processamento de texto natura...",
+        "destaque": false
+    }
+]

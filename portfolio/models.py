@@ -31,6 +31,8 @@ class UnidadeCurricular(models.Model):
     conteudos = models.TextField(null=True, blank=True)
     metodologia = models.TextField(null=True, blank=True)
     bibliografia = models.TextField(null=True, blank=True)
+    natureza = models.CharField(max_length=50, null=True, blank=True)
+    avaliacao = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.nome} ({self.sigla})"
