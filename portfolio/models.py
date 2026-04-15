@@ -6,6 +6,7 @@ class Licenciatura(models.Model):
     objetivos = models.TextField()
     competencias = models.TextField()
     saidas_profissionais = models.TextField()
+    razoes_escolha = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.nome
@@ -26,6 +27,10 @@ class UnidadeCurricular(models.Model):
     licenciatura = models.ForeignKey(Licenciatura, on_delete=models.CASCADE, related_name='ucs')
     docentes = models.ManyToManyField(Docente, related_name='ucs')
     imagem = models.ImageField(upload_to='ucs/', null=True, blank=True)
+    objetivos = models.TextField(null=True, blank=True)
+    conteudos = models.TextField(null=True, blank=True)
+    metodologia = models.TextField(null=True, blank=True)
+    bibliografia = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.nome} ({self.sigla})"
