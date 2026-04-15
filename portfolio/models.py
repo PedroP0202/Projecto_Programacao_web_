@@ -55,7 +55,8 @@ class Projeto(models.Model):
     unidade_curricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE, related_name='projetos')
     imagem = models.ImageField(upload_to='projetos/', null=True, blank=True)
     video_link = models.URLField(null=True, blank=True)
-    repositorio_git = models.URLField()
+    repositorio_git = models.URLField(null=True, blank=True)
+    url_deploy = models.URLField(null=True, blank=True)  # URL do projeto publicado
 
     def __str__(self):
         return self.nome
@@ -66,6 +67,7 @@ class TFC(models.Model):
     orientadores = models.CharField(max_length=200)
     ano = models.IntegerField()
     resumo = models.TextField()
+    link_repositorio = models.URLField(null=True, blank=True)  # Link para o repositório do TFC
     imagem = models.ImageField(upload_to='tfcs/', null=True, blank=True)
     destaque = models.BooleanField(default=False)
 
@@ -73,9 +75,11 @@ class TFC(models.Model):
         return self.titulo
 
 class Competencia(models.Model):
+    NIVEL_CHOICES = [(1, 'Básico'), (2, 'Intermédio'), (3, 'Avançado'), (4, 'Especialista')]
     titulo = models.CharField(max_length=100)
-    categoria = models.CharField(max_length=50) # ex: Soft Skill, Hard Skill
+    categoria = models.CharField(max_length=50)  # ex: Soft Skill, Hard Skill
     descricao = models.TextField()
+    nivel = models.IntegerField(choices=NIVEL_CHOICES, default=1)  # Nível de proficiência
 
     def __str__(self):
         return self.titulo
