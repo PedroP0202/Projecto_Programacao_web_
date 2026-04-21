@@ -10,22 +10,94 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+from urllib.parse import parse_qsl, unquote, urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def get_bool_env(*names, default=False):
+    true_values = {'1', 'true', 'yes', 'on'}
+    false_values = {'0', 'false', 'no', 'off'}
+
+    for name in names:
+        value = os.getenv(name)
+        if value is None:
+            continue
+
+        normalized = value.strip().lower()
+        if normalized in true_values:
+            return True
+        if normalized in false_values:
+            return False
+
+    return default
+
+
+def get_list_env(name, default=None):
+    value = os.getenv(name)
+    if not value:
+        return list(default or [])
+    return [item.strip() for item in value.split(',') if item.strip()]
+
+
+def database_config_from_url(database_url):
+    parsed = urlparse(database_url)
+    scheme = parsed.scheme.split('+', 1)[0]
+
+    if scheme in {'postgres', 'postgresql', 'psql'}:
+        query = dict(parse_qsl(parsed.query))
+        config = {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': parsed.path.lstrip('/'),
+            'USER': unquote(parsed.username or ''),
+            'PASSWORD': unquote(parsed.password or ''),
+            'HOST': parsed.hostname or '',
+            'PORT': str(parsed.port or ''),
+        }
+        sslmode = query.get('sslmode')
+        if sslmode:
+            config['OPTIONS'] = {'sslmode': sslmode}
+        return config
+
+    if scheme == 'sqlite':
+        path = unquote(parsed.path or '')
+        if path in {'', '/:memory:'}:
+            database_name = ':memory:'
+        else:
+            database_name = BASE_DIR / path.lstrip('/')
+        return {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': database_name,
+        }
+
+    raise ValueError(f'DATABASE_URL scheme not supported: {scheme}')
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-aw5a^$+%ikm2-y0k5+d=q351dpy*)7cwogb%*&ebw8u^75u+2w'
+SECRET_KEY = os.getenv(
+    'DJANGO_SECRET_KEY',
+    'django-insecure-aw5a^$+%ikm2-y0k5+d=q351dpy*)7cwogb%*&ebw8u^75u+2w',
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = get_bool_env('DJANGO_DEBUG', 'DEBUG', default=True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = get_list_env('ALLOWED_HOSTS', ['127.0.0.1', 'localhost', 'testserver', '.vercel.app'])
+VERCEL_URL = os.getenv('VERCEL_URL')
+if VERCEL_URL and VERCEL_URL not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append(VERCEL_URL)
+
+CSRF_TRUSTED_ORIGINS = get_list_env('CSRF_TRUSTED_ORIGINS')
+if VERCEL_URL:
+    vercel_origin = f'https://{VERCEL_URL}'
+    if vercel_origin not in CSRF_TRUSTED_ORIGINS:
+        CSRF_TRUSTED_ORIGINS.append(vercel_origin)
 
 
 # Application definition
@@ -82,6 +154,13 @@ DATABASES = {
     }
 }
 
+DATABASE_URL = os.getenv('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES['default'] = database_config_from_url(DATABASE_URL)
+
+DATABASES['default']['CONN_MAX_AGE'] = 600
+DATABASES['default']['CONN_HEALTH_CHECKS'] = True
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -117,7 +196,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -125,3 +205,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = get_bool_env('SECURE_SSL_REDIRECT', default=True)
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    USE_X_FORWARDED_HOST = True

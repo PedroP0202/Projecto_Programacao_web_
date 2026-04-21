@@ -110,7 +110,7 @@ class MakingOf(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     titulo = models.CharField(max_length=100)
     descricao = models.TextField()
-    imagem_caderno = models.ImageField(upload_to='makingof/')
+    imagem_caderno = models.ImageField(upload_to='makingof/', null=True, blank=True)
     decisoes_tomadas = models.TextField()
     erros_e_correcoes = models.TextField()
     uso_ia = models.TextField()

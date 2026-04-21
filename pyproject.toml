@@ -1,0 +1,2 @@
+[tool.vercel.scripts]
+build = "python manage.py migrate && python manage.py seed_portfolio && python manage.py ensure_superuser && python manage.py collectstatic --noinput"
