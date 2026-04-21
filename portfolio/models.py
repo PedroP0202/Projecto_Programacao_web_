@@ -47,6 +47,7 @@ class Tecnologia(models.Model):
     def __str__(self):
         return self.nome
 
+
 class Projeto(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.TextField()
@@ -56,10 +57,11 @@ class Projeto(models.Model):
     imagem = models.ImageField(upload_to='projetos/', null=True, blank=True)
     video_link = models.URLField(null=True, blank=True)
     repositorio_git = models.URLField(null=True, blank=True)
-    url_deploy = models.URLField(null=True, blank=True)  # URL do projeto publicado
+    url_deploy = models.URLField(null=True, blank=True)
 
     def __str__(self):
         return self.nome
+
 
 class TFC(models.Model):
     titulo = models.CharField(max_length=200)
@@ -67,22 +69,30 @@ class TFC(models.Model):
     orientadores = models.CharField(max_length=200)
     ano = models.IntegerField()
     resumo = models.TextField()
-    link_repositorio = models.URLField(null=True, blank=True)  # Link para o repositório do TFC
+    link_repositorio = models.URLField(null=True, blank=True)
     imagem = models.ImageField(upload_to='tfcs/', null=True, blank=True)
     destaque = models.BooleanField(default=False)
 
     def __str__(self):
         return self.titulo
 
+
 class Competencia(models.Model):
-    NIVEL_CHOICES = [(1, 'Básico'), (2, 'Intermédio'), (3, 'Avançado'), (4, 'Especialista')]
+    NIVEL_CHOICES = [
+        (1, 'Básico'),
+        (2, 'Intermédio'),
+        (3, 'Avançado'),
+        (4, 'Especialista'),
+    ]
+
     titulo = models.CharField(max_length=100)
-    categoria = models.CharField(max_length=50)  # ex: Soft Skill, Hard Skill
+    categoria = models.CharField(max_length=50)
     descricao = models.TextField()
-    nivel = models.IntegerField(choices=NIVEL_CHOICES, default=1)  # Nível de proficiência
+    nivel = models.IntegerField(choices=NIVEL_CHOICES, default=1)
 
     def __str__(self):
         return self.titulo
+
 
 class Formacao(models.Model):
     titulo = models.CharField(max_length=100)
@@ -95,6 +105,7 @@ class Formacao(models.Model):
     def __str__(self):
         return self.titulo
 
+
 class MakingOf(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     titulo = models.CharField(max_length=100)
@@ -106,6 +117,7 @@ class MakingOf(models.Model):
 
     def __str__(self):
         return f"{self.titulo} - {self.data.strftime('%d/%m/%Y')}"
+
 
 class Interesse(models.Model):
     titulo = models.CharField(max_length=100)
