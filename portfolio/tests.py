@@ -52,5 +52,9 @@ class DeployCommandTests(TestCase):
 
         call_command('seed_portfolio', stdout=stdout)
 
-        self.assertTrue(Licenciatura.objects.exists())
+        licenciatura = Licenciatura.objects.first()
+
+        self.assertIsNotNone(licenciatura)
+        self.assertIsInstance(licenciatura.apresentacao, str)
+        self.assertNotIn('courseCode', licenciatura.apresentacao)
         self.assertTrue(TFC.objects.exists())

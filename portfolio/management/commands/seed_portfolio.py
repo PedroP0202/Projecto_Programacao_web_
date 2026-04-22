@@ -47,16 +47,29 @@ class Command(BaseCommand):
         if not course_data:
             return
 
+        course_detail = course_data.get('courseDetail') or {}
+        if not isinstance(course_detail, dict):
+            course_detail = {}
+
         licenciatura, _ = Licenciatura.objects.update_or_create(
-            nome='Engenharia Informática',
+            nome=course_detail.get('courseName', 'Engenharia Informática'),
             defaults={
-                'apresentacao': course_data.get(
-                    'courseDetail',
+                'apresentacao': course_detail.get(
+                    'presentation',
                     'Curso de Engenharia Informática da Universidade Lusófona.',
                 ),
-                'objetivos': 'Formar profissionais qualificados na área de TI.',
-                'competencias': 'Desenvolvimento de software, redes, sistemas e web.',
-                'saidas_profissionais': 'Software Engineer, Systems Admin, Web Developer e áreas relacionadas.',
+                'objetivos': course_detail.get(
+                    'objectives',
+                    'Formar profissionais qualificados na área de TI.',
+                ),
+                'competencias': course_detail.get(
+                    'competences',
+                    'Desenvolvimento de software, redes, sistemas e web.',
+                ),
+                'saidas_profissionais': course_detail.get(
+                    'careerOportunities',
+                    'Software Engineer, Systems Admin, Web Developer e áreas relacionadas.',
+                ),
                 'razoes_escolha': '\n'.join(
                     reason.get('reason', '') for reason in course_data.get('reasons', [])
                 ),
