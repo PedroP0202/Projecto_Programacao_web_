@@ -23,40 +23,16 @@
     <section>
         <h2>Resumo</h2>
         <div class="stats">
-            <div class="stat"><strong>{{ total_ucs }}</strong><br>Unidades curriculares</div>
             <div class="stat"><strong>{{ total_projetos }}</strong><br>Projetos</div>
             <div class="stat"><strong>{{ total_competencias }}</strong><br>Competências</div>
             <div class="stat"><strong>{{ total_formacoes }}</strong><br>Formações</div>
         </div>
     </section>
 
-    <section>
-        <h2>Unidades Curriculares</h2>
-        {% if ucs %}
-            <ul>
-                {% for uc in ucs %}
-                    <li>{{ uc.nome }} - {{ uc.ano }}.º ano, {{ uc.semestre }}.º semestre</li>
-                {% endfor %}
-            </ul>
-            <p><a href="{% url 'ucs' %}">Ver todas as UCs</a></p>
-        {% else %}
-            <p class="muted">Ainda não existem unidades curriculares registadas.</p>
-        {% endif %}
-    </section>
 
-    <section>
-        <h2>Projetos</h2>
-        {% if projetos %}
-            <ul>
-                {% for projeto in projetos %}
-                    <li>{{ projeto.nome }}{% if projeto.unidade_curricular %} - {{ projeto.unidade_curricular.nome }}{% endif %}</li>
-                {% endfor %}
-            </ul>
-            <p><a href="{% url 'projetos' %}">Ver todos os projetos</a></p>
-        {% else %}
-            <p class="muted">Ainda não existem projetos registados.</p>
-        {% endif %}
-    </section>
+
+
+
 
     <section>
         <h2>Competências</h2>
@@ -86,17 +62,5 @@
         {% endif %}
     </section>
 
-    <section>
-        <h2>TFC em Destaque</h2>
-        {% if tfcs %}
-            <ul>
-                {% for tfc in tfcs %}
-                    <li>{{ tfc.titulo }} - {{ tfc.ano }}</li>
-                {% endfor %}
-            </ul>
-            <p><a href="{% url 'tfcs' %}">Ver todos os TFCs</a></p>
-        {% else %}
-            <p class="muted">Ainda não existem TFCs em destaque.</p>
-        {% endif %}
-    </section>
+
 {% endblock %}
