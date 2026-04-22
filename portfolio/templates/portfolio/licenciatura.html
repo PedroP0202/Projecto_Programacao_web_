@@ -1,0 +1,23 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Licenciatura{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Licenciatura</h1>
+        {% if licenciatura %}
+            <article>
+                <h2>{{ licenciatura.nome }}</h2>
+                <p><strong>Apresentação:</strong> {{ licenciatura.apresentacao }}</p>
+                <p><strong>Objetivos:</strong> {{ licenciatura.objetivos }}</p>
+                <p><strong>Competências:</strong> {{ licenciatura.competencias }}</p>
+                <p><strong>Saídas profissionais:</strong> {{ licenciatura.saidas_profissionais }}</p>
+                {% if licenciatura.razoes_escolha %}
+                    <p><strong>Razões da escolha:</strong> {{ licenciatura.razoes_escolha }}</p>
+                {% endif %}
+            </article>
+        {% else %}
+            <p class="muted">Ainda não existe informação da licenciatura.</p>
+        {% endif %}
+    </section>
+{% endblock %}

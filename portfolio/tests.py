@@ -7,7 +7,7 @@ from django.core.management import call_command
 from django.test import TestCase
 from django.urls import reverse
 
-from .models import Licenciatura, TFC
+from portfolio.models import Competencia, Formacao, Licenciatura, Projeto, TFC, UnidadeCurricular
 
 class HomeViewTests(TestCase):
     def test_home_page_loads_without_data(self):
@@ -28,6 +28,39 @@ class HomeViewTests(TestCase):
         response = self.client.get(reverse('home'))
 
         self.assertContains(response, 'Engenharia Informática')
+
+    def test_portfolio_section_pages_load(self):
+        Licenciatura.objects.create(
+            nome='Engenharia Informática',
+            apresentacao='Curso simples e funcional.',
+            objetivos='Aprender a programar.',
+            competencias='Python, Django e bases de dados.',
+            saidas_profissionais='Desenvolvimento de software.',
+        )
+        Competencia.objects.create(
+            titulo='Django',
+            categoria='Hard Skill',
+            descricao='Framework web.',
+            nivel=3,
+        )
+        Formacao.objects.create(
+            titulo='Curso Django',
+            instituicao='ULHT',
+            data_inicio='2024-01-01',
+            descricao='Formacao base.',
+            local='Lisboa',
+        )
+        TFC.objects.create(
+            titulo='TFC Teste',
+            autores='Aluno',
+            orientadores='Professor',
+            ano=2025,
+            resumo='Resumo de teste.',
+        )
+
+        for route_name in ['licenciatura', 'ucs', 'projetos', 'competencias', 'formacoes', 'tfcs']:
+            response = self.client.get(reverse(route_name))
+            self.assertEqual(response.status_code, 200, route_name)
 
 
 class DeployCommandTests(TestCase):

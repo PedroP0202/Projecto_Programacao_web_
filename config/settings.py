@@ -110,7 +110,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
-    'escola',
+    'escola_online.apps.EscolaOnlineConfig',
 ]
 
 MIDDLEWARE = [

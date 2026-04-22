@@ -1,0 +1,24 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Formações{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Formações</h1>
+        {% if formacoes %}
+            <div class="grid">
+                {% for formacao in formacoes %}
+                    <article>
+                        <h2>{{ formacao.titulo }}</h2>
+                        <p><strong>Instituição:</strong> {{ formacao.instituicao }}</p>
+                        <p><strong>Local:</strong> {{ formacao.local }}</p>
+                        <p><strong>Início:</strong> {{ formacao.data_inicio }}{% if formacao.data_fim %} | <strong>Fim:</strong> {{ formacao.data_fim }}{% endif %}</p>
+                        <p>{{ formacao.descricao }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem formações registadas.</p>
+        {% endif %}
+    </section>
+{% endblock %}

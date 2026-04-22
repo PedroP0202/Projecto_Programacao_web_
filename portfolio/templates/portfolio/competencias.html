@@ -1,0 +1,23 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Competências{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Competências</h1>
+        {% if competencias %}
+            <div class="grid">
+                {% for competencia in competencias %}
+                    <article>
+                        <h2>{{ competencia.titulo }}</h2>
+                        <p><strong>Categoria:</strong> {{ competencia.categoria }}</p>
+                        <p><strong>Nível:</strong> {{ competencia.get_nivel_display }}</p>
+                        <p>{{ competencia.descricao }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem competências registadas.</p>
+        {% endif %}
+    </section>
+{% endblock %}
