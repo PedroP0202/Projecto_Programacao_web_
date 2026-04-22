@@ -1,5 +1,16 @@
 from django.shortcuts import render
-from .models import Competencia, Formacao, Licenciatura, Projeto, TFC, UnidadeCurricular
+from .models import (
+    Competencia,
+    Docente,
+    Formacao,
+    Interesse,
+    Licenciatura,
+    MakingOf,
+    Projeto,
+    Tecnologia,
+    TFC,
+    UnidadeCurricular,
+)
 
 
 def home(request):
@@ -55,3 +66,23 @@ def formacoes_view(request):
 def tfcs_view(request):
     tfcs = TFC.objects.order_by('-ano', 'titulo')
     return render(request, 'portfolio/tfcs.html', {'tfcs': tfcs})
+
+
+def docentes_view(request):
+    docentes = Docente.objects.prefetch_related('ucs').order_by('nome')
+    return render(request, 'portfolio/docentes.html', {'docentes': docentes})
+
+
+def tecnologias_view(request):
+    tecnologias = Tecnologia.objects.prefetch_related('projetos').order_by('nome')
+    return render(request, 'portfolio/tecnologias.html', {'tecnologias': tecnologias})
+
+
+def interesses_view(request):
+    interesses = Interesse.objects.order_by('titulo')
+    return render(request, 'portfolio/interesses.html', {'interesses': interesses})
+
+
+def makingof_view(request):
+    registos = MakingOf.objects.order_by('-data')
+    return render(request, 'portfolio/makingof.html', {'registos': registos})

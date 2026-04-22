@@ -1,0 +1,25 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Making Of{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Making Of</h1>
+        {% if registos %}
+            <div class="grid">
+                {% for registo in registos %}
+                    <article>
+                        <h2>{{ registo.titulo }}</h2>
+                        <p><strong>Data:</strong> {{ registo.data }}</p>
+                        <p><strong>Descrição:</strong> {{ registo.descricao }}</p>
+                        <p><strong>Decisões tomadas:</strong> {{ registo.decisoes_tomadas }}</p>
+                        <p><strong>Erros e correções:</strong> {{ registo.erros_e_correcoes }}</p>
+                        <p><strong>Uso de IA:</strong> {{ registo.uso_ia }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem registos de making of.</p>
+        {% endif %}
+    </section>
+{% endblock %}

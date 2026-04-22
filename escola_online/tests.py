@@ -29,3 +29,13 @@ class EscolaViewTests(TestCase):
         self.assertContains(response, 'Programacao Web')
         self.assertContains(response, 'Ana Costa')
         self.assertContains(response, 'Rita')
+
+    def test_professores_alunos_e_curso_views_load(self):
+        professor = Professor.objects.create(nome='Pedro Lima', email='pedro@example.com')
+        aluno = Aluno.objects.create(nome='Ines', numero='A002')
+        curso = Curso.objects.create(nome='Bases de Dados', professor=professor)
+        curso.alunos.add(aluno)
+
+        self.assertEqual(self.client.get(reverse('professores')).status_code, 200)
+        self.assertEqual(self.client.get(reverse('alunos')).status_code, 200)
+        self.assertEqual(self.client.get(reverse('curso', args=[curso.id])).status_code, 200)

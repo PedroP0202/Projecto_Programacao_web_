@@ -1,0 +1,30 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Tecnologias{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Tecnologias</h1>
+        {% if tecnologias %}
+            <div class="grid">
+                {% for tecnologia in tecnologias %}
+                    <article>
+                        <h2>{{ tecnologia.nome }}</h2>
+                        <p>{{ tecnologia.descricao }}</p>
+                        <p><strong>Nível de interesse:</strong> {{ tecnologia.nivel_interesse }}</p>
+                        <p><a href="{{ tecnologia.link_oficial }}" target="_blank" rel="noopener noreferrer">Site oficial</a></p>
+                        <p><strong>Projetos:</strong>
+                            {% for projeto in tecnologia.projetos.all %}
+                                {{ projeto.nome }}{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                                <span class="muted">Sem projetos associados.</span>
+                            {% endfor %}
+                        </p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem tecnologias registadas.</p>
+        {% endif %}
+    </section>
+{% endblock %}

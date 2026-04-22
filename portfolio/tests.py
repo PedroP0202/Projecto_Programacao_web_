@@ -7,7 +7,18 @@ from django.core.management import call_command
 from django.test import TestCase
 from django.urls import reverse
 
-from portfolio.models import Competencia, Formacao, Licenciatura, Projeto, TFC, UnidadeCurricular
+from portfolio.models import (
+    Competencia,
+    Docente,
+    Formacao,
+    Interesse,
+    Licenciatura,
+    MakingOf,
+    Projeto,
+    Tecnologia,
+    TFC,
+    UnidadeCurricular,
+)
 
 class HomeViewTests(TestCase):
     def test_home_page_loads_without_data(self):
@@ -37,6 +48,32 @@ class HomeViewTests(TestCase):
             competencias='Python, Django e bases de dados.',
             saidas_profissionais='Desenvolvimento de software.',
         )
+        docente = Docente.objects.create(
+            nome='Professor Teste',
+            link_lusofona='https://example.com/docente',
+        )
+        uc = UnidadeCurricular.objects.create(
+            nome='Programacao',
+            sigla='PW',
+            ano=2,
+            semestre=1,
+            creditos=6,
+            licenciatura=Licenciatura.objects.first(),
+        )
+        uc.docentes.add(docente)
+        tecnologia = Tecnologia.objects.create(
+            nome='Python',
+            link_oficial='https://python.org',
+            descricao='Linguagem',
+            nivel_interesse=4,
+        )
+        projeto = Projeto.objects.create(
+            nome='Projeto Teste',
+            descricao='Descricao do projeto.',
+            conceitos_aplicados='MVC',
+            unidade_curricular=uc,
+        )
+        projeto.tecnologias.add(tecnologia)
         Competencia.objects.create(
             titulo='Django',
             categoria='Hard Skill',
@@ -57,8 +94,30 @@ class HomeViewTests(TestCase):
             ano=2025,
             resumo='Resumo de teste.',
         )
+        Interesse.objects.create(
+            titulo='IA',
+            descricao='Interesse em inteligencia artificial.',
+        )
+        MakingOf.objects.create(
+            titulo='Registo',
+            descricao='Descricao',
+            decisoes_tomadas='Decisoes',
+            erros_e_correcoes='Correcao',
+            uso_ia='Sim',
+        )
 
-        for route_name in ['licenciatura', 'ucs', 'projetos', 'competencias', 'formacoes', 'tfcs']:
+        for route_name in [
+            'licenciatura',
+            'ucs',
+            'docentes',
+            'projetos',
+            'tecnologias',
+            'competencias',
+            'formacoes',
+            'interesses',
+            'makingof',
+            'tfcs',
+        ]:
             response = self.client.get(reverse(route_name))
             self.assertEqual(response.status_code, 200, route_name)
 

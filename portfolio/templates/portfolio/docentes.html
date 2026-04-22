@@ -1,0 +1,28 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Docentes{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Docentes</h1>
+        {% if docentes %}
+            <div class="grid">
+                {% for docente in docentes %}
+                    <article>
+                        <h2>{{ docente.nome }}</h2>
+                        <p><a href="{{ docente.link_lusofona }}" target="_blank" rel="noopener noreferrer">Perfil Lusófona</a></p>
+                        <p><strong>UCs:</strong>
+                            {% for uc in docente.ucs.all %}
+                                {{ uc.nome }}{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                                <span class="muted">Sem UCs associadas.</span>
+                            {% endfor %}
+                        </p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem docentes registados.</p>
+        {% endif %}
+    </section>
+{% endblock %}
