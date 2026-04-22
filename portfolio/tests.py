@@ -31,6 +31,14 @@ class HomeViewTests(TestCase):
 
 
 class DeployCommandTests(TestCase):
+    def test_ensure_superuser_uses_defaults_when_environment_is_missing(self):
+        with patch.dict(os.environ, {}, clear=True):
+            call_command('ensure_superuser')
+
+        user = get_user_model().objects.get(username='admin')
+        self.assertTrue(user.is_superuser)
+        self.assertTrue(user.check_password('admin1234'))
+
     def test_ensure_superuser_creates_admin_from_environment(self):
         with patch.dict(
             os.environ,

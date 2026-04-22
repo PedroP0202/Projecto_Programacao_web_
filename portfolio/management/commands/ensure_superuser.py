@@ -8,17 +8,16 @@ class Command(BaseCommand):
     help = 'Cria ou atualiza o superuser com base nas variáveis de ambiente.'
 
     def handle(self, *args, **options):
-        username = os.getenv('DJANGO_SUPERUSER_USERNAME')
-        password = os.getenv('DJANGO_SUPERUSER_PASSWORD')
-        email = os.getenv('DJANGO_SUPERUSER_EMAIL', '')
+        username = os.getenv('DJANGO_SUPERUSER_USERNAME', 'admin')
+        password = os.getenv('DJANGO_SUPERUSER_PASSWORD', 'admin1234')
+        email = os.getenv('DJANGO_SUPERUSER_EMAIL', 'admin@example.com')
 
-        if not username or not password:
+        if 'DJANGO_SUPERUSER_USERNAME' not in os.environ or 'DJANGO_SUPERUSER_PASSWORD' not in os.environ:
             self.stdout.write(
                 self.style.WARNING(
-                    'Superuser não criado: faltam DJANGO_SUPERUSER_USERNAME e/ou DJANGO_SUPERUSER_PASSWORD.'
+                    'Variáveis do superuser não definidas; a usar credenciais por omissão.'
                 )
             )
-            return
 
         User = get_user_model()
         user, created = User.objects.get_or_create(
