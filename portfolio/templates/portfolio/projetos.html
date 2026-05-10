@@ -5,13 +5,26 @@
 {% block content %}
     <section>
         <h1>Projetos</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'projetos' %}">Criar projeto</a>
+            </p>
+        {% endif %}
         {% if projetos %}
             <div class="grid">
                 {% for projeto in projetos %}
                     <article>
                         <h2>{{ projeto.nome }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'projetos' projeto.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'projetos' projeto.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
                         <p>{{ projeto.descricao }}</p>
-                        <p><strong>UC:</strong> {{ projeto.unidade_curricular.nome }}</p>
+                        {% if projeto.unidade_curricular %}
+                            <p><strong>UC:</strong> {{ projeto.unidade_curricular.nome }}</p>
+                        {% endif %}
                         <p><strong>Conceitos aplicados:</strong> {{ projeto.conceitos_aplicados }}</p>
                         <p><strong>Tecnologias:</strong>
                             {% for tecnologia in projeto.tecnologias.all %}

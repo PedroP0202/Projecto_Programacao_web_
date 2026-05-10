@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Licenciatura(models.Model):
     nome = models.CharField(max_length=100)
     apresentacao = models.TextField()
@@ -10,6 +11,38 @@ class Licenciatura(models.Model):
 
     def __str__(self):
         return self.nome
+
+
+class Docente(models.Model):
+    nome = models.CharField(max_length=100)
+    link_lusofona = models.URLField()
+
+    def __str__(self):
+        return self.nome
+
+
+class UnidadeCurricular(models.Model):
+    nome = models.CharField(max_length=100)
+    sigla = models.CharField(max_length=10)
+    ano = models.IntegerField()
+    semestre = models.IntegerField()
+    creditos = models.IntegerField()
+    imagem = models.ImageField(upload_to='ucs/', null=True, blank=True)
+    objetivos = models.TextField(null=True, blank=True)
+    conteudos = models.TextField(null=True, blank=True)
+    metodologia = models.TextField(null=True, blank=True)
+    bibliografia = models.TextField(null=True, blank=True)
+    avaliacao = models.TextField(null=True, blank=True)
+    natureza = models.CharField(max_length=50, null=True, blank=True)
+    licenciatura = models.ForeignKey(
+        Licenciatura,
+        on_delete=models.CASCADE,
+        related_name='ucs',
+    )
+    docentes = models.ManyToManyField(Docente, related_name='ucs')
+
+    def __str__(self):
+        return f'{self.sigla} - {self.nome}'
 
 
 
@@ -28,6 +61,11 @@ class Projeto(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.TextField()
     conceitos_aplicados = models.TextField()
+    unidade_curricular = models.ForeignKey(
+        UnidadeCurricular,
+        on_delete=models.CASCADE,
+        related_name='projetos',
+    )
     tecnologias = models.ManyToManyField(Tecnologia, related_name='projetos')
     imagem = models.ImageField(upload_to='projetos/', null=True, blank=True)
     video_link = models.URLField(null=True, blank=True)
@@ -58,6 +96,15 @@ class Competencia(models.Model):
         return self.titulo
 
 
+class Interesse(models.Model):
+    titulo = models.CharField(max_length=100)
+    descricao = models.TextField()
+    imagem = models.ImageField(upload_to='interesses/', null=True, blank=True)
+
+    def __str__(self):
+        return self.titulo
+
+
 class Formacao(models.Model):
     titulo = models.CharField(max_length=100)
     instituicao = models.CharField(max_length=100)
@@ -70,11 +117,25 @@ class Formacao(models.Model):
         return self.titulo
 
 
+class TFC(models.Model):
+    titulo = models.CharField(max_length=200)
+    autores = models.CharField(max_length=200)
+    orientadores = models.CharField(max_length=200)
+    ano = models.IntegerField()
+    resumo = models.TextField()
+    imagem = models.ImageField(upload_to='tfcs/', null=True, blank=True)
+    destaque = models.BooleanField(default=False)
+    link_repositorio = models.URLField(null=True, blank=True)
+
+    def __str__(self):
+        return self.titulo
+
+
 class MakingOf(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     titulo = models.CharField(max_length=100)
     descricao = models.TextField()
-    imagem_caderno = models.ImageField(upload_to='makingof/')
+    imagem_caderno = models.ImageField(upload_to='makingof/', null=True, blank=True)
     decisoes_tomadas = models.TextField()
     erros_e_correcoes = models.TextField()
     uso_ia = models.TextField()

@@ -5,11 +5,22 @@
 {% block content %}
     <section>
         <h1>Tecnologias</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'tecnologias' %}">Criar tecnologia</a>
+            </p>
+        {% endif %}
         {% if tecnologias %}
             <div class="grid">
                 {% for tecnologia in tecnologias %}
                     <article>
                         <h2>{{ tecnologia.nome }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'tecnologias' tecnologia.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'tecnologias' tecnologia.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
                         <p>{{ tecnologia.descricao }}</p>
                         <p><strong>Nível de interesse:</strong> {{ tecnologia.nivel_interesse }}</p>
                         <p><a href="{{ tecnologia.link_oficial }}" target="_blank" rel="noopener noreferrer">Site oficial</a></p>

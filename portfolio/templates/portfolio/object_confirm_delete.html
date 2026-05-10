@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>{{ title }}</h1>
+        <p>Tem a certeza que pretende apagar <strong>{{ object }}</strong>?</p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="actions">
+                <button class="danger" type="submit">Apagar</button>
+                <a class="button secondary" href="{% url cancel_url %}">Cancelar</a>
+            </div>
+        </form>
+    </section>
+{% endblock %}

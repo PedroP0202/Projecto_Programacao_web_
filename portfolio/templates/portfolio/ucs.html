@@ -1,0 +1,41 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Disciplinas{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Disciplinas</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'disciplinas' %}">Criar disciplina</a>
+            </p>
+        {% endif %}
+        {% if disciplinas %}
+            <div class="grid">
+                {% for disciplina in disciplinas %}
+                    <article>
+                        <h2>{{ disciplina.nome }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'disciplinas' disciplina.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'disciplinas' disciplina.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
+                        <p><strong>Sigla:</strong> {{ disciplina.sigla }}</p>
+                        <p><strong>Ano:</strong> {{ disciplina.ano }} | <strong>Semestre:</strong> {{ disciplina.semestre }} | <strong>ECTS:</strong> {{ disciplina.creditos }}</p>
+                        <p><strong>Licenciatura:</strong> {{ disciplina.licenciatura.nome }}</p>
+                        <p><strong>Docentes:</strong>
+                            {% for docente in disciplina.docentes.all %}
+                                {{ docente.nome }}{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                                <span class="muted">Sem docentes associados.</span>
+                            {% endfor %}
+                        </p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem disciplinas registadas.</p>
+        {% endif %}
+    </section>
+{% endblock %}

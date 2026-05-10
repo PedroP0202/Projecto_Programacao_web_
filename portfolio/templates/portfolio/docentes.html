@@ -1,0 +1,39 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Docentes{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Docentes</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'docentes' %}">Criar docente</a>
+            </p>
+        {% endif %}
+        {% if docentes %}
+            <div class="grid">
+                {% for docente in docentes %}
+                    <article>
+                        <h2>{{ docente.nome }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'docentes' docente.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'docentes' docente.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
+                        <p><a href="{{ docente.link_lusofona }}" target="_blank" rel="noopener noreferrer">Página Lusófona</a></p>
+                        <p><strong>Disciplinas:</strong>
+                            {% for uc in docente.ucs.all %}
+                                {{ uc.nome }}{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                                <span class="muted">Sem disciplinas associadas.</span>
+                            {% endfor %}
+                        </p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem docentes registados.</p>
+        {% endif %}
+    </section>
+{% endblock %}

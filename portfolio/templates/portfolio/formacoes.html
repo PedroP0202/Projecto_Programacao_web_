@@ -5,11 +5,22 @@
 {% block content %}
     <section>
         <h1>Formações</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'formacoes' %}">Criar formação</a>
+            </p>
+        {% endif %}
         {% if formacoes %}
             <div class="grid">
                 {% for formacao in formacoes %}
                     <article>
                         <h2>{{ formacao.titulo }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'formacoes' formacao.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'formacoes' formacao.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
                         <p><strong>Instituição:</strong> {{ formacao.instituicao }}</p>
                         <p><strong>Local:</strong> {{ formacao.local }}</p>
                         <p><strong>Início:</strong> {{ formacao.data_inicio }}{% if formacao.data_fim %} | <strong>Fim:</strong> {{ formacao.data_fim }}{% endif %}</p>

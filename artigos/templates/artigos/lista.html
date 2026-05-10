@@ -1,0 +1,83 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Artigos{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Artigos</h1>
+        <p class="muted">Conteúdos sobre tecnologia, aprendizagem e soft-skills.</p>
+        {% if is_author %}
+            <p class="actions">
+                <a class="button" href="{% url 'artigos:criar' %}">Publicar artigo</a>
+            </p>
+        {% endif %}
+    </section>
+
+    {% for artigo in artigos %}
+        <article>
+            <h2>{{ artigo.titulo }}</h2>
+            <p class="muted">
+                Por {{ artigo.autor.username }} em {{ artigo.data_criacao|date:"d/m/Y H:i" }}
+            </p>
+
+            {% if artigo.fotografia %}
+                <p><img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}"></p>
+            {% endif %}
+
+            <div>{{ artigo.texto|linebreaks }}</div>
+
+            {% if artigo.link_externo %}
+                <p>
+                    <a href="{{ artigo.link_externo }}" target="_blank" rel="noopener noreferrer">
+                        Link externo
+                    </a>
+                </p>
+            {% endif %}
+
+            <div class="actions">
+                <form method="post" action="{% url 'artigos:gostar' artigo.pk %}">
+                    {% csrf_token %}
+                    <button type="submit">
+                        {% if artigo.user_liked %}Remover like{% else %}Gosto{% endif %}
+                        ({{ artigo.likes_count }})
+                    </button>
+                </form>
+
+                {% if request.user == artigo.autor and is_author %}
+                    <a class="button secondary" href="{% url 'artigos:editar' artigo.pk %}">Editar</a>
+                {% endif %}
+            </div>
+
+            <div class="comments">
+                <h3>Comentários</h3>
+                {% for comentario in artigo.comentarios.all %}
+                    <div class="comment">
+                        <div>{{ comentario.texto|linebreaks }}</div>
+                        <p class="muted">
+                            {{ comentario.autor.username }} · {{ comentario.data_criacao|date:"d/m/Y H:i" }}
+                        </p>
+                    </div>
+                {% empty %}
+                    <p class="muted">Ainda não existem comentários.</p>
+                {% endfor %}
+
+                {% if request.user.is_authenticated %}
+                    <form method="post" action="{% url 'artigos:comentar' artigo.pk %}">
+                        {% csrf_token %}
+                        {{ artigo.comentario_form.as_p }}
+                        <button type="submit">Comentar</button>
+                    </form>
+                {% else %}
+                    <p class="muted">
+                        <a href="{% url 'accounts:login' %}?next={{ request.path }}">Inicie sessão</a>
+                        para comentar.
+                    </p>
+                {% endif %}
+            </div>
+        </article>
+    {% empty %}
+        <section>
+            <p class="muted">Ainda não existem artigos publicados.</p>
+        </section>
+    {% endfor %}
+{% endblock %}

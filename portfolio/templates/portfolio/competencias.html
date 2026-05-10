@@ -5,11 +5,22 @@
 {% block content %}
     <section>
         <h1>Competências</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'competencias' %}">Criar competência</a>
+            </p>
+        {% endif %}
         {% if competencias %}
             <div class="grid">
                 {% for competencia in competencias %}
                     <article>
                         <h2>{{ competencia.titulo }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'competencias' competencia.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'competencias' competencia.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
                         <p><strong>Categoria:</strong> {{ competencia.categoria }}</p>
                         <p><strong>Nível:</strong> {{ competencia.get_nivel_display }}</p>
                         <p>{{ competencia.descricao }}</p>

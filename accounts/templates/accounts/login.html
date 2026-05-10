@@ -1,0 +1,31 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <section class="auth-panel">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="auth_method" value="password">
+            <label for="username">Utilizador</label>
+            <input id="username" type="text" name="username" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="muted">Ainda não tem conta? <a href="{% url 'accounts:register' %}">Criar registo</a></p>
+    </section>
+
+    <section class="auth-panel">
+        <h1>Entrar com link mágico</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="auth_method" value="magic_link">
+            {{ magic_form.as_p }}
+            <button type="submit">Enviar link mágico</button>
+        </form>
+    </section>
+{% endblock %}

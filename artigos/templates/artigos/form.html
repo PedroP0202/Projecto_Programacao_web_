@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>{{ title }}</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="actions">
+                <button type="submit">Guardar</button>
+                <a class="button secondary" href="{% url 'artigos:lista' %}">Cancelar</a>
+            </div>
+        </form>
+    </section>
+{% endblock %}

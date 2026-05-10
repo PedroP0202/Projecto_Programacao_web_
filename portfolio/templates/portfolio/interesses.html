@@ -1,0 +1,32 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Interesses{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Interesses</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'interesses' %}">Criar interesse</a>
+            </p>
+        {% endif %}
+        {% if interesses %}
+            <div class="grid">
+                {% for interesse in interesses %}
+                    <article>
+                        <h2>{{ interesse.titulo }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'interesses' interesse.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'interesses' interesse.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
+                        <p>{{ interesse.descricao }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem interesses registados.</p>
+        {% endif %}
+    </section>
+{% endblock %}

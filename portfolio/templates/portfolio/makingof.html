@@ -5,11 +5,22 @@
 {% block content %}
     <section>
         <h1>Making Of</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'makingof' %}">Criar registo</a>
+            </p>
+        {% endif %}
         {% if registos %}
             <div class="grid">
                 {% for registo in registos %}
                     <article>
                         <h2>{{ registo.titulo }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'makingof' registo.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'makingof' registo.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
                         <p><strong>Data:</strong> {{ registo.data }}</p>
                         <p><strong>Descrição:</strong> {{ registo.descricao }}</p>
                         <p><strong>Decisões tomadas:</strong> {{ registo.decisoes_tomadas }}</p>

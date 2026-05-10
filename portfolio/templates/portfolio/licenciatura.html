@@ -5,9 +5,21 @@
 {% block content %}
     <section>
         <h1>Licenciatura</h1>
+        {% if is_portfolio_manager %}
+            <p class="actions">
+                <a class="button" href="{% url 'portfolio_create' 'licenciaturas' %}">Criar licenciatura</a>
+                <a class="button" href="{% url 'portfolio_create' 'disciplinas' %}">Criar disciplina</a>
+            </p>
+        {% endif %}
         {% if licenciatura %}
             <article>
                 <h2>{{ licenciatura.nome }}</h2>
+                {% if is_portfolio_manager %}
+                    <p class="actions">
+                        <a class="button secondary" href="{% url 'portfolio_update' 'licenciaturas' licenciatura.pk %}">Editar</a>
+                        <a class="button danger" href="{% url 'portfolio_delete' 'licenciaturas' licenciatura.pk %}">Apagar</a>
+                    </p>
+                {% endif %}
                 <p><strong>Apresentação:</strong> {{ licenciatura.apresentacao }}</p>
                 <p><strong>Objetivos:</strong> {{ licenciatura.objetivos }}</p>
                 <p><strong>Competências:</strong> {{ licenciatura.competencias }}</p>
@@ -18,6 +30,32 @@
             </article>
         {% else %}
             <p class="muted">Ainda não existe informação da licenciatura.</p>
+        {% endif %}
+    </section>
+
+    <section>
+        <h1>Disciplinas</h1>
+        {% if disciplinas %}
+            <div class="grid">
+                {% for disciplina in disciplinas %}
+                    <article>
+                        <h2>{{ disciplina.nome }}</h2>
+                        {% if is_portfolio_manager %}
+                            <p class="actions">
+                                <a class="button secondary" href="{% url 'portfolio_update' 'disciplinas' disciplina.pk %}">Editar</a>
+                                <a class="button danger" href="{% url 'portfolio_delete' 'disciplinas' disciplina.pk %}">Apagar</a>
+                            </p>
+                        {% endif %}
+                        <p><strong>Sigla:</strong> {{ disciplina.sigla }}</p>
+                        <p><strong>Ano:</strong> {{ disciplina.ano }} | <strong>Semestre:</strong> {{ disciplina.semestre }} | <strong>ECTS:</strong> {{ disciplina.creditos }}</p>
+                        {% if disciplina.objetivos %}
+                            <p><strong>Objetivos:</strong> {{ disciplina.objetivos }}</p>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted">Ainda não existem disciplinas registadas.</p>
         {% endif %}
     </section>
 {% endblock %}
