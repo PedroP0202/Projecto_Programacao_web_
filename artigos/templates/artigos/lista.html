@@ -48,31 +48,46 @@
                 {% endif %}
             </div>
 
+            <div class="rating-section" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">
+                <h3>Avaliação</h3>
+                <p>Média: {% if artigo.rating_avg %}{{ artigo.rating_avg|floatformat:1 }} / 5 estrelas{% else %}Sem avaliações{% endif %}</p>
+                <form method="post" action="{% url 'artigos:rating' artigo.pk %}" style="display: flex; gap: 10px; align-items: center; max-width: 300px;">
+                    {% csrf_token %}
+                    <select name="valor" required style="width: auto;">
+                        <option value="" disabled selected>Avaliar...</option>
+                        <option value="5">5 Estrelas</option>
+                        <option value="4">4 Estrelas</option>
+                        <option value="3">3 Estrelas</option>
+                        <option value="2">2 Estrelas</option>
+                        <option value="1">1 Estrela</option>
+                    </select>
+                    <button type="submit" class="button secondary">Enviar</button>
+                </form>
+            </div>
+
             <div class="comments">
                 <h3>Comentários</h3>
                 {% for comentario in artigo.comentarios.all %}
                     <div class="comment">
                         <div>{{ comentario.texto|linebreaks }}</div>
                         <p class="muted">
-                            {{ comentario.autor.username }} · {{ comentario.data_criacao|date:"d/m/Y H:i" }}
+                            {% if comentario.autor %}
+                                {{ comentario.autor.username }}
+                            {% else %}
+                                {{ comentario.nome_autor|default:"Anónimo" }}
+                            {% endif %}
+                            · {{ comentario.data_criacao|date:"d/m/Y H:i" }}
                         </p>
                     </div>
                 {% empty %}
                     <p class="muted">Ainda não existem comentários.</p>
                 {% endfor %}
 
-                {% if request.user.is_authenticated %}
-                    <form method="post" action="{% url 'artigos:comentar' artigo.pk %}">
-                        {% csrf_token %}
-                        {{ artigo.comentario_form.as_p }}
-                        <button type="submit">Comentar</button>
-                    </form>
-                {% else %}
-                    <p class="muted">
-                        <a href="{% url 'accounts:login' %}?next={{ request.path }}">Inicie sessão</a>
-                        para comentar.
-                    </p>
-                {% endif %}
+                <form method="post" action="{% url 'artigos:comentar' artigo.pk %}">
+                    {% csrf_token %}
+                    {{ artigo.comentario_form.as_p }}
+                    <button type="submit">Comentar</button>
+                </form>
             </div>
         </article>
     {% empty %}

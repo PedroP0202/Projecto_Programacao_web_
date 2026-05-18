@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Artigo, Comentario, Like
+from .models import Artigo, Comentario, Like, Rating
 
 
 @admin.register(Artigo)
@@ -29,9 +29,9 @@ class ArtigoAdmin(admin.ModelAdmin):
 
 @admin.register(Comentario)
 class ComentarioAdmin(admin.ModelAdmin):
-    list_display = ['artigo', 'autor', 'data_criacao']
+    list_display = ['artigo', 'autor', 'nome_autor', 'data_criacao']
     list_filter = ['data_criacao', 'autor']
-    search_fields = ['texto', 'autor__username', 'artigo__titulo']
+    search_fields = ['texto', 'autor__username', 'nome_autor', 'artigo__titulo']
     readonly_fields = ['data_criacao']
 
 
@@ -39,5 +39,13 @@ class ComentarioAdmin(admin.ModelAdmin):
 class LikeAdmin(admin.ModelAdmin):
     list_display = ['artigo', 'utilizador', 'session_key', 'data_criacao']
     list_filter = ['data_criacao']
+    search_fields = ['artigo__titulo', 'utilizador__username', 'session_key']
+    readonly_fields = ['data_criacao']
+
+
+@admin.register(Rating)
+class RatingAdmin(admin.ModelAdmin):
+    list_display = ['artigo', 'valor', 'utilizador', 'session_key', 'data_criacao']
+    list_filter = ['valor', 'data_criacao']
     search_fields = ['artigo__titulo', 'utilizador__username', 'session_key']
     readonly_fields = ['data_criacao']

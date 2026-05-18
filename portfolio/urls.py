@@ -15,10 +15,16 @@ from .views import (
     tecnologias_view,
     tfcs_view,
     ucs_view,
+    landing_page_view,
+    sobre_view,
+    videotutoriais_view,
 )
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', landing_page_view, name='landing_page'),
+    path('home/', home, name='home'),
+    path('sobre/', sobre_view, name='sobre'),
+    path('videotutoriais/', videotutoriais_view, name='videotutoriais'),
     path('licenciatura/', licenciatura_view, name='licenciatura'),
     path('ucs/', ucs_view, name='ucs'),
     path('docentes/', docentes_view, name='docentes'),

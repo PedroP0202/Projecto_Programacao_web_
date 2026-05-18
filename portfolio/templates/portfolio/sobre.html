@@ -1,0 +1,38 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Sobre Mim & O Projeto{% endblock %}
+
+{% block content %}
+<article>
+    <h2>Sobre a Aplicação</h2>
+    <p>Esta é uma aplicação desenvolvida com a framework <strong>Django</strong>, que serve como um portfólio digital, diário de bordo e blog para documentar o meu percurso académico e profissional.</p>
+    
+    <h3>Tecnologias Usadas</h3>
+    <ul>
+        <li><strong>Backend:</strong> Python, Django</li>
+        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript Vanilla</li>
+        <li><strong>Base de Dados:</strong> Neon (PostgreSQL) para ambiente Cloud e SQLite para desenvolvimento local</li>
+        <li><strong>Armazenamento (Media):</strong> Cloudinary</li>
+    </ul>
+
+    <h3>Arquitetura da Solução & CI/CD</h3>
+    <p>A aplicação está alojada de forma contínua através de um pipeline CI/CD (Continuous Integration / Continuous Deployment). O código está num repositório GitHub e qualquer alteração (commit) desencadeia um fluxo automatizado que:</p>
+    <ol>
+        <li>Testa a aplicação garantindo a ausência de erros (linting, testes unitários).</li>
+        <li>Compila os <em>assets</em> estáticos utilizando o WhiteNoise para servir ficheiros eficazmente.</li>
+        <li>Publica os novos ficheiros no servidor de produção de forma automática.</li>
+    </ol>
+    
+    <p>Os ficheiros multimédia (fotografias de artigos, logos de projetos, etc) não ficam armazenados localmente no servidor de alojamento web, sendo antes descarregados diretamente para o serviço cloud <strong>Cloudinary</strong>. A base de dados principal, outrora em ficheiro local, encontra-se escalonada no serviço gerido <strong>Neon</strong>, proporcionando escalabilidade horizontal e resiliência a perdas de dados.</p>
+    
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
+
+    <h3>Links Importantes</h3>
+    <div class="actions">
+        <!-- Substituir links pelos respetivos perfis -->
+        <a href="https://github.com/PedroP0202/Projecto_Programacao_web_" target="_blank" class="button">GitHub do Projeto</a>
+        <a href="https://linkedin.com/in/" target="_blank" class="button secondary">LinkedIn</a>
+        <a href="https://discord.com/" target="_blank" class="button secondary">Discord</a>
+    </div>
+</article>
+{% endblock %}

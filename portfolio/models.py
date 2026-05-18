@@ -142,3 +142,18 @@ class MakingOf(models.Model):
 
     def __str__(self):
         return f"{self.titulo} - {self.data.strftime('%d/%m/%Y')}"
+
+
+class Videotutorial(models.Model):
+    titulo = models.CharField(max_length=200)
+    descricao = models.TextField()
+    youtube_id = models.CharField(max_length=50, help_text="ID do vídeo no YouTube (ex: dQw4w9WgXcQ)")
+    data_publicacao = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-data_publicacao']
+        verbose_name = 'videotutorial'
+        verbose_name_plural = 'videotutoriais'
+
+    def __str__(self):
+        return self.titulo

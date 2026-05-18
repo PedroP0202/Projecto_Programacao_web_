@@ -25,7 +25,7 @@ class Aluno(models.Model):
 
 class Curso(models.Model):
     nome = models.CharField(max_length=100)
-    imagem = models.ImageField(upload_to='cursos/')
+    imagem = models.ImageField(upload_to='cursos/', null=True, blank=True)
     professor = models.ForeignKey(Professor, on_delete=models.CASCADE, related_name='cursos')
     alunos = models.ManyToManyField(Aluno, related_name='cursos')
 

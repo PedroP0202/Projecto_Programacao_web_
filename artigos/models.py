@@ -68,7 +68,10 @@ class Comentario(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         related_name='comentarios_artigos',
+        null=True,
+        blank=True,
     )
+    nome_autor = models.CharField(max_length=100, null=True, blank=True, help_text="Para utilizadores não autenticados")
     texto = models.TextField()
     data_criacao = models.DateTimeField(auto_now_add=True)
 
@@ -78,4 +81,37 @@ class Comentario(models.Model):
         verbose_name_plural = 'comentários'
 
     def __str__(self):
-        return f'Comentário de {self.autor} em {self.artigo}'
+        nome = self.autor.username if self.autor else self.nome_autor or "Anónimo"
+        return f'Comentário de {nome} em {self.artigo}'
+
+
+class Rating(models.Model):
+    artigo = models.ForeignKey(Artigo, on_delete=models.CASCADE, related_name='ratings')
+    valor = models.IntegerField()
+    utilizador = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='ratings_artigos',
+        null=True,
+        blank=True,
+    )
+    session_key = models.CharField(max_length=40, null=True, blank=True)
+    data_criacao = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['artigo', 'utilizador'],
+                condition=models.Q(utilizador__isnull=False),
+                name='unique_rating_artigo_utilizador',
+            ),
+            models.UniqueConstraint(
+                fields=['artigo', 'session_key'],
+                condition=models.Q(session_key__isnull=False),
+                name='unique_rating_artigo_session',
+            ),
+        ]
+
+    def __str__(self):
+        dono = self.utilizador or self.session_key
+        return f'Rating de {self.valor} em {self.artigo} por {dono}'

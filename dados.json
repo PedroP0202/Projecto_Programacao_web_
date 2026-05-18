@@ -1,0 +1,1107 @@
+[
+{
+  "model": "portfolio.licenciatura",
+  "pk": 1,
+  "fields": {
+    "nome": "Engenharia Informática",
+    "apresentacao": "O curso de licenciatura em Engenharia Informática da Universidade Lusófona forma licenciados capazes de assumir posições de destaque em projetos de engenharia informática ou equipas de desenvolvimento e consultadoria, na área da engenharia dos sistemas de informação, assumindo pela sua formação e atitude papéis relevantes na geração de inovação e riqueza. Nesse sentido, os estudantes obtêm as competências adequadas à conceção, realização e manutenção de sistemas informáticos, programação de aplicações e de sistemas, desenho arquiteturas de computação e comunicações, gestão de sistemas de informação e de conhecimento, assim como à compreensão e resolução dos problemas associados.\r\n",
+    "objetivos": "Os objetivos desta licenciatura são os seguintes:\r\n1. Fornecer um perfil profissional reconhecido no mercado, com fortes competências em Tecnologias de Informação e Comunicação, garantindo um elevado grau de empregabilidade e a possibilidade de prosseguir estudos de 2º ciclo com excelentes perspectivas de sucesso.\r\n2. Garantir um ensino de excelência assente num corpo docente de qualidade, integrando especialistas e doutorados com elevado potencial pedagógico e actividade comprovada em investigação.\r\n3. Dar acesso a estágios e formação em ambiente empresarial no decorrer do percurso académico, em colaboração com empresas líderes de mercado, potenciando níveis de qualificação profissional elevados antes da conclusão do curso.\r\n4. Garantir a realização de Trabalhos Finais de Curso inseridos em projectos inovadores, pelo facto dos muitos dos seus docentes estarem agregados a Centros de Investigação reconhecidos, participar em projectos de I&D e desenvolver parcerias com o meio empresarial.\r\n5. Desenvolver o espírito empreendedor dos alunos, através do Centro de Incubação de Empresas PLAY que apoia ideias de jovens empreendedores, pote",
+    "competencias": "O curso de licenciatura em Engenharia Informática da Universidade Lusófona desenvolve perfis com fortes competências tecnológicas e humanas, de forma a potenciar aos seus licenciados um elevado grau de empregabilidade, ou o prosseguimento dos estudos de 2º ciclo com excelentes perspectivas de sucesso. Os licenciados em Eng.ª Informática têm assim a possibilidade de escolher diversas carreiras profissionais:\r\n- Analista Programador \r\n- Consultor na área das TI\r\n- Arquitecto de Soluções\r\n- Arquitecto/Administrador de Redes\r\n\r\nNas seguintes áreas tecnológicas:\r\n- Desenvolvimento de Aplicações Empresariais\r\n- Desenvolvimento de Aplicações Móveis\r\n- Concepção e Gestão de Repositórios de Informação\r\n- Novos Paradigmas da Internet (Cloud Computing, Redes Sociais)\r\n- Gestão de Sistemas Informáticos\r\n- Etc..",
+    "saidas_profissionais": "O curso de licenciatura em Engenharia Informática da Universidade Lusófona pretende formar o perfil profissional do engenheiro de aplicações, caracterizado pela capacidade de participar em grandes projetos de engenharia informática, integrando equipas de desenvolvimento de projetos, gerindo e mantendo sistemas de informação. O diploma apresenta ainda uma formação aprofundadada em domínios comuns às Engenharias, como a Física e a Matemática, e em domínios específicos das Ciências Informáticas, como a Metodologia da Programação, os Sistemas de Informação, as Redes de Comunicações, e a gestão, tanto de sistemas como de projetos.\r\n\r\nOs Licenciados em Engenharia Informática encontrarão situações de emprego na rede Europeia de organismos públicos e privados com necessidades de desenvolvimento, utilização, reorganização e modernização de sistemas de informação, nomeadamente: \r\n- em empresas vocacionadas para o desenvolvimento e comercialização de soluções baseadas em informática; \r\n- na integração e chefia de equipas informáticas em grandes empresas dos setores comerciais, industriais ou dos serviços;\r\n-  em instituições ligadas ao setor público estatal ou privado, em particular na área dos serviços.",
+    "razoes_escolha": "Aceder a um estatuto profissional com elevado potencial de mercado, através de um perfil reconhecido com fortes competências tecnológicas e humanas, garantindo um elevado grau de empregabilidade e a possibilidade de prosseguir os estudos de 2º ciclo com excelentes perspetivas de sucesso.\nUsufruir de um ensino de excelência assente num corpo docente de qualidade, integrando especialistas e doutorados com elevado potencial pedagógico e atividade comprovada em investigação.\r\n\nTer acesso a vários estágios e formações empresariais ao longo do curso, no âmbito das diferentes parcerias desenvolvidas pelo DEISI, potenciando a empregabilidade assim como um nível de qualificação elevado antes da conclusão do curso.\nPoder efetuar o Trabalho Final de Curso inserido em projetos inovadores, pelo facto de uma maioria do seu corpo docente estar agregado aos Centros de Investigação da ECATI ou às empresas parceiras do DEISI.\nTirar partido do Centro de Incubação de Empresas PLAY, que garante apoio às ideias dos jovens alunos mais empreendedores, potenciando a sua transformação em empresas de sucesso.\nCurso reconhecido pela Ordem dos Engenheiros Técnicos."
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 1,
+  "fields": {
+    "nome": "Fundamentos de Física",
+    "sigla": "7336",
+    "ano": 1,
+    "semestre": 1,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Compreensão do movimento dos corpos, ou seja, cinemática. Compreender as forças que atuam sobre os corpos e resolver as equações do movimento, ou seja, a dinâmica. Compreender o trabalho e a energia. Entendendo o campo elétrico e o potencial elétrico, ou seja, eletrostática. Compreender as correntes elétricas e resolver circuitos com correntes elétricas contínuas\n",
+    "conteudos": "Descrição dos conteúdos\n\n\n\tGrandezas físicas, dimensões e sistemas de unidades.\n\tReferencial, posição e trajetória. Movimento unidimensional.\n\tMovimento no espaço. Projéteis e movimento circular.\n\tLeis de Newton. Tipos de forças, força gravitacional.\n\tAplicações de Leis de Newton: plano inclinado, rodelas, mola oscilatória, pendulo.\n\tTrabalho. Forças conservativas e energia potencial.\n\tConservação da energia mecânica.\n\tCentro de massa, impulso e momento linear.Colisões.\n\tMomento de uma força, momento de inércia e momento angular.\n\tLei de Coulomb, campo elétrico.\n\tPotencial elétrico e capacitores.\n\tCorrente elétrica e resistência elétrica.\n\tCircuitos elétricos. Leis de Kirchhoff\n\n",
+    "metodologia": "Projetos para alunos de fazer um progama computacional\n",
+    "bibliografia": "\n\tD. Halliday, R. Resnick e J. Walker, Fundamentos de Física, Mecânica, vol. 1, 9ª edição, editora LTC D. Halliday, R. Resnick e J. Walker, Fundamentos de Física, Eletromagnetismo, vol. 3, 9ª edição, editora LTC\n\tD. Halliday, R. Resnick e J. Walker, Fundamentos de Física, Mecânica, vol. 1, 9ª edição, editora LTC D. Halliday, R. Resnick e J. Walker, Fundamentos de Física, Eletromagnetismo, vol. 3, 9ª edição, editora LTC\n\n\n \n",
+    "avaliacao": "<p>Descri&ccedil;&atilde;o dos instrumentos de avalia&ccedil;&atilde;o (individuais e de grupo) &iquest; testes, trabalhos pr&aacute;ticos, relat&oacute;rios, projetos... respetivas datas de entrega/apresenta&ccedil;&atilde;o... e pondera&ccedil;&atilde;o na nota final.</p>\n\n<p>Exemplo:</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Data limite</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">1&ordm;Teste de avalia&ccedil;&atilde;o</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">28-10-2025</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">2&ordm;Teste de avalia&ccedil;&atilde;o</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">09-11-2025</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Projeto _apresenta&ccedil;&atilde;o nas aulas praticas</p>\n\n\t\t\t<p style=\"text-align:center\">&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">15 at&eacute; 19/12/2025</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">20%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Participa&ccedil;&atilde;o do aluno em sala&nbsp;aula</p>\n\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p>&nbsp;10% nas teoricas(quizzes)</p>\n\n\t\t\t<p>10% nas praticas(resolu&ccedil;&atilde;o fichas de exercicios)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">&nbsp;</td>\n\t\t\t<td style=\"vertical-align:top\">&nbsp;</td>\n\t\t\t<td style=\"vertical-align:top\">&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>Adicionalmente poder&atilde;o ser inclu&iacute;das informa&ccedil;&otilde;es gerais, como por exemplo, refer&ecirc;ncia ao tipo de acompanhamento a prestar ao estudante na realiza&ccedil;&atilde;o dos trabalhos; refer&ecirc;ncias bibliogr&aacute;ficas e websites &uacute;teis; indica&ccedil;&otilde;es para a reda&ccedil;&atilde;o de trabalho escrito...</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 2,
+  "fields": {
+    "nome": "Fundamentos de Programação",
+    "sigla": "7337",
+    "ano": 1,
+    "semestre": 1,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "O objectivo desta unidade curricular é fornecer aos futuros profissionais na área da informática as bases para que possam iniciar (de um modo disciplinado) a actividade de programação.\n\nO aluno começa por desenvolver a capacidade de raciocínio algorítmico recorrendo a fluxogramas.\n\nO aluno deverá ser capaz de traduzir esses fluxogramas numa linguagem de programação imperativa. Concretamente, o aluno deverá conhecer a sintaxe básica de Kotlin que lhe permitam criar programas simples de linha de comando.\n\nFinalmente, o aluno deve conseguir analisar e avaliar programas feitos por outras pessoas (colegas, professores, etc.).\n",
+    "conteudos": "\n\tIntrodução à programação\n\tAlgoritmos, fluxogramas, pseudo-código\n\tSintaxe e semântica das linguagens\n\tElementos da sintaxe, estrutura de um programa\n\tDeclarações e atribuições\n\tTipos primitivos\n\tExpressões aritméticas, expressões lógicas\n\tEntradas e saídas de dados\n\tSelecção\n\tRepetição\n\tFunções\n\tArrays uni-dimensionais e bi-dimensionais\n\tTratamento de erros\n\tLeitura e escrita de ficheiros\n\tBoas práticas de programação imperativa\n\n",
+    "metodologia": "\n\tAs aulas teóricas são parcialmente leccionadas no modelo \"flipped learning\": são disponibilizados vídeos antes da aula teórica que os alunos devem visualizar; a aula teórica é maioritariamente ocupada com exercícios sobre essa matéria e respetiva correção, intercalada com alguma matéria adicional.\n\tAlguns trabalhos de casa são avaliados no modelo \"peer assessment\": os alunos avaliam anonimamente os trabalhos uns dos outros.\n\tA validação do código produzido nas fichas práticas e no projeto é feita através de uma ferramenta de validação automática do código, que permite aos alunos grande autonomia.\n\tAlguns exercícios de programação são realizados obrigatoriamente com o apoio de um LLM (ChatGPT, Gemini, etc..). Estes exercícios terão enunciados adaptados, para evitar que seja simplesmente feito o copy/paste para o LLM - serão apresentados de forma visual, seja por diagramas seja por vídeos demonstrando o que se pretende. O objetivo é que os alunos treinem a construção de \"prompts\" eficazes.\n\n",
+    "bibliografia": "\n\t\n\tSingh, B. (2015) Algorithm, Pseudocode and Flowchart: Learn Algorithm in Simple Steps.\n\t\n\t\n\tSubramanian, V. (2019) Programming Kotlin. The Pragmatic Programmers.\n\t\n\n\n \n",
+    "avaliacao": "<h2>&Eacute;poca de avalia&ccedil;&atilde;o cont&iacute;nua</h2>\n\n<ul>\n\t<li><strong>Componente te&oacute;rica</strong> (50% da nota final, nota m&iacute;nima 9,5) - tem duas op&ccedil;&otilde;es: avalia&ccedil;&atilde;o cont&iacute;nua ou apenas uma frequ&ecirc;ncia completa\n\n\t<ul>\n\t\t<li>Avalia&ccedil;&atilde;o cont&iacute;nua:\n\t\t<ul>\n\t\t\t<li>4 TPCs te&oacute;ricos individuais - 20%</li>\n\t\t\t<li>Frequ&ecirc;ncia interm&eacute;dia (primeira metade da mat&eacute;ria) - 30% - nota m&iacute;nima: 8</li>\n\t\t\t<li>Frequ&ecirc;ncia completa (toda a mat&eacute;ria) - 50% - nota m&iacute;nima: 8 (apenas para quem passou na frequ&ecirc;ncia interm&eacute;dia)</li>\n\t\t</ul>\n\t\t</li>\n\t\t<li>Frequ&ecirc;ncia completa (toda a mat&eacute;ria) - 100% - nota m&iacute;nima: 9,5</li>\n\t</ul>\n\t</li>\n\t<li><strong>Componente pr&aacute;tica</strong> (50% da nota final, nota m&iacute;nima 9,5)\n\t<ul>\n\t\t<li>2 testes pr&aacute;ticos individuais - 24% (testes feitos durante a aula pr&aacute;tica)</li>\n\t\t<li>Participa&ccedil;&atilde;o pr&aacute;tica - 16%</li>\n\t\t<li>Projeto em grupos de 2, com defesa individual - 60%\n\t\t<ul>\n\t\t\t<li>A defesa inclui altera&ccedil;&otilde;es no c&oacute;digo da aplica&ccedil;&atilde;o que cada aluno ter&aacute; que fazer individualmente.</li>\n\t\t\t<li>A nota da discuss&atilde;o presencial pode ir de 0 a 100% e &eacute; aplicada &agrave; nota do projecto</li>\n\t\t\t<li>O aluno ter&aacute; que conseguir fazer&nbsp;pelo menos&nbsp;metade das&nbsp;altera&ccedil;&otilde;es pedidas para passar na componente pr&aacute;tica.</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2>&Eacute;poca de recurso e &eacute;poca especial</h2>\n\n<ul>\n\t<li>Exame (50% da nota final, nota m&iacute;nima 9,5)</li>\n\t<li>Projeto (50% da nota final, nota m&iacute;nima 9,5)</li>\n</ul>\n\n<h2>Transi&ccedil;&atilde;o de notas</h2>\n\n<ul>\n\t<li>As notas das componentes te&oacute;rica e pr&aacute;tica transitam automaticamente entre &eacute;pocas do mesmo ano letivo. Isto &eacute;, se o aluno teve nota superior a 9,5 numa das componentes e reprovou na outra componente em avalia&ccedil;&atilde;o cont&iacute;nua, apenas precisa de repetir a componente reprovada em &eacute;poca de recurso/especial.</li>\n\t<li>Dado n&atilde;o ter havido mudan&ccedil;a de conte&uacute;dos, as notas das componentes aprovadas em 2024/25 podem transitar&nbsp;para 2025/26. Para tal, o&nbsp;aluno tem que solicitar por email essa transi&ccedil;&atilde;o e nesse caso, n&atilde;o pode repetir a avalia&ccedil;&atilde;o da componente aprovada. N&atilde;o haver&aacute; transi&ccedil;&atilde;o de notas de outros anos letivos.</li>\n</ul>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 3,
+  "fields": {
+    "nome": "Matemática I",
+    "sigla": "1",
+    "ano": 1,
+    "semestre": 1,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Esta disciplina confere a(o) aluna(o) conhecimentos que lhe permitam utilizar, de forma criativa, autónoma, e em contextos diversificados:\n\nOA1: a linguagem simbólica matemática e o raciocínio matemático;\n\nOA2: os conceitos e resultados fundamentais do cálculo diferencial, de modo a que possa proceder ao estudo de uma função real de variável real;\n\nOA3: os métodos de primitivação:\n\nOA4: as noções fundamentais do cálculo integral, de modo a que possa calcular integrais simples e determinar áreas de domínios planos.\n",
+    "conteudos": "1. Números reais\n\n\n\tRacionais e irracionais; operações algébricas entre frações.\n\n\n2. Funções reais de variável real\n\n\n\tGeneralidades sobre funções (domínio, imagem, leitura de domínio e imagem num gráfico, curvas de nível).\n\tFunções polinomiais e racionais.\n\tRaíz quadrada de um real.\n\tFunções trigonométricas.\n\tFunção exponencial e logarítmica.\n\n\n3. Limite:\n\n\n\tDefinição e propriedades do limite de uma função num ponto. Indeterminações (0/0  e  +00-00). Continuidade de funções.\n\n\n4. Derivada: \n\n\n\tInterpretação geométrica. Regras de derivação. Derivadas de ordem superior. Regra de Cauchy.\n\n\n5. Estudo global de uma função:\n\n\n\tMonotonia e extremos relativos. Concavidade e pontos de inflexão. Assíntotas. Gráficos.\n\n\n6. Integração:\n\n\n\tPrimitiva imediata. Primitivação por substituição e por partes. Integral definido, teorema fundamental do cálculo.  Aplicações da integração (áreas de figuras planas).\n\n",
+    "metodologia": "\n\tTodo o material de apoio e informação relevante será partilhada com as(os) alunas(os) através do Moodle.\n\n\n \n\n\n\tAs aulas teóricas (e notas publicadas no Moodle) permitem apresentar as ideias que fundamentam o programa desta Unidade Curricular (UC).\n\tPara cada tópico desta UC é apresentada uma ficha de exercícios de aplicação. A(O)s alunas(os) são incentivados a resolver estes exercícios assim como a apresentar quaisquer dúvidas.\n\tA avaliação conta com 2 testes de 60 minutos ou um teste (Frequência Final, com duração de 90 minutos) ou exame (Recurso).\n\t\n\t\t(Média dos 2 testes) = A         (Nota de Exame Recurso) = B\n\t\tSe A > 9,5 o(a) aluno(a) está aprovado à UC e poderá fazer exame se quiser melhorar a nota. Neste caso, a Nota Final = max(A,B)\n\t\tSe A < 9,5 o(a) aluno(a) está reprovado à UC e terá de fazer exame se quiser obter aprovação à UC.\n\t\n\t\n\n",
+    "bibliografia": "\n\tLages Lima, E.; Análise Real, Vol.I (6ª ed.), Col. Matemática Universitária, IMPA, Rio de Janeiro, 2002.\n\tSárrico, C.; Análise Matemática – Leitura e exercícios, Col. Trajetos Ciência 4, Gradiva, Lisboa, 1999.\n\tApostol, Tom M.; Cálculo Vol.I (2ª ed.),  Reverté,  1994    ISBN 9788429150155\n\tGuerreiro, J.S.; Curso de Análise Matemática, Escolar Editora     ISBN 9789725922224\n\n\n \n",
+    "avaliacao": "<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\">1. <u>A avalia&ccedil;&atilde;o a esta UC conta com</u>:</div>\n\n<p>&nbsp;</p>\n\n<ul>\n\t<li>uma componente cont&iacute;nua, que consiste na realiza&ccedil;&atilde;o de 2&nbsp;testes (com dura&ccedil;&atilde;o de 60 minutos, cada)</li>\n\t<li>para cada um dos testes, a nota m&iacute;nima (para efeitos de determina&ccedil;&atilde;o da nota de avalia&ccedil;&atilde;o cont&iacute;nua)&nbsp; &eacute; igual a 8.</li>\n\t<li>um teste (Frequ&ecirc;ncia Final, com dura&ccedil;&atilde;o de 90 minutos)</li>\n\t<li>um exame (Recurso, com dura&ccedil;&atilde;o de 90 minutos).&nbsp;</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\">2. Supondo que&nbsp;<u>(M&eacute;dia dos 2&nbsp;testes) = A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Nota de Exame Recurso) = B</u>&nbsp; temos:&nbsp;</div>\n\n<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\">&nbsp;</div>\n\n<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 929px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 98px; text-align: center;\">Se A &gt; 9,5&nbsp;</td>\n\t\t\t<td style=\"width: 820px; text-align: center;\">o(a) aluno(a) est&aacute; aprovado &agrave; UC e poder&aacute; fazer a Frequ&ecirc;ncia Final (FF) ou o Recurso (ER) se quiser melhorar a nota.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 98px; text-align: center;\">Se A &lt; 9,5&nbsp;</td>\n\t\t\t<td style=\"width: 820px; text-align: center;\">o(a) aluno(a) est&aacute; reprovado &agrave; UC e ter&aacute; de fazer fazer a Frequ&ecirc;ncia Final (FF) ou o Recurso (ER) se quiser obter aprova&ccedil;&atilde;o &agrave; UC.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\">3. Datas para avalia&ccedil;&atilde;o:</div>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 1112px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 272px;\">Teste 1</td>\n\t\t\t<td style=\"width: 829px;\">&nbsp;semana com in&iacute;cio a&nbsp; 3 de novembro 25</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 272px;\">Teste 2</td>\n\t\t\t<td style=\"width: 829px;\">16 janeiro 2026</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 272px;\">Frequ&ecirc;ncia Final&nbsp;</td>\n\t\t\t<td style=\"width: 829px; text-align: center;\">\n\t\t\t<p style=\"text-align: left;\">&nbsp;16 janeiro 2026</p>\n\n\t\t\t<h2 style=\"font-style: italic; text-align: left;\">A data da FF coincide com a do segundo teste. A(o) aluna(o) pode decidir, no dia da prova, se far&aacute; o segundo teste (60 minutos)&nbsp; ou a FF (90 minutos).&nbsp;</h2>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 272px;\">Recurso&nbsp;</td>\n\t\t\t<td style=\"width: 829px;\">&nbsp;30 janeiro 25&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\"><em><cite><big>&Eacute; exigida a presen&ccedil;a de cada aluna(o) a pelo menos&nbsp; 75% das aulas pr&aacute;ticas de modo a ter a oportunidade de fazer avalia&ccedil;&atilde;o cont&iacute;nua. </big></cite></em></div>\n\n<div style=\"background:#eee;border:1px solid #ccc;padding:5px 10px;\"><em><cite><big>Caso contr&aacute;rio, s&oacute; se poder&aacute; apresentar a avalia&ccedil;&atilde;o em &eacute;poca de recurso.&nbsp;Trabalhadores-<wbr />estudantes n&atilde;o s&atilde;o contemplados com esta regra.</big></cite></em></div>\n\n<p>&nbsp;</p>\n\n<p><u>Qualquer situa&ccedil;&atilde;o&nbsp;de fraude observada num qualquer momento do processo de avalia&ccedil;&atilde;o significar&aacute; que a(o)s&nbsp;aluna(o)s envolvidos passar&atilde;o a dispor unicamente da &Eacute;poca de Recurso para serem avaliados &agrave; UC.&nbsp;</u></p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 4,
+  "fields": {
+    "nome": "Matemática Discreta",
+    "sigla": "1656",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Os objetivos principais desta disciplina são:\n\nOA1. Aplicar propriedades elementares das operações lógicas e de quantificação;\n\nOA2. Construir e analisar argumentos matemáticos;\n\nOA3. Explicar os conceitos básicos sobre conjuntos e funções e realizar operações elementares sobre estes objetos matemáticos;\n\nOA4. Entender a teoria dos números;\n\nOA5. Construir e compreender autómatos finitos e máquinas de Turing;\n\nOA6. Contribuir para a aquisição de um conjunto de competências: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral.\n",
+    "conteudos": "CP1. Preliminares de Lógica\n\nCP2. Teoria de conjuntos\n\nCP3. Funções\n\nCP4. Teoria de números\n\nCP5. Teoria da computaçao\n",
+    "metodologia": "A metodologia de ensino inclui o método expositivo (ME1) para apresentar os conteúdos necessários, o demonstrativo (ME2) para ilustrar a sua aplicação a casos práticos e o ativo (ME3) para resolução de exercícios em sala de aula.\n\nA avaliação de conhecimentos é feita por avaliação contínua ou por prova escrita de exame final.\n",
+    "bibliografia": "\n\tSlides e apontamentos das aulas\n\n\n \n",
+    "avaliacao": "<p>A avalia&ccedil;&atilde;o de conhecimentos &eacute; feita por avalia&ccedil;&atilde;o cont&iacute;nua ou por prova escrita de exame final.</p>\n\n<p>A avalia&ccedil;&atilde;o cont&iacute;nua inclui a realiza&ccedil;&atilde;o de 3 testes durante as aulas te&oacute;ricas em datas a definir no in&iacute;cio do semestre. A aprova&ccedil;&atilde;o por avalia&ccedil;&atilde;o cont&iacute;nua obriga &agrave; realiza&ccedil;&atilde;o de todos os testes, com nota m&iacute;nima de 8 valores&nbsp;e &agrave; presen&ccedil;a em 75% das aulas pr&aacute;ticas. Em caso de n&atilde;o aprova&ccedil;&atilde;o &agrave; disciplina pela avalia&ccedil;&atilde;o cont&iacute;nua, os alunos poder&atilde;o ser avaliados atrav&eacute;s de uma frequ&ecirc;ncia final e/ou exame de recurso.&nbsp;</p>\n\n<p>A nota final do aluno poder&aacute; ser bonificada entre 0.5 e 1 valor com a presen&ccedil;a e resposta correta a perguntas realizadas durante as aulas te&oacute;ricas.</p>\n\n<p>Alunos com nota final entre 8 e 9.4, caso pretendam, poder&atilde;o ser sujeitos a uma prova extra, em condi&ccedil;&otilde;es a definir, para obten&ccedil;&atilde;o de aprova&ccedil;&atilde;o.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 5,
+  "fields": {
+    "nome": "Sistemas Digitais",
+    "sigla": "7",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Esta UC tem como principal objetivo apresentar aos alunos as ferramentas necessárias para a introdução ao funcionamento de máquinas. Um dos objetivos principais é a apresentar aos alunos novas bases numéricas, uma vez que estas constituem o principal alicerce de sistemas digitais. \n",
+    "conteudos": "Aulas teóricas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tCircuitos Lógicos Básicos\n\tÁlgebra de Boole\n\tFunções Lógicas\n\tCircuitos Digitais LSI e MSI\n\tCircuitos Combinatórios Básicos\n\tSíntese de Circuitos Sequenciais Elementares\n\tCircuitos Digitais com Memória\n\n\nAulas práticas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tSimulação de Componentes Básicos\n\tProjeto Simples de Sistemas Digitais\n\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\tArroz, Guilherme, Monteiro, Jose¿ e Oliveira, Arlindo - Arquitectura de Computadores: dos Sistemas Digitais aos Microprocessadores. 3ª Edic¿a¿o. Lisboa, Portugal: IST Press, 2014.\n\tDias, Morgado – Sistemas Digitais – Princípios e Prática. 3ª Edição. Lisboa, Portugal, FCA, 2012\n\tMano, Morris, Kime, Charles - Logic and Computer Design Fundamentals, Pearson Prentice-Hall, 2008\n\n\n \n",
+    "avaliacao": "<p>&nbsp;</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Trabalhos de Casa / Question&aacute;rio Aula [Te&oacute;rica]</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">5%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">1&ordf; Frequ&ecirc;ncia&nbsp;[Te&oacute;rica]</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">22,5%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">2&ordf; Frequ&ecirc;ncia / Exame&nbsp;[Te&oacute;rica]</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">22,5% /&nbsp;50%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Trabalho 1&nbsp;[Pr&aacute;tica]</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">17,5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Trabalho 2&nbsp;[Pr&aacute;tica]</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">17,5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Ficha 1&nbsp;[Pr&aacute;tica]</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Ficha 2&nbsp;[Pr&aacute;tica]</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Ficha 3&nbsp;[Pr&aacute;tica]</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">5%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Requisitos para aprovac&ccedil;&atilde;o&nbsp;na UC: </strong></p>\n\n<p>Parte Te&oacute;rica (nota m&iacute;nima de 9,5 valores) [NT,&nbsp;0-20 valores]:</p>\n\n<ul>\n\t<li>2 Freq. (nota m&iacute;nima de 8 valores em cada) + TPC <strong>ou </strong>Exame Te&oacute;rico ou Exame&nbsp;Te&oacute;rico na &Eacute;poca de Recurso.\n\n\t<ul>\n\t\t<li>NT = 1&ordf;Fre x&nbsp;45% + 2&ordf;Fre x&nbsp;45% + TPC x 10% <strong>ou </strong>Exame Te&oacute;rico / Recurso&nbsp;Te&oacute;rico<b>&nbsp;</b>x&nbsp;100%</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Parte Pr&aacute;tica (nota m&iacute;nima de 9,5 valores e uma assiduidade m&iacute;nima nas aulas de 75%) [NP, 0-20 valores]:</p>\n\n<ul>\n\t<li>Trabalhos de laborat&oacute;rios (entrega obrigat&oacute;ria) e sua defesa ao longo do semestre +&nbsp;Fichas de laborat&oacute;rios&nbsp;<strong>ou&nbsp;</strong>Exame&nbsp;Pr&aacute;tico na &Eacute;poca de Recurso\n\n\t<ul>\n\t\t<li>NP = T1 x 35% + T2 x 35% + F1 x 10%&nbsp;+&nbsp;F2&nbsp;x 10%&nbsp;+&nbsp;F3&nbsp;x 10%&nbsp;<strong>ou </strong>Recurso&nbsp;Pr&aacute;tico<strong> </strong>x 100%</li>\n\t\t<li>Poder&aacute; existir discuss&atilde;o oral de cada um dos trabalhos e do recurso pr&aacute;tico.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p><strong>Nota Final = NT * 50% + M&iacute;nimo(NT + 3;&nbsp;NP) * 50%</strong></p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 6,
+  "fields": {
+    "nome": "Álgebra Linear",
+    "sigla": "2091",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "No final desta unidade curricular, os estudantes devem saber:\n\nOA1. Dominar os conceitos e as operações elementares sobre matrizes;\n\nOA2. Discutir e resolver sistemas de equações lineares e utilizar o método de eliminação de Gauss;\n\nOA3. Formular e resolver problemas do mundo real usando sistemas de equações lineares;\n\nOA4. Reconhecer os conceitos de espaço vetorial e transformação linear e utilizá-los na resolução de problemas destes domínios;\n\nOA5. Calcular determinantes e compreender a sua utilidade;\n\nOA6. Determinar os valores próprios e os vetores próprios e saber utilizá-los no processo de diagonalização;\n\nOA7. Identificar e utilizar os conteúdos abordados na resolução de problemas reais.\n\n \n",
+    "conteudos": "CP1. Matrizes\n\nCP2. Sistemas de equações lineares\n\nCP3. Espaços vetoriais reais\n\nCP4. Transformações lineares\n\nCP5. Determinantes\n\nCP6. Valores e vetores próprios de matrizes\n\n \n",
+    "metodologia": "A metodologia de ensino inclui o método expositivo (ME1) para apresentar os conteúdos necessários, o demonstrativo (ME2) para ilustrar a sua aplicação a casos práticos e o ativo (ME3) para resolução de exercícios em sala de aula.\n",
+    "bibliografia": " \n\n\n\tSlides e apontamentos das aulas\n\n",
+    "avaliacao": "<p>A avalia&ccedil;&atilde;o de conhecimentos &eacute; feita por avalia&ccedil;&atilde;o cont&iacute;nua ou por prova escrita de exame final.</p>\n\n<p><br />\nA avalia&ccedil;&atilde;o cont&iacute;nua inclui a realiza&ccedil;&atilde;o de 3 testes durante as aulas te&oacute;ricas&nbsp;em datas a definir no in&iacute;cio do semestre. A aprova&ccedil;&atilde;o por avalia&ccedil;&atilde;o cont&iacute;nua obriga &agrave; realiza&ccedil;&atilde;o de todos os testes, tendo o &uacute;ltimo teste nota m&iacute;nima de 8&nbsp;valores.&nbsp;Al&eacute;m disso, &eacute; obrigat&oacute;ria a presen&ccedil;a em 75% das aulas pr&aacute;ticas para a realiza&ccedil;&atilde;o da avalia&ccedil;&atilde;o cont&iacute;nua (exceto para alunos com estatuto trabalhador-estudante). Em caso de n&atilde;o aprova&ccedil;&atilde;o &agrave; disciplina pela avalia&ccedil;&atilde;o cont&iacute;nua, os alunos poder&atilde;o ser avaliados atrav&eacute;s de uma frequ&ecirc;ncia final e/ou exame de recurso.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>No final da avalia&ccedil;&atilde;o cont&iacute;nua, os alunos que tenham realizado a frequ&ecirc;ncia final e tenham nota final entre 8 e 9.4, caso pretendam, poder&atilde;o ser sujeitos a uma prova complementar, em condi&ccedil;&otilde;es a definir, para obten&ccedil;&atilde;o de aprova&ccedil;&atilde;o.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 7,
+  "fields": {
+    "nome": "Algoritmia e Estruturas de Dados",
+    "sigla": "13397",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais de algoritmos e das estruturas de dados básicas, numa perspetiva de resolver problemas complexos de uma forma eficiente. O aluno deverá ser capaz de analisar e avaliar a eficiência de um algoritmo sem necessidade de o implementar ou testar. Deverá ser igualmente capaz de aplicar a estrutura de dados mais eficaz e eficiente para resolver um determinado problema.\n\nConcretamente, o aluno deverá conseguir criar programas em Java cuja eficiência seja um critério significativo de sucesso (ex: pesquisa, ordenação).\n",
+    "conteudos": "\n\tfunções recursivas, algoritmos recursivos\n\ttipos de dados complexos\n\teficiência e optimização (algorítmica e não-algorítmica)\n\tcomplexidade de algoritmos\n\talgoritmos de pesquisa\n\talgoritmos de ordenação - bubble sort, selection sort, merge sort, quick sort \n\ttipos de dados abstractos - pilhas e filas\n\tlistas ligadas\n\tárvores binárias, árvores ordenadas, árvores AVL\n\thashtables\n\n",
+    "metodologia": "Na componente teórica, algumas aulas utilizam o modelo \"flipped learning\": os alunos visualizam vídeos que explicam certos conteúdos antes da aula teórica, e a aula teórica acaba por ser teórico-prática, com os alunos a resolverem exercícios relacionados com os vídeos. São também feitas sessões de live coding, em que o professor projeta o seu computador e desenvolve programas à frente dos alunos.\n\nNa componente prática, é utilizada uma ferramenta de validação automática de código (Drop Project), que permite que os alunos avancem nos exercícios de forma relativamente autónoma. O projeto também é realizado nesse modelo, sem limite de tentativas: o aluno pode submeter quantas vezes quiser até passar os testes automáticos.\n\nO uso de LLMs é autorizado e até incentivado, no sentido de complementar e não substituir - no entanto, para evitar comportamentos de \"copy&prompting\" pouco didáticos, os exercícios são apresentados de forma visual (seja com diagramas seja com vídeos).\n",
+    "bibliografia": "Lafore, R. (2003) Data Structures and Algortihms in Java. 2nd edition.\n",
+    "avaliacao": "<h1>Componente te&oacute;rica (40% da nota final, nota m&iacute;nima 9,5) &nbsp;</h1>\n\n<p>tem duas op&ccedil;&otilde;es: avalia&ccedil;&atilde;o cont&iacute;nua ou apenas uma frequ&ecirc;ncia completa</p>\n\n<ul>\n\t<li><strong>Avalia&ccedil;&atilde;o cont&iacute;nua</strong>\n\n\t<ul>\n\t\t<li>Frequ&ecirc;ncia parte 2 (segunda metade da mat&eacute;ria) - 45% - nota m&iacute;nima: 8 (apenas para quem passou na frequ&ecirc;ncia parte 1)</li>\n\t\t<li>Frequ&ecirc;ncia parte 1 (primeira metade da mat&eacute;ria) - 45% - nota m&iacute;nima: 8</li>\n\t\t<li>3 TPCs - 10%</li>\n\t</ul>\n\t</li>\n\t<li><strong>Frequ&ecirc;ncia completa</strong> (toda a mat&eacute;ria) - 100% - nota m&iacute;nima: 9,5</li>\n</ul>\n\n<h1>Componente pr&aacute;tica (60% da nota final, nota m&iacute;nima 9,5)</h1>\n\n<ul>\n\t<li>\n\t<p><strong>2 mini-fichas presenciais</strong><strong> - 25%, </strong>feitas durante a aula pr&aacute;tica, usando o Drop Project (ferramenta de valida&ccedil;&atilde;o autom&aacute;tica de c&oacute;digo)</p>\n\t</li>\n\t<li><strong>Participa&ccedil;&atilde;o - 10%,&nbsp;</strong>calculada a partir do n&uacute;mero de fichas pr&aacute;ticas submetidas dentro do prazo</li>\n\t<li><strong>Projeto</strong><strong> em grupos de 2, com defesa presencial</strong> - 65% (apenas ser&atilde;o aceites grupos de 1 aluno em situa&ccedil;&otilde;es excepcionais, devidamente justificadas)\n\t<ul>\n\t\t<li>A defesa presencial inclui altera&ccedil;&otilde;es no c&oacute;digo da aplica&ccedil;&atilde;o que cada aluno ter&aacute; que fazer individualmente assim como perguntas colocadas individualmente.</li>\n\t\t<li>A nota da defesa presencial pode ir de 0 a 100% e &eacute; aplicada &agrave; nota do projecto</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Nota: Se tiver nota m&iacute;nima numa componente, essa nota &eacute; transferida para &eacute;poca de recurso e &eacute;poca especial do mesmo ano letivo.</p>\n\n<p>Em &eacute;poca de recurso e especial, mant&eacute;m-se a obrigatoriedade de aprovar na componente te&oacute;rica e pr&aacute;tica (nota m&iacute;nima em cada uma &eacute; 9,5). A componente te&oacute;rica &eacute; avaliada atrav&eacute;s de um exame e a componente pr&aacute;tica &eacute; avaliada atrav&eacute;s de um projeto e respetiva defesa individual.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 8,
+  "fields": {
+    "nome": "Arquitetura de Computadores",
+    "sigla": "5857",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "Entender o funcionamento dos computadores, com o foco na interação dos programas com o hardware. Reconhecimento das potencialidades e limitações de um computador. Entendimento da forma como interagem os diversos elementos da estrutura/arquitetura de um computador.\n",
+    "conteudos": "Programa\n\n\n\tIntrodução à arquitetura de Computadores\n\tInstruções máquina\n\tProcessador\n\tMemória\n\tParalelismo\n\n\nNas Aulas Práticas os estudantes fazem exercícios e usam simuladores para executarem os programas e observarem a sua interação com o hardware.\n",
+    "metodologia": "A utilização de simuladores modernos e recentes permite a visualização e aprendizagem detalhada do funcionamento do processador e da memória.\n",
+    "bibliografia": "Computer Organization and Design, The Hardware Software Interface, RISC-V Edition, Second Edition. David Patterson & John Hennessy. Elsevier, 2021.\n\n \n",
+    "avaliacao": "<p>50% avalia&ccedil;&atilde;o te&oacute;rica</p>\n\n<ul>\n\t<li>Frequ&ecirc;ncia intercalar. Peso: 50% te&oacute;rica</li>\n\t<li>Frequ&ecirc;ncia final: Peso: 50% te&oacute;rica</li>\n\t<li>Exame recurso: Peso: 100% te&oacute;rica</li>\n\t<li>As frequ&ecirc;ncias e exame s&atilde;o feitos sem consulta (livros, apontamentos, IA, etc.)</li>\n</ul>\n\n<p>50% avalia&ccedil;&atilde;o pr&aacute;tica</p>\n\n<ul>\n\t<li>8 fichas feitas nas aulas pr&aacute;ticas, 40% da nota pr&aacute;tica, notas 0/100%</li>\n\t<li>1 trabalho pr&aacute;tico, 60% da nota pr&aacute;tica, nota m&iacute;nima 9,5</li>\n\t<li>Fichas e trabalhos feitos individualmente ou por grupos de 2 estudantes</li>\n</ul>\n\n<p>Notas m&iacute;nimas:</p>\n\n<ul>\n\t<li>Componente te&oacute;rica: 9,5 valores (m&eacute;dia da frequ&ecirc;ncia intercalar e da frequ&ecirc;ncia final, ou do exame de recurso)</li>\n\t<li>Componente pr&aacute;tica: 9,5 valores no trabalho e m&eacute;dia de 9,5 valores no conjunto de trabalho e fichas, ou 9,5 valores no trabalho de recurso</li>\n</ul>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 9,
+  "fields": {
+    "nome": "Competências Comportamentais",
+    "sigla": "17267",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 4,
+    "imagem": "",
+    "objetivos": "Pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.\n",
+    "conteudos": "1. Marketing Pessoal e personal skills development:\n\na. CV;\n\nb. Portefólio;\n\nc. Apresentação pessoal e comunicação interpessoal;\n\nd. Apresentação em público e ferramentas para o efeito;\n\ne. Redes sociais e Networking.\n\n2. Gestão de tempo:\n\na. Trabalho remoto e comunicação mediada;\n\n3. As tecnologias no trabalho: oportunidades e ameaças;\n\n4. Trabalho em equipa;\n\n5. Resolução de problemas e Pensamento crítico.\n\n6. Factos Vs Opiniões;\n\n7. Work-life balance.\n\n8. O fator Humano na IA\n",
+    "metodologia": "O trabalho desenvolvido no contexto da desciplina de competências comportamentais assenta numa metodologia participativa e interactiva onde os alunos têm um papel determinante na forma como o trabalho é desenvolvido. Os docentes são apenas condutores do processo pedagógico, dando ampla liberdade aos alunos para o seu próprio caminho de desenvolvimento de competências. As aulas práticas e teóricas funcionam em conjunção permitindo aos alunos uma sedimentação dos conteúdos decorrentes das discussões nas aulas teóricas numa transferência para o contexto prático, realizado na aulas práticas.\n",
+    "bibliografia": "\n\t\n\tSonmez, J. Z. (2020). Soft Skills: The software developer's life manual. Manning Publ.;\n\t\n\t\n\tCreutzmann, A. (2022). Soft Skills for the Professional Services Industry: Principles, Tasks, and Tools for Success. John Wiley & Sons.\n\t\n\n\n \n",
+    "avaliacao": "<p>Descri&ccedil;&atilde;o dos instrumentos de avalia&ccedil;&atilde;o (individuais e de grupo) &iquest; testes, trabalhos pr&aacute;ticos, relat&oacute;rios, projetos... respetivas datas de entrega/apresenta&ccedil;&atilde;o... e pondera&ccedil;&atilde;o na nota final.</p>\n\n<p>Exemplo:</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Data limite</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Trabalhos aulas pr&aacute;ticas (incluindo Trabalho TFC)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">V&aacute;rias Datas</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Trabalho grupo</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Semana 12&nbsp;(te&oacute;ricas)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Trabalho Individual</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Semana 10&nbsp;(pr&aacute;ticas)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Recens&atilde;o Te&oacute;rica</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">Semana 12&nbsp;(te&oacute;ricas)</td>\n\t\t\t<td style=\"vertical-align: top; text-align: center;\">10%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 10,
+  "fields": {
+    "nome": "Linguagens de Programação I",
+    "sigla": "498",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "No final desta Unidade Curricular, os alunos deverão ser capazes de criar programas C eficientes e rápidos, tendo em consideração o uso correto da memória. Deverão adquirir uma compreensão sólida da abstração procedural e ser capazes de analisar e criar algoritmos simples usando essa abordagem. Além disso, os alunos devem entender os princípios por trás dos sistemas \"coletores de lixo\" em linguagens de alto nível, e da operação de bibliotecas de estruturas de dados. O curso visa fornecer aos alunos conhecimentos necessários para criar programas em C bem projetados, eficientes e robustos e para entender os princípios fundamentais que sustentam a operação das linguagens de programação modernas.\n",
+    "conteudos": "M0: Introdução: Visão geral, programação C, história, benefícios, configuração do ambiente, programa simples\n\nM1: Sintaxe Básica: Definições, tipos de dados, operadores, entrada/saída, estruturas de controlo\n\nM2: Estruturas de controle avançadas: Switch, break/continue, goto\n\nM3: Funções: definição/invocação, argumentos/valores de retorno, recursão\n\nM4: Matrizes e Strings: Definições, vectores de caracteres, strings, funções, matrizes 2D\n\nM5: Ponteiros: Definições, aritmética, pilha/heap, alocação dinâmica de memória\n\nM6: Ponteiros Avançados: Ponteiros para ponteiros/funções\n\nM7: Estruturas e Uniões: Definições, estruturas aninhadas, uniões\n\nM8: Entrada/saída de arquivo: visão geral, abertura/leitura/gravação de ficheiros, entrada/saída binária\n\nM9: Diretivas e Macros do Pré-processador: Definições, #define, #ifdef, #undef, macros com parâmetros\n\nM10: Operadores bit a bit: Definições, operadores bit a bit AND/OR/XOR/NOT/shift\n\nM11: Listas Ligadas: Definições, criação/manipulação, exemplos, pilhas/filas\n",
+    "metodologia": "Pandora\n\n \n",
+    "bibliografia": "K. N. King - C Programming: A Modern Approach, 2nd Edition\n\nPereira, Alexandre - C e Algoritmos. 2a Ed., Lisboa, Portugal: Edições Sílabo, 2017.\n\nKernighan, B. W. Ritchie D. M. - The C Programming Language. 2nd Ed: Prentice Hall Professional Technical Reference, 1988. ISBN0131103709\n",
+    "avaliacao": "<p>&nbsp;</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Frequ&ecirc;ncia Interm&eacute;dia</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">22.5%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Frequ&ecirc;ncia Final</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">27.5%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Exerc&iacute;cio Individual 1</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">3.5%</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Exerc&iacute;cio Individual 2</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">4%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Exerc&iacute;cio Individual 3</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">7.5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Exerc&iacute;cio Grupo 1</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">3.5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Exerc&iacute;cio Grupo 2</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">4%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Exerc&iacute;cio Grupo 3</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">7.5%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Projecto Final</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">20%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 11,
+  "fields": {
+    "nome": "Matemática II",
+    "sigla": "505",
+    "ano": 1,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "Conferir competências nas técnicas e aplicações do cálculo diferencial e integral com funções de várias variáveis. Dominar os conceitos de limite, continuidade e diferenciabilidade de funções. Dominar o cálculo de integrais múltiplos.\n\nTer capacidade de resolver problemas em contextos diversificados usando os métodos do cálculo diferencial e integral. Conhecer as aplicações a problemas de otimização, de caracterização geométrica de curvas e superfícies e de cálculo de volumes e áreas.\n",
+    "conteudos": "1. Vectores e geometria do espaço\n\n1.1 Coordenadas cartesianas tridimensionais.\n\n1.2 Vectores, produto escalar.\n\n1.3 Rectas e planos.\n\n1.4 Superfícies cilíndricas e quádricas.\n\n1.5 Noções topologicas\n\n2. Funções vectoriais de variável real\n\n2.1 Funções vectoriais e curvas no espaço.\n\n2.2 Limites e continuidade. Diferenciabilidade, vector tangente a uma curva.\n\n2.3 Integração, comprimento de uma curva.\n\n3. Funções de várias variáveis\n\n3.1 Dominios e  curvas de nível.\n\n3.2 Limites e continuidade.\n\n3.3 Derivadas parciais, derivadas de ordem superior.\n\n3.4 Diferenciabilidade, planos tangentes e aproximações polinómiais.\n\n3.5 Derivada direccional, vector gradiente e sua interpretação geométrica.\n\n3.6 Matriz Hessiana, extremos locais e pontos de sela.\n\n4. Integrais múltiplos\n\n4.1 Integrais duplos.\n\n4.2 Coordenadas polares e mudança de variáveis em integrais duplos.\n\n4.3 Integrais triplos.\n\n4.4 Coordenadas cilíndricas e esféricas. Mudança de variáveis em integrais triplos.\n",
+    "metodologia": "\n\tNas aulas discutem-se as ideias que fundamentam o programa desta Unidade Curricular (UC), e são analisados múltiplos exemplos e exercícios de aplicação.\n\tPara cada tópico desta UC é apresentado um conjunto de exercícios de aplicação. A(O)s alunas(os) são incentivados a resolver estes exercícios assim como a apresentar quaisquer dúvidas.\n\tTodo o material de apoio e informação relevante será partilhada com as(os) alunas(os) através do Moodle.\n\tA avaliação conta com uma componente contínua, que consiste na realização de 3 testes de 40 minutos ou um exame (Frequência Final ou Recurso).\n\t\n\t\tMédia dos 3 testes = A         Nota de Exame = B\n\t\tSe A > 9,5 o(a) aluno(a) está aprovado à UC e poderá fazer exame se quiser melhorar a nota. Neste caso, a Nota Final = max(A,B)\n\t\tSe A < 9,5 o(a) aluno(a) está reprovado à UC e terá de fazer exame se quiser obter aprovação à UC.\n\t\n\t\n\tSão considerados aprovados os alunos que obtenham nota final não inferior a 10 valores.\n\n",
+    "bibliografia": "\n\t\n\tStewart, J.; Cálculo, vol. 2, 5ª ed.; Thomson Learning; 2007.\n\t\n\t\n\tSimmons, G.F.; Cálculo com Geometria Analítica, vol. 2; Makron Books; 1987.\n\t\n\n\n \n",
+    "avaliacao": "<ul>\n\t<li>A avalia&ccedil;&atilde;o conta com uma componente cont&iacute;nua, que consiste na realiza&ccedil;&atilde;o de 3 testes de 40 minutos e um exame (Frequ&ecirc;ncia Final ou Recurso)</li>\n\t<li><u>M&eacute;dia dos 3 testes = A&nbsp;</u> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<u>Nota de Exame = B</u></li>\n\t<li>Se A &gt; 9,5 o(a) aluno(a) est&aacute; aprovado &agrave; UC e poder&aacute; fazer exame se quiser melhorar a nota. Neste caso, a Nota Final = max(A,B)</li>\n\t<li>Se A &lt; 9,5 o(a) aluno(a) est&aacute; reprovado &agrave; UC e ter&aacute; de fazer exame se quiser obter aprova&ccedil;&atilde;o &agrave; UC.</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<ul>\n\t<li>S&atilde;o considerados aprovados os alunos que obtenham nota final n&atilde;o inferior a 10 valores.</li>\n\t<li>Os (as) alunos(as) <u>n&atilde;o podem realizar teste intercalar fora da semana definida</u></li>\n\t<li>&Eacute;poca de recurso e a &eacute;poca especial: a&nbsp;aprova&ccedil;&atilde;o &eacute; obtida com a nota m&iacute;nima de 9,5 valores na prova escrita.&nbsp;</li>\n\t<li><u>Qualquer situa&ccedil;&atilde;o&nbsp;de fraude observada num qualquer momento do processo de avalia&ccedil;&atilde;o significar&aacute;</u> que a(o)s&nbsp;aluna(o)s envolvidos passar&atilde;o a dispor unicamente da &Eacute;poca de Recurso para serem avaliados &agrave; UC.&nbsp;</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 363px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">Teste 1</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;20 mar&ccedil;o 24</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">Teste 2</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;8 maio 24</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">Teste 3</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;29 maio 24</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">Frequ&ecirc;ncia Final&nbsp;</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;24 junho 24&nbsp; &nbsp;15h</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">Recurso&nbsp;</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;8 julho 24&nbsp; &nbsp; &nbsp;18.30h</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 168px;\">&Eacute;poca Especial&nbsp;</td>\n\t\t\t<td style=\"width: 182px;\">&nbsp;22 julho 24&nbsp; &nbsp; &nbsp;18.30h</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p style=\"text-align:center\">&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 12,
+  "fields": {
+    "nome": "Arquiteturas Avançadas de Computadores",
+    "sigla": "13398",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "Os estudantes devem conhecer os componentes de um computador moderno e compreender o seu funcionamento e as suas interações. Devem ser capazes de identificar o fluxo de dados e analizar o desempenho de um computador.\n\nEsta competência é diretamente aplicável nos domínios do hardware e da administração de sistemas, e indiretamente aplicável no domínio do software - permitindo formar futuros engenheiros informáticos que tomem decisões de análise, desenho e implementação de software que tirem partido das capacidades do hardware e tenham em conta as eventuais limitações destas.\n",
+    "conteudos": "1. Introdução\n\n2. O processador\n\n    Principais módulos funcionais\n\n    Condutas e riscos\n\n    Exceções\n\n    Paralelismo ao nível da instrução\n\n3. Hierarquia de memória\n\n    Dispositivos e tecnologia de armazenamento: disco magnético, memória flash\n\n    Memórias cache\n\n    Memória virtual\n\n    Confiabilidade na hierarquia de memória\n\n    Paralelismo: coerência entre caches, RAID\n\n4. Arquiteturas paralelas\n\n    Limites de frequência, dissipação de energia e memória\n\n    Paralelismo e limites ao aumento de desempenho\n\n    SIMD e processadores vetoriais\n\n    Multithreading em hardware\n\n    Arquiteturas de multiprocessador¿ aglomerados e computação em grelha.\n\n    GPUs\n\n    Medição de desempenho\n\n5. Virtualização\n\n    Origens e definição do conceito de máquina virtual\n\n    Conceito de hipervisor\n\n    Variantes de implementação\n\n    Virtualização de sistema: processador, memória, periféricos (E/S)\n\n    Exemplos de plataformas\n",
+    "metodologia": "Trabalhos práticos com avaliação por pares\n\nTrabalhos práticos com componentes electronicos físicos\n",
+    "bibliografia": "\n\tDavid A. Patterson and John L. Hennessy. (2020). Computer Organization and Design (MIPS Edition): The Hardware/Software Interface (6th ed.). Morgan Kaufmann Publishers Inc., San Francisco, CA, USA\n\n\n \n",
+    "avaliacao": "<p>A <strong>avalia&ccedil;&atilde;o cont&iacute;nua</strong> tem duas componentes:</p>\n\n<ul>\n\t<li>\n\t<p>50% Componente Te&oacute;rica (nota m&iacute;nima 9,5)</p>\n\n\t<ul>\n\t\t<li>\n\t\t<p>Frequ&ecirc;ncia Interm&eacute;dia &ndash; 45% da nota te&oacute;rica&nbsp;(n&atilde;o tem nota m&iacute;nima) &mdash; 1.&ordf; metade da mat&eacute;ria</p>\n\t\t</li>\n\t\t<li>\n\t\t<p>Frequ&ecirc;ncia Final<strong>(*)</strong>&nbsp;&ndash; 45% da nota te&oacute;rica (n&atilde;o tem nota m&iacute;nima)&nbsp;&mdash; 2.&ordf; metade da mat&eacute;ria</p>\n\t\t</li>\n\t\t<li>\n\t\t<p>Desafios nas aulas &ndash; 10% da nota te&oacute;rica (n&atilde;o tem nota m&iacute;nima)</p>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li>\n\t<p>50% Componente Pr&aacute;tica&nbsp;(nota m&iacute;nima 9,5)</p>\n\n\t<ul>\n\t\t<li>\n\t\t<p>Trabalhos de grupo&ndash; 30% da nota pr&aacute;tica (n&atilde;o tem nota m&iacute;nima)</p>\n\t\t</li>\n\t\t<li>\n\t\t<p>Mini Teste individual&ndash; 20% da nota pr&aacute;tica (n&atilde;o tem nota m&iacute;nima)</p>\n\t\t</li>\n\t\t<li>\n\t\t<p>Projeto final &ndash; 50% da nota pr&aacute;tica (nota m&iacute;nima 9.5)</p>\n\t\t</li>\n\t\t<li>\n\t\t<p><strong>Requer assiduidade &ge;75% nas aulas&nbsp;pr&aacute;ticas</strong></p>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>&nbsp;<strong>(*)</strong>&nbsp;-&nbsp;Op&ccedil;&atilde;o de fazer <em>Exame Final de Frequ&ecirc;ncia</em> (mat&eacute;ria toda) na data da Frequ&ecirc;ncia Final, para 100% da nota da componente te&oacute;rica</p>\n\n<p>A <strong>avalia&ccedil;&atilde;o de recurso</strong> tem duas componentes:</p>\n\n<ul>\n\t<li>\n\t<p>50% Componente Te&oacute;rica (nota m&iacute;nima 9,5) &ndash; o melhor de entre</p>\n\n\t<ul>\n\t\t<li>\n\t\t<p>a) Exame te&oacute;rico de recurso, ou&nbsp;</p>\n\t\t</li>\n\t\t<li>\n\t\t<p>b) Nota da componente te&oacute;rica em avalia&ccedil;&atilde;o cont&iacute;nua (se &ge;9,5)</p>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li>\n\t<p>50% Componente Pr&aacute;tica&nbsp;(nota m&iacute;nima 9,5) &ndash; o melhor de entre</p>\n\n\t<ul>\n\t\t<li>\n\t\t<p>a) Projeto pr&aacute;tico de recurso</p>\n\t\t</li>\n\t\t<li>b) Nota da componente te&oacute;rica em avalia&ccedil;&atilde;o cont&iacute;nua (se &ge;9,5 e assiduidade &ge;75% nas aulas pr&aacute;ticas)</li>\n\t</ul>\n\t</li>\n</ul>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 13,
+  "fields": {
+    "nome": "Bases de Dados",
+    "sigla": "1792",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "São objetivos dotar os estudantes dos conhecimentos teóricos e práticos necessários à concepção, construção e análise de bases de dados relacionais: nomeadamente obter as seguintes aptidões e\n\ncompetências:\n\n1. Compreender as razões de implementação de bases de dados relacionais no mundo empresarial\n\n2. Transpor de uma análise de requisitos para um modelo entidade-associação para desenhar bases de dados;\n\n3. Aplicar os conceitos do modelo relacional de bases de dados, transformando o modelo entidade-associação, em modelo físico de dados;\n\n4. Aplicar as técnicas de normalização de tabelas;\n\n5. Compreender arquitetura e principais componentes de Sistemas de Gestão de Bases de Dados;\n\n6. Utilizar a linguagem SQL base e avançado para a criação, consulta e modificação de bases de dados;\n",
+    "conteudos": "O programa da unidade curricular é:\n\nA) Componente Teórico\n\n\n\tIntrodução\n\tModelo de relacionamento entre entidades\n\tO modelo relacional\n\tRefinamento de esquema: Conceito de normalização e transações\n\tArquitetura de SGBD e algum SQL Avançado\n\n\nB) Componente Prática\n\n\n\tIntrodução à linguagem SQL;\n\tInstruções: DDL, DML (DQL) e DCL\n\tOperações: WHERE, ORDER BY, GROUP BY;\n\tConceito avançados em SQL: Controlo de erros\n\tOperadores Relacionais: União, intersecção e Subtracção\n\tProduto Cartesiano (externo)\n\tQueries complexos (filtro com valores agregados) e sub-queries\n\tSet DDL; Instrução CREATE; Tipos de dados; Nulidade; Instruções ALTER e DROP\n\tINDICES e VIEWS\n\tControlo de erros: estrutura TRY¿CATCH\n\tProcedimentos (SP) e Triggers\n\tOperações com tabelas: Cursores\n\n",
+    "metodologia": "Uso de dinâmicas interativas de jogos em aulas, através de plataformas como o Kahoot.\n",
+    "bibliografia": "Books\n\n\n\tCampbell, L., & Majors, C. (2017). Database Reliability Engineering: Designing and Operating Resilient Database Systems (1 edition). Beijing Boston Farnham Sebastopol Tokyo: O¿Reilly Media.\n\tDate, C. J. (2003). An Introduction to Database Systems (8 edition). Boston: Pearson.\n\tElmasri, R., & Navathe, S. B. (2015). Fundamentals of Database Systems (7 edition). Hoboken, NJ: Pearson.\n\tTeorey, T. J., Lightstone, S. S., Nadeau, T., & Jagadish, H. V. (2011). Database Modeling and Design: Logical Design (5 edition). Amsterdam: Morgan Kaufmann.\n\n\n \n",
+    "avaliacao": "<p>Na parte te&oacute;rica, os 50% da avalia&ccedil;&atilde;o ter&aacute; as 3 seguintes distribui&ccedil;&otilde;es:<br />\n-Teste final - 25%<br />\n-2 mini testes - 20%<br />\n-Participa&ccedil;&atilde;o em aula - 5%<br />\nNa parte te&oacute;rica, os 50% da avalia&ccedil;&atilde;o ter&aacute; as 3 seguintes distribui&ccedil;&otilde;es:<br />\n- Participa&ccedil;&atilde;o, assiduidade e pontualidade: 5%<br />\n- Queries a realizar em aula ou TPC : 5%<br />\n- Trabalhos intercalares, 2 entregas: 15%<br />\n- Trabalho final: 25%<br />\nA &eacute;poca de recurso ter&aacute; 1 exame te&oacute;rico e 1 trabalho &uacute;nico com modela&ccedil;&atilde;o, DDL, DML e programa&ccedil;&atilde;o, com mais quest&otilde;es que a entrega final de frequ&ecirc;ncia.</p>\n\n<p>A utiliza&ccedil;&atilde;o de ferramentas de intelig&ecirc;ncia artificial (IA) para a realiza&ccedil;&atilde;o de elementos de avalia&ccedil;&atilde;o n&atilde;o &eacute; permitida nesta UC. Este impedimento deve-se ao objetivo de ser pretender avaliar a capacidade conceptual e de sistematiza&ccedil;&atilde;o de conceitos estruturantes da unidade. Sempre que necess&aacute;rio, com fundamento em ind&iacute;cio, &eacute; leg&iacute;timo ao docente calendarizar uma prova oral de avalia&ccedil;&atilde;o, convocando o/a estudante a comparecer, sob pena da anula&ccedil;&atilde;o da avalia&ccedil;&atilde;o &agrave; UC.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 14,
+  "fields": {
+    "nome": "Desenvolvimento de Interfaces Web",
+    "sigla": "26141",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 3,
+    "imagem": "",
+    "objetivos": "\n\t\n\tCompreender o funcionamento da Internet e da Web e o seu impacto no desenvolvimento de aplicações.\n\t\n\t\n\tAplicar princípios de programação Web e padrões de arquitetura usando HTML, CSS, JavaScript, React e Next.js.\n\t\n\t\n\tCriar interfaces interativas, responsivas e escaláveis para aplicações front-end.\n\t\n\t\n\tIntegrar APIs e utilizar ferramentas como Git, GitHub, Codespaces, GitHub Pages e Vercel no ciclo de desenvolvimento.\n\t\n\t\n\tAvaliar e selecionar abordagens de design e arquitetura adequadas a cada contexto.\n\t\n\t\n\tDesenvolver e publicar aplicações Web criativas, funcionais e prontas para produção na cloud.\n\t\n\n",
+    "conteudos": "Módulo 1: A Web e seus Paradigmas\n\n\n\t\n\tFuncionamento da Web: IP, HTTP, client-server\n\t\n\t\n\tVisão geral de tecnologias, paradigmas e padrões de desenho da Web\n\t\n\n\n\nMódulo 2: HTML e CSS para Desenho de Páginas Web\n\n\n\t\n\tHTML e seus elementos para estruturação de conteúdos multimédia\n\t\n\t\n\tFormulários para envio de dados\n\t\n\t\n\tHTML5 e elementos semânticos\n\t\n\t\n\tCSS e seus seletores para estilização de conteúdos\n\t\n\t\n\tPropriedades CSS\n\t\n\t\n\tLayouts dinâmicos com CSS Flexbox e CSS Grid\n\t\n\t\n\tDesign responsivo com media queries\n\t\n\t\n\tEfeitos e animações CSS\n\t\n\t\n\tPrincípios de Web Design\n\t\n\n\n\nMódulo 3: JavaScript para Programação Front-End\n\n\n\t\n\tIntrodução ao JavaScript\n\t\n\t\n\tProgramação Orientada a Eventos\n\t\n\t\n\tManipulação de elementos do DOM\n\t\n\t\n\tComportamento de conteúdos\n\t\n\t\n\tData-attributes, Local Storage, Cookies\n\t\n\t\n\tAJAX\n\t\n\t\n\tInteração com REST APIs\n\t\n\t\n\tSingle Page Applications\n\t\n\n\n\nMódulo 4: React e Next.js\n\n\n\t\n\tComponentes e JSX\n\t\n\t\n\tGestão de estado e Context API\n\t\n\t\n\tRoteamento e renderização com Next.js\n\t\n\t\n\tFetching de dados e API routes\n\t\n\t\n\tEstilização e design responsivo\n\t\n\n\n \n\n\n\n",
+    "metodologia": "\n\t\n\tDocumentação dos projetos em GitBooks, garantindo organização e acesso contínuo.\n\t\n\t\n\tUso da metodologia Git Flow para práticas colaborativas e controlo de versões.\n\t\n\t\n\tDesenvolvimento em GitHub com Codespaces, simulando ambientes reais de programação.\n\t\n\t\n\tPublicação das aplicações em GitHub Pages e Vercel, cobrindo todo o ciclo de vida do software.\n\t\n\t\n\tLive coding nas aulas teóricas para exemplificar boas práticas e resolução de problemas.\n\t\n\t\n\tExercícios em grupo para promover interação, partilha de ideias e competências colaborativas.\n\t\n\n\n \n",
+    "bibliografia": "\n\t\n\tJ. Meloni and J. Kytnin, “HTML, CSS, and JavaScript All in One”, Sams Publishing, 2018\n\t\n\t\n\tB, Frain, “Responsive Web Design with HTML5 and CSS by Ben Frain”, 3rd Ed., Packt Publishing, 2022\n\t\n\t\n\tM. Riva, ”Real World Next.JS”, Packt Publishing, 2022\n\t\n\t\n\tF. Portela, R. Queirós, “Introdução ao desenvolvimento moderno para a Web”, FCA, 2018\n\t\n\n\n \n",
+    "avaliacao": "<p>Avalia&ccedil;&atilde;o continua:</p>\n\n<ul>\n\t<li>Componente Te&oacute;rica (CT): 40%. 2 Testes (20% cada)</li>\n\t<li>Componente Pr&aacute;tica (CP): 60%. 3 Projetos (20% cada)</li>\n\t<li>Nota m&iacute;nima de 9,5 em cada componente.</li>\n</ul>\n\n<p>Exame, Avalia&ccedil;&atilde;o Recurso Especial:</p>\n\n<ul>\n\t<li>Exame: 40%</li>\n\t<li>Projeto Global: 60%</li>\n</ul>\n\n<p>Os projetos s&atilde;o avaliados numa defesa em ambiente offline.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 15,
+  "fields": {
+    "nome": "Linguagens de Programação II",
+    "sigla": "898",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Esta UC tem como objetivo apresentar uma visão multi-paradigma da programação. São analisados e comparados os 3 paradigmas mais populares: imperativo, orientado a objectos e funcional. Os alunos revêm conceitos da programação imperativa e adquirem conceitos fundamentais da programação orientada a objetos (herança, encapsulamento, polimorfismo, etc.) e da programação funcional (lambdas, funções de 1a ordem, etc.) de forma a que consigam aplicá-los em projetos de desenvolvimento de software complexo usando linguagens de programação modernas multi-paradigma (Java, C#, Python, Kotlin, JavaScript).\n\nAo longo do semestre, os alunos são consciencializados para a necessidade de redução de custos de manutenção através de melhorias na qualidade do software produzido e aplicação de boas práticas tirando partido das vantagens específicas de cada paradigma. São igualmente expostos a ferramentas essenciais no desenvolvimento moderno de software, como controlo de versões e testes unitários.\n\nTodos estes conceitos são aplicados num projeto de elevada complexidade, multi-paradigma e multi-linguagem que atinge em média as 2500 LOC. O projeto tem que ser desenvolvido em Git e ter uma cobertura elevada de testes unitários. Mais do que as capacidades técnicas, os alunos trabalham a gestão de tempo, o rigor e a resiliência, a capacidade analítica e espírito crítico, a criatividade e o trabalho em equipa.\n",
+    "conteudos": "\n\tParadigmas de programação\n\t\n\t\tImperativo, funcional, orientado a objetos\n\t\n\t\n\tConceitos de programação por objectos\n\t\n\t\tEntidades, Atributos, Acções\n\t\tClasse vs Objecto, Principio do encapsulamento\n\t\tHerança, polimorfismo, parametrização por herança, composição\n\t\tUML\n\t\t\n\t\t\tDiagramas de classes\n\t\t\n\t\t\n\t\n\t\n\tJava orientado a objectos\n\t\n\t\tClasses, objectos, variáveis\n\t\tConstrutores, métodos\n\t\tVisibilidade, Exceptions\n\t\tEstruturas de dados: Arrays, Lists, Maps\n\t\tHerança, classes abstractas\n\t\tInput/Output\n\t\n\t\n\tTestes unitários\n\t\n\t\tJUnit\n\t\n\t\n\tControlo de versões\n\t\n\t\tGit, Github\n\t\n\t\n\tPadrões de desenho\n\t\n\t\tFactory, Singleton, Observer/Observable, Composite\n\t\n\t\n\tConceitos de programação funcional em Kotlin\n\t\n\t\tFunções puras, lambdas, funções de primeira ordem, iteração interna, operações com listas\n\t\n\t\n\tBoas práticas de programação multi-paradigma\n\n",
+    "metodologia": "\n\tAs aulas teóricas são parcialmente leccionadas no modelo \"flipped learning\": são disponibilizados vídeos antes da aula teórica que os alunos devem visualizar; a aula teórica é maioritariamente ocupada com exercícios sobre essa matéria e respetiva correção, intercalada com alguma matéria adicional.\n\tOs trabalhos de casa são avaliados no modelo \"peer assessment\": os alunos avaliam anonimamente os trabalhos uns dos outros.\n\tA validação do código produzido nas fichas práticas e no projeto é feita através de uma ferramenta de validação automática do código, que permite aos alunos grande autonomia.\n\tAlguns exercícios de programação são realizados obrigatoriamente com o apoio de um LLM (ChatGPT, Gemini, etc..). Estes exercícios terão enunciados adaptados, para evitar que seja simplesmente feito o copy/paste para o LLM - serão apresentados de forma visual, seja por diagramas seja por vídeos demonstrando o que se pretende. O objetivo é que os alunos treinem a construção de \"prompts\" eficazes.\n\n",
+    "bibliografia": "\n\t\n\tBooch, G. et al (2007) Object-Oriented Analysis and Design with Applications, 3rd edition.\n\t\n\t\n\tFowler, M. (2003) UML Distilled, 3rd edition.\n\t\n\t\n\tDowney, A. and Mayfield, C. (2019) Think Java: How to Think Like a Computer Scientist, 2nd edition.\n\t\n\n",
+    "avaliacao": "<h2>&Eacute;poca de avalia&ccedil;&atilde;o cont&iacute;nua</h2>\n\n<ul>\n\t<li><strong>Componente te&oacute;rica</strong> (50% da nota final, nota m&iacute;nima 9,5) - tem duas op&ccedil;&otilde;es: avalia&ccedil;&atilde;o cont&iacute;nua ou apenas uma frequ&ecirc;ncia completa\n\n\t<ul>\n\t\t<li>Avalia&ccedil;&atilde;o cont&iacute;nua:\n\t\t<ul>\n\t\t\t<li>4 TPCs te&oacute;ricos individuais - 20%</li>\n\t\t\t<li>Frequ&ecirc;ncia interm&eacute;dia (primeira metade da mat&eacute;ria) - 30% - nota m&iacute;nima: 8</li>\n\t\t\t<li>Frequ&ecirc;ncia completa (toda a mat&eacute;ria) - 50% - nota m&iacute;nima: 8 (apenas para quem passou na frequ&ecirc;ncia interm&eacute;dia)</li>\n\t\t</ul>\n\t\t</li>\n\t\t<li>Frequ&ecirc;ncia completa (toda a mat&eacute;ria) - 100% - nota m&iacute;nima: 9,5</li>\n\t</ul>\n\t</li>\n\t<li><strong>Componente pr&aacute;tica</strong> (50% da nota final, nota m&iacute;nima 9,5)\n\t<ul>\n\t\t<li>3 mini-fichas pr&aacute;ticas individuais - 28%\n\t\t<ul>\n\t\t\t<li>mini-ficha 1 e 2 - 12% cada uma</li>\n\t\t\t<li>mini-ficha 3 - 4%</li>\n\t\t</ul>\n\t\t</li>\n\t\t<li>Participa&ccedil;&atilde;o pr&aacute;tica - 16%</li>\n\t\t<li>Projeto em grupos de 2, com defesa individual - 56%\n\t\t<ul>\n\t\t\t<li>A defesa inclui altera&ccedil;&otilde;es no c&oacute;digo da aplica&ccedil;&atilde;o que cada aluno ter&aacute; que fazer individualmente.</li>\n\t\t\t<li>A nota da discuss&atilde;o presencial pode ir de 0 a 100% e &eacute; aplicada &agrave; nota do projecto</li>\n\t\t\t<li>O aluno ter&aacute; que conseguir fazer&nbsp;pelo menos&nbsp;metade das&nbsp;altera&ccedil;&otilde;es pedidas para passar na componente pr&aacute;tica.</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2>&Eacute;poca de recurso e &eacute;poca especial</h2>\n\n<ul>\n\t<li>Exame (50% da nota final, nota m&iacute;nima 9,5)</li>\n\t<li>Projeto (50% da nota final, nota m&iacute;nima 9,5)</li>\n</ul>\n\n<h2>Transi&ccedil;&atilde;o de notas</h2>\n\n<ul>\n\t<li>As notas das componentes te&oacute;rica e pr&aacute;tica transitam automaticamente entre &eacute;pocas do mesmo ano letivo. Isto &eacute;, se o aluno teve nota superior a 9,5 numa das componentes e reprovou na outra componente em avalia&ccedil;&atilde;o cont&iacute;nua, apenas precisa de repetir a componente reprovada em &eacute;poca de recurso/especial.</li>\n\t<li>Dado n&atilde;o ter havido mudan&ccedil;a de conte&uacute;dos, as notas das componentes aprovadas em 2024/25 podem transitar&nbsp;para 2025/26. Para tal, o&nbsp;aluno tem que solicitar por email essa transi&ccedil;&atilde;o e nesse caso, n&atilde;o pode repetir a avalia&ccedil;&atilde;o da componente aprovada. N&atilde;o haver&aacute; transi&ccedil;&atilde;o de notas de outros anos letivos.</li>\n</ul>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 16,
+  "fields": {
+    "nome": "Processamento de Imagem",
+    "sigla": "19082",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 4,
+    "imagem": "",
+    "objetivos": "- Conhecer e compreender os funcionamentos base dos Large Language Models, as suas características, limitações, e afins\n\n- Code reading: leitura e interpretação de programas de forma sistemática\n\n- Debugging: recorrendo ao debugger do IntelliJ\n\n- Unit Testing: recorrendo ao JUnit\n\n- Exploração e documentação de de código existente usando LLMs\n\n- Pensamento crítico e pensamento céptico\n\n- Code Review: análise crítica de código\n\n- Técnicas de \"Prompt engineering\"\n",
+    "conteudos": "\n\tLiteracia de IA Generativa\n\t\n\t\tIntrodução aos Large Language Models\n\t\tÉtica e Direitos de Autor\n\t\tImplicações éticas do uso dos LLMs (ética, propriedade intelectual, segurança, …)\n\t\tTécnicas de melhoria de soluções dos LLMs:  fine tunning, RAG, prompt engineering\n\t\n\t\n\tLeitura e análise sistemática de código\n\tDebugging com recurso ao debugger do IntelliJ\n\tPensamento Crítico e Pensamento Céptico\n\t\n\t\tIntrodução aos 2 tipos de pensamento\n\t\tDiferenças chave entre os 2 tipos de pensamento\n\t\tA importância dos 2 tipos de pensamento na era dos LLMs\n\t\n\t\n\tDecomposição de problemas e modularização\n\tTestes de Software\n\t\n\t\tTipos de testes (e.g., manuais, automaticos, integração, unitários, etc)\n\t\tTestes Unitários com JUnit\n\t\n\t\n\tTest Driven Development (TDD)\n\tIntrodução à Revisão/Verificação de Código (Code Review)\n\tExploração de Código Existente com base em LLMs\n\tIntegração de LLMs em software via API\n\tRetrieval Augmented Generation\n\n",
+    "metodologia": "Uso de \"Custom GPTs\" configurados para dar erros que os alunos têm de encontrar no código.\n\nInteracção guiada com LLMs (i.e. ChatGPT, etc).\n\nApresentação de casos de uso reais nos quais os LLMs geraram problemas.\n",
+    "bibliografia": "Vladimir Khorikov – Unit Testing: Principles, Practices, and Patterns.\n\n2.ª edição. Shelter Island, NY : Manning Publications, 2020. 1 volume (xx + 300 p.) : il. ISBN 9781617296277.\n\n \n\nRoy Osherove – The Art of Unit Testing: With Examples in .NET.\n\n2.ª edição. Shelter Island, NY : Manning Publications, 2013. 1 volume (xx + 320 p.) : il. ISBN 9781617290893.\n",
+    "avaliacao": "<p>Exemplo:</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Data limite</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Componente te&oacute;rica</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">fim do semestre</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;50%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Componente pr&aacute;tica</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">fim do semestre</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">50%</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><strong>Componente te&oacute;rica:</strong></p>\n\n<p>* 2 testes (30% e 70%)</p>\n\n<p><strong>Componente pr&aacute;tica:</strong></p>\n\n<p>* 2 mini-testes (20% cada = 40%)</p>\n\n<p>* trabalho em aula (20%)</p>\n\n<p>* mini-projecto (20%)</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 17,
+  "fields": {
+    "nome": "Sistemas Operativos",
+    "sigla": "6305",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "OA1. Conhecimento teórico de como funciona um sistema operativo\n\nOA2. Capacidade prática para desenvolver programas que usem de forma eficiente os recursos do sistema operativo, incluindo concorrência e sincronização\n",
+    "conteudos": "CP1 - Introdução aos Sistemas Operativos\n\nCP2 - Processos: virtualização do CPU\n\nCP3 - Gestão de Memória: virtualização da memõria\n\nCP4 - Concorrência e Sincronização\n\nCP5 - Persistência, Sistema de ficheiros\n",
+    "metodologia": "Em quase todas as aulas teóricas e práticas são utilizados quizzes para envolver os alunos no processo de aprendizagem.\n\nAs ferramentas utilizadas na componente prática para o desenvolvimento dos programas (CLion e GitHub) contêm aceleradores baseados em GenIA que aceleram o processo de desenvolvimento e ajudam os estudantes a aprender a trabalhar com este tipo de ferramentas.\n",
+    "bibliografia": "\"Operating Systems: Three Easy Pieces”, Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, Arpaci-Dusseau Books, November, 2023 (Version 1.10). Disponível online gratuitamente\n\n \n",
+    "avaliacao": "<p>50% te&oacute;rica</p>\n\n<ul>\n\t<li>Frequ&ecirc;ncia intercalar. Peso: 50% te&oacute;rica. Data: 3 Novembro 2025</li>\n\t<li>Frequ&ecirc;ncia final: Peso: 50% te&oacute;rica. Data: 16 Janeiro 2026</li>\n\t<li>Exame recurso: Peso: 100% te&oacute;rica. Data: 30 Janeiro 2026</li>\n\t<li>As frequ&ecirc;ncias e exame s&atilde;o feitos sem consulta (livros, apontamentos, IA, etc.)</li>\n</ul>\n\n<p>50% pr&aacute;tica</p>\n\n<ul>\n\t<li>3 trabalhos individuais ou em grupos de 2 alunos entregues numa aula pr&aacute;tica e avaliados na aula pr&aacute;tica seguinte</li>\n\t<li>Trabalho 1 - peso: 20% pr&aacute;tica</li>\n\t<li>Trabalho 2 - peso: 30% pr&aacute;tica</li>\n\t<li>&nbsp;Trabalho 3 - peso: 50% pr&aacute;tica</li>\n</ul>\n\n<p>Nota m&iacute;nima de 9,5 na componente te&oacute;rica e 9,5 na componente pr&aacute;tica</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 18,
+  "fields": {
+    "nome": "Engenharia de Requisitos e Testes",
+    "sigla": "22512",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "\n\tEntender o que é Gestão de Sistemas de Informação\n\tPor que é fundamental definir requisitos\n\tSaber desenvolver e gerenciar uma metodologia de definição e estrutura de requisitos\n\tComo alinhar os testes com os requisitos\n\tCompreender a importância de modelar os requisitos e testes\n\tFundamentos de Gestão de Projetos\n\n",
+    "conteudos": "Estrutura de Capítulos principais de conteúdos\n\n\n\t\n\tVisão de Gerenciamento de Sistemas de Informação\n\t\n\t\n\tEngenharia de Requisitos (Gestão de backlog, BPMN e UML - Modelação)\n\t\n\t\n\tTestes de software\n\t\n\t\n\tGestão de Projetos\n\t\n\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "Abdula, M., Averdunk, I., Barcia, R., Brown, K., & Emuchay, N. (2018). The Cloud Adoption Playbook: Proven Strategies for Transforming Your Organization with the Cloud (1 edition). Wiley.\n\nAllen, J., Blood, T., Vogels, D. W., Cockcroft, A., & Schwartz, M. (2020). Reaching Cloud Velocity: A Leader’s Guide to Success in the AWS Cloud. Independently published.\n\nHohpe, G., Danieli, M., Landreau, J.-F., & Hashmi, T. (2020). Cloud Strategy: A Decision-based Approach to Successful Cloud Migration. Independently published.\n\nRastogi, S. (2021). Cloud Computing Simplified: Explore Application of Cloud, Cloud Deployment Models, Service Models and Mobile Cloud Computing. BPB Publications.\n\nAbdula, M., Averdunk, I., Barcia, R., Brown, K., & Emuchay, N. (2018). The Cloud Adoption Playbook: Proven Strategies for Transforming Your Organization with the Cloud (1 edition). Wiley.\n\n \n",
+    "avaliacao": "<p>&bull;Theory &ndash; 50%</p>\n\n<p>&ndash;Participation &ndash; 5%</p>\n\n<p>&ndash;Online Quizzes during classes - 10%</p>\n\n<p>&ndash;Group work + presentation - 15%</p>\n\n<p>&ndash;Final Exam - 20%</p>\n\n<p>&bull;Projects &ndash; 50%</p>\n\n<p>&ndash;2 projects: IaaS, PaaS, SaaS, BaaS</p>\n\n<p>&ndash;Rules for the pratical component grade will be explained by professor Rui Santos &amp; Luis Gomes</p>\n\n<p>Minimum grade in each component 9,5 values in 20.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 19,
+  "fields": {
+    "nome": "Probabilidades e Estatística",
+    "sigla": "620",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Esta disciplina permite que o(a) aluno(a)\n\nOA1: seja exposto à probabilidade como uma função de medida essencial à ciência.\n\nOA2: entenda a estatística como uma área da ciência que permite à engenharia recolher dados, analisar dados, formular hipóteses relativas a esses dados e testar essas hipóteses.\n\nOA3: utilize a linguagem de programação R para obter resultados estatísticos e probabilísticos em dados reais.\n\nNessa medida, a estatística e a probabilidade são essenciais ao conhecimento e à engenharia.\n\n \n",
+    "conteudos": "1. Estatística Descritiva\n\n\n\tClassificação de variáveis\n\tMedidas de localização, de dispersão e de forma\n\tRepresentações gráficas (Gráficos de barras, Histogramas, Caixas de Bigodes...)\n\n\n2. Correlação e Regressão Linear\n\n\n\tCoeficientes de correlação\n\tEstimativa da reta de regressão linear simples\n\tQualidade do ajustamento\n\n\n3. Introdução à Probabilidade\n\n\n\tEspaço de resultados. Acontecimentos. Definição de probabilidade\n\tProbabilidade condicionada\n\tLei das Probabilidade Composta\n\tTeorema da probabilidade total\n\tTeorema de Bayes\n\tAcontecimentos independentes\n\n\n4. Variáveis aleatórias reais\n\n\n\tFunção distribuição\n\tFunção (massa) de probabilidade\n\tDistribuição discreta Bernoulli e Binomial\n\tFunção densidade de probabilidade\n\tDistribuição contínua Normal\n\n\n5. Inferência Estatística\n\n\n\tEstimação pontual\n\tEstimação intervalar\n\t Testes de hipóteses\n\n",
+    "metodologia": "É proposto aos alunos analisarem resultados computacionais de forma guiada, em sala de aula, com o objetivo de descobrirem os conceitos estatísticos subjacentes. A discussão dos mesmos é feita de forma conjunta em interligação com os resultados analisados. Exercícios práticos são propostos para consolidar os conhecimentos e o modo de aplicação dos mesmos.\n\nOs conceitos probabilísticos são apresentados de forma expositiva e consolidados com a apresentação de exemplos práticos e computacionais. Posteriormente, são ainda realizados exercícios para a consolidação dos mesmos. \n\nOs alunos são encorajados a trabalhar em grupo e de forma autónoma na resolução do projeto computacional e dos exercícios propostos. \n",
+    "bibliografia": "\n\tApontamentos das aulas e textos de apoio\n\n\n \n",
+    "avaliacao": "<p>A avalia&ccedil;&atilde;o de conhecimentos &eacute; feita por uma componente te&oacute;rica (60%) e uma componente pr&aacute;tica (40%), ambas com nota m&iacute;nima de 9.5 valores. Todas as componentes s&atilde;o obrigat&oacute;rias em qualquer &eacute;poca de avalia&ccedil;&atilde;o.</p>\n\n<p>A componente te&oacute;rica inclui a realiza&ccedil;&atilde;o de 2 testes, com igual peso na nota, ou a frequ&ecirc;ncia final. O primeiro teste ser&aacute; realizado durante a aula te&oacute;rica (em data a definir no in&iacute;cio do semestre) e o segundo na data da frequ&ecirc;ncia final, ambos com nota m&iacute;nima de 8 valores e m&eacute;dia superior a 9.5 valores. Na data da frequ&ecirc;ncia final, o aluno pode optar por realizar o segundo teste ou a frequ&ecirc;ncia final, tendo a frequ&ecirc;ncia final nota m&iacute;nima de 9.5 valores. A aprova&ccedil;&atilde;o na componente te&oacute;rica obriga &agrave; presen&ccedil;a em 75% das aulas pr&aacute;ticas, regra n&atilde;o aplic&aacute;vel a alunos com estatuto trabalhador-estudante. Em caso de n&atilde;o aprova&ccedil;&atilde;o, os alunos poder&atilde;o ser avaliados atrav&eacute;s de exame de recurso.</p>\n\n<p>A componente pr&aacute;tica consiste na elabora&ccedil;&atilde;o de um projeto computacional em grupos de 3 elementos, com a avalia&ccedil;&atilde;o dividida em quatro partes:</p>\n\n<ul>\n\t<li>submiss&otilde;es semanais (5%): a cada semana, o aluno dever&aacute; submeter a parte do c&oacute;digo relativo &agrave;quela semana. A submiss&atilde;o &eacute; feita em grupo, mas a avalia&ccedil;&atilde;o &eacute; feita individualmente. O aluno obt&eacute;m 20 valores caso esteja presente em sala de aula, submeta o c&oacute;digo sem erros e adaptado &agrave; sua base de dados; o aluno obt&eacute;m 0 valores caso n&atilde;o esteja presente em sala de aula ou o c&oacute;digo submetido n&atilde;o apresente as condi&ccedil;&otilde;es exigidas. S&atilde;o admitidas duas faltas devidamente justificadas, sendo as restantes faltas classificadas com 0 valores. No caso dos alunos com estatuto trabalhador-estudante com mais de duas faltas justificadas, ter&atilde;o de responder a algumas perguntas extra, proporcionalmente ao n&uacute;mero de faltas.</li>\n\t<li>c&oacute;digo (10%): c&oacute;digo submetido ao longo do semestre com a possibilidade de resubmiss&atilde;o para melhoria no final do semestre,&nbsp;avaliado de acordo com os objetivos do trabalho</li>\n\t<li>documento com a interpreta&ccedil;&atilde;o dos resultados (10%): documento a utilizar na apresenta&ccedil;&atilde;o com os principais resultados e a respetiva&nbsp;interpreta&ccedil;&atilde;o, em linguagem corrente</li>\n\t<li>apresenta&ccedil;&atilde;o e discuss&atilde;o do projeto (15%): com base exclusivamente nos documentos submetidos anteriormente, e nota m&iacute;nima de 10 valores</li>\n</ul>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 20,
+  "fields": {
+    "nome": "Programação Web",
+    "sigla": "11195",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "\n\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tEntender o funcionamento da Internet e da Web.\n\t\t\t\tCompreender os princípios da programação Web e seus principais padrões de desenho.\n\t\t\t\tAplicar estes conceitos, usando várias tecnologias (HTML, CSS, JavaScript, Python and Django¿).\n\t\t\t\tArquitetar aplicações eficientes, de fácil manutenção, que corram na Web.\n\t\t\t\tAvaliar as diferentes estratégias de desenho, sabendo escolher a abordagem que mais se adequa ao contexto.\n\t\t\t\tSer capaz de construir e implantar na cloud aplicações Web complexas e criativas, totalmente funcionais (full stack).\n\t\t\t\n\t\t\t\n\t\t\n\t\n\n",
+    "conteudos": "A Web e seus paradigmas\n\n- Funcionamento da Internet e da Web: arquitetura e protocolos IP e HTTP\n\n- Tecnologias, paradigmas e padrões de desenho da Web\n\nPython para desenvolvimento Web\n\n- Sintaxe, operadores, controlo de fluxos e tipos de dados\n\n- Funções e módulos \n\n- Gestão de ficheiros e pastas   \n\n- Classes \n\nDjango web framework para Back-end\n\n- Web frameworks\n\n- Arquitetura MVT \n\n- Urls, views e templates\n\n- Linguagem template\n\n- Modelação de base de dados, ORM\n\n- Formulários\n\n- Autenticação\n\n- Implantação na cloud \n\nHTML e CSS para desenho de páginas Web\n\n- HTML e seus elementos \n\n- Formulários para envio de dados\n\n- HTML5 e elementos semânticos\n\n- CSS e seus seletores, para estilização de conteúdos\n\n- Propriedades CSS\n\n- Design responsivo e layouts dinâmicos\n\n- Efeitos e animações CSS\n\n- Bootstrap\n\nJavaScript para programação Front-end\n\n- Programação Orientada a Eventos \n\n- Manipulação do DOM \n\n- JSON e APIs\n\n- Single Page Applications\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\tPORTELA, Filipe, QUEIRÓS, Ricardo. Introdução ao desenvolvimento moderno para a Web. FCA. 2018. ISBN: 978-972-722-897-3\n\tVASCONCELOS, José Braga de, Python: Algoritmia e Programação Web. FCA. 2015. ISBN: 978-972-722-813-3\n\tVINCENT, William S., Django for Beginners 3.1: build websites with Python & Django, 2020. ISBN-13: 978-1735467207\n\t\n\t\n\n\t \n\t\n\n",
+    "avaliacao": "<ul>\n\t<li><strong>Avalia&ccedil;&atilde;o continua:</strong>\n\n\t<ul>\n\t\t<li><strong>Componente Te&oacute;rica (CT):</strong>\n\n\t\t<ul>\n\t\t\t<li>3 TPCs te&oacute;ricos, em grupos de 2 &ndash; 10%</li>\n\t\t\t<li>Frequ&ecirc;ncia Interm&eacute;dia &ndash; 15% (Nota m&iacute;nima: 8)</li>\n\t\t\t<li>Frequ&ecirc;ncia Final &ndash; 25% (Nota m&iacute;nima: 8)</li>\n\t\t</ul>\n\t\t</li>\n\t\t<li><strong>Componente Pr&aacute;tica (CP):</strong>\n\t\t<ul>\n\t\t\t<li>3 minitestes individuais &ndash; 15%</li>\n\t\t\t<li>Participa&ccedil;&atilde;o na aula &ndash; 5%</li>\n\t\t\t<li>Projeto individual &ndash; 30%</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li><strong>Avalia&ccedil;&atilde;o &eacute;poca de recurso/especial:&nbsp;</strong>\n\t<ul>\n\t\t<li>CT: Exame (50%)&nbsp; (Nota m&iacute;nima: 9,5)</li>\n\t\t<li>CP: Projeto (50%)&nbsp;(Nota m&iacute;nima: 9,5)</li>\n\t</ul>\n\t</li>\n</ul>\n\n<ul>\n\t<li><strong>Nota final = CT (50%)&nbsp; + CP (50%)</strong><br />\n\tNota m&iacute;nima de 9,5&nbsp;em&nbsp;<u>cada</u>&nbsp;componente.</li>\n</ul>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 21,
+  "fields": {
+    "nome": "Redes de Computadores",
+    "sigla": "1793",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "Após a conclusão desta UC, os estudantes serão capazes de:\n\n1. Compreender a arquitetura da Internet e o modelo de camadas protocolar\n\n2. Analisar o funcionamento de protocolos aplicacionais (HTTP, SMTP, DNS)\n\n3. Distinguir os serviços de transporte UDP e TCP, incluindo mecanismos de controlo de fluxo e congestão\n\n4. Configurar endereços IP, sub-redes, e compreender encaminhamento e NAT\n\n5. Explicar protocolos de encaminhamento (RIP, OSPF, BGP)\n\n6. Analisar protocolos de nível de ligação, incluindo Ethernet e WiFi\n\n7. Utilizar ferramentas de análise de rede como Wireshark e Cisco Packet Tracer\n",
+    "conteudos": "\n\t1. Introdução\n\t\n\t\tO que é a internet\n\t\tPeriferia vs infraestrutura\n\t\tAtraso, perda, débito\n\t\tModelo de camadas\n\t\n\t\n\t2. Nível aplicacional\n\t\n\t\tPrincípios de aplicações distribuídas\n\t\tWeb e HTTP (incl. cookies e GET condicional)\n\t\tCorreio eletrónico\n\t\tDNS\n\t\n\t\n\t3. Nível transporte\n\t\n\t\tServiços do nível de transporte\n\t\tUDP\n\t\tTCP\n\t\t\n\t\t\tpipelining, timeouts, retransmissões\n\t\t\tcontrolo fluxo, gestão ligações, controlo congestão\n\t\t\n\t\t\n\t\tTLS\n\t\n\t\n\t4. Nível rede\n\t\n\t\tServiços, o que está dentro de um router\n\t\tIP\n\t\t\n\t\t\tformato do datagrama, endereçamento IPv4\n\t\t\tDHCP, NAT, IPv6\n\t\t\n\t\t\n\t\tAlgoritmos de roteamento\n\t\tRoteamento na Internet (RIP, OSPF, BGP)\n\t\n\t\n\t5. Nível ligação\n\t\n\t\tProtocolos acesso ao meio\n\t\tEndereçamento, ARP\n\t\tEthernet, VLANs\n\t\tRedes móveis/sem fios, WiFi\n\t\n\t\n\n\n \n",
+    "metodologia": "A UC adota uma abordagem de aprendizagem ativa combinando aulas teórico-práticas com laboratórios hands-on. Utilizam-se ferramentas profissionais como Wireshark para captura e análise de tráfego real, e Cisco Packet Tracer para simulação de redes. Os estudantes analisam comunicações reais através das Chrome Dev Tools, observando protocolos em ação. Esta metodologia permite a experimentação direta com os conceitos teóricos, facilitando a compreensão através da observação e manipulação de redes simuladas e reais. A utilização de cenários práticos aproxima a aprendizagem do contexto profissional.\n",
+    "bibliografia": "Kurose, J. F., & Ross, K. W. (2025). Computer Networking: A Top-Down Approach (9ª edição). Pearson. ISBN 978-0-13-542933-4\n",
+    "avaliacao": "<ul>\n\t<li><strong>50% te&oacute;rica</strong> (<strong>nota m&iacute;nima 9,5</strong>), dos quais:\n\t<ul>\n\t\t<li>10% Desafios nas aulas ao longo do semestre (10%)</li>\n\t\t<li>45% Frequ&ecirc;ncia intercalar (45%)</li>\n\t\t<li>45% Frequ&ecirc;ncia final (45%)\n\t\t<ul>\n\t\t\t<li>Na frequ&ecirc;ncia final &eacute; poss&iacute;vel optar por exame completo para a totalidade da nota te&oacute;rica</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li><strong>50% pr&aacute;tica</strong>&nbsp;(<strong>nota m&iacute;nima 9,5</strong>), dos quais:\n\t<ul>\n\t\t<li>10% Ficha&nbsp;Pr&aacute;tica 1 (individual)</li>\n\t\t<li>15% Ficha Pr&aacute;tica 2 (individual)</li>\n\t\t<li>20% Projeto Fase 1 (grupos de 3 alunos da mesma turma pr&aacute;tica)</li>\n\t\t<li>25% Projeto Fase 2&nbsp;(grupos de 3 alunos da mesma turma pr&aacute;tica)</li>\n\t\t<li>30% Defesa individual do projeto&nbsp;(<strong>nota m&iacute;nima 9,5</strong>)</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 22,
+  "fields": {
+    "nome": "Sistemas de Suporte à Decisão",
+    "sigla": "7303",
+    "ano": 2,
+    "semestre": 2,
+    "creditos": 6,
+    "imagem": "",
+    "objetivos": "\n\tEntender por que as empresas precisam de um ambiente de BI\n\tQuais componentes da arquitetura existem para BI\n\tEsquemas de modelação para DW\n\tConhecer os vários processos de manipulação de dados em ambientes DW\n\tO que um colaborador/utilizador pode obter em interfaces de relatórios\n\n",
+    "conteudos": "\n\tDesafios de Negócio de DW\n\tArquitecturas DW\n\tMelhores Práticas de Modelação de DW\n\tImplementação de ETL\n\tBases de Dados específicas para BI\n\tFerramentas de Relatórios\n\tProjetos de BI com Large Language Models (LLMs) e AI Agents\n\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\t\n\tBolton, J. (Ed.). (2019). Data Warehousing Essentials. Larsen and Keller Education.\n\t\n\t\n\tDeckler, G. (2022). Learn Power BI: A comprehensive, step-by-step guide for beginners to learn real-world business intelligence, 2nd Edition (2nd ed. edition). Packt Publishing\n\t\n\t\n\tInmon, B., & Puppini, F. (2020). The Unified Star Schema: An Agile and Resilient Approach to Data Warehouse and Analytics Design. Technics Publications.\n\t\n\t\n\tKelly, N. (2021). Delivering Data Analytics: A Step-By-Step Guide to Driving Adoption of Business Intelligence from Planning to Launch (1st edition). Kogan Page.\n\t\n\t\n\tKimball, R. (2008). The Data Warehouse Lifecycle Toolkit, 2nd Edition (2 edition). Wiley.\n\t\n\t\n\tKimball, R. (2013). The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling, 3rd Edition (3 edition). Wiley.\n\n\t \n\t\n\n",
+    "avaliacao": "<p><strong>Componente Te&oacute;rica (Frequ&ecirc;ncia)</strong></p>\n\n<ul>\n\t<li>Participa&ccedil;&atilde;o, Mini Testes, Teste final&nbsp;- 50%\n\t<ul>\n\t\t<li>Teste Final Frequ&ecirc;ncia (60%)</li>\n\t\t<li>2 Mini-testes (30%)</li>\n\t\t<li>Participa&ccedil;&atilde;o (10%)</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><strong>Componente Pr&aacute;tica&nbsp;(Frequ&ecirc;ncia)</strong></p>\n\n<ul>\n\t<li>Projetos - 50%\n\t<ul>\n\t\t<li>1st Work - Modeling</li>\n\t\t<li>2nd Work - ETL</li>\n\t\t<li>3rd Work - Reporting & AI Agents</li>\n\t\t<li>Participation</li>\n\t\t<li>Teams of 3-4 students</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Nota m&iacute;nima em cada componente 9,5 valores em 20.</p>\n\n<p>-------------------------------</p>\n\n<p><strong>Recurso</strong></p>\n\n<ul>\n\t<li>Teste de Recurso&nbsp;(50%)</li>\n\t<li>Projeto Final - 50%</li>\n</ul>\n\n<p>Nota m&iacute;nima em cada componente 9,5 valores em 20.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 23,
+  "fields": {
+    "nome": "Trabalho Final de Curso",
+    "sigla": "5140",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 20,
+    "imagem": "",
+    "objetivos": "O principal objectivo desta unidade curricular é de integrar os conceitos que foram adquiridos pelo aluno ao longo do curso, num projecto de âmbito alargado e onde o aluno autonomamente resolva um problema.\n\nEste objectivo geral pode ser concretizado por:\n\nOA1. Saber aplicar os princípios e técnicas associadas à conceção e implementação de casos reais ou simulados.\n\nOA2. Saber aplicar os conhecimentos obtidos nas unidades curriculares do curso face a problemas ligados às mesmas, bem como a aplicação dos conhecimentos a novos paradigmas dos SI/TIC não abordados no curso.\n\nOA3. Saber investigar o estado da arte no objeto de estudo.\n\nOA4. Saber desenvolver um trabalho de natureza aplicada que integre os conhecimentos adquiridos ao longo da componente curricular do curso.\n",
+    "conteudos": "CP1. Orientação.\n\nCP2. Elaboração do estado da arte.\n\nCP3. Desenvolvimento do projeto.\n\n         CP3.1. Identificação de problema\n\n         CP3.2. Planeamento do projecto\n\n         CP3.3. Demonstração de viabilidade\n\n         CP3.4. Execução\n\n         CP3.5. Controlo do projecto\n\n         CP3.6. Testes\n\nCP4. Apresentação dos resultados.\n",
+    "metodologia": "Tutoria individualizada; Ligação ao mercado e intercenção em contexto real; desenvolvimento próximo de modelo profissional\n",
+    "bibliografia": "Regulamentos de TFC, Coordenação DEISI\n\nA restante bibliografia dependerá do tema do projecto a realizar por cada aluno ou grupo\n",
+    "avaliacao": "<p><strong>Descri&ccedil;&atilde;o&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Data limite&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pondera&ccedil;&atilde;o</strong></p>\n\n<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (</strong>relat&oacute;rio/apresenta&ccedil;&otilde;es)</p>\n\n<p><strong>Projecto Intercalar&nbsp;</strong>(incluindo relat&oacute;rio e apresenta&ccedil;&atilde;o)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25%</p>\n\n<p><strong>Projecto Final&nbsp;</strong>(incluindo relat&oacute;rio e apresenta&ccedil;&atilde;o)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;75%</p>\n\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 24,
+  "fields": {
+    "nome": "Computação Distribuída",
+    "sigla": "7348",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "No final da unidade curricular, os estudantes deverão conhecer os conceitos fundamentais e os principais desafios da computação distribuída, com foco em desempenho, fiabilidade, resiliência e segurança. Serão capazes de aplicar técnicas de design e boas práticas para modelar soluções distribuídas adequadas a diferentes contextos, desenvolver microsserviços com comunicação síncrona e assíncrona, integrar persistência de dados e mecanismos de coordenação entre serviços. Além disso, terão oportunidade de experimentar metodologias e ferramentas que suportam o ciclo de vida de sistemas distribuídos, incluindo containerização, monitorização e estratégias de teste. Pretende-se ainda que os estudantes demonstrem competências transversais de trabalho em equipa, comunicação técnica e resolução de problemas em ambientes complexos, consolidando uma preparação sólida para desafios reais de desenvolvimento e arquitetura de software distribuído.\n",
+    "conteudos": "1. Introdução. Caracterização, requisitos, arquitectura e funcionalidades\n\n2. Arquitecturas e Modelos de Comunicação Distribuída. Arquitecturas de sistemas, níveis de software\n\n3. Comunicação entre Processos Distribuídos (IPC). Características da comunicação entre processos, Invocação, parâmetros e heterogeneidade de dados\n\n4. Invocação Remota e Objectos Distribuídos. RPC: Modelo de execução. Linguagem de definição de interfaces (IDL). Plataformas de execução: Sun RPC, Java RMI\n\n5. Nomeação e Serviços de Directório. Tipos de Nomes. Espaços de nomeação. Serviços de Directório (Web, X.500, LDAP)\n\n6. Web Services (WS). Modelo de Execução Web Services (WS). O protocolo SOAP. Linguagens de definição de Serviços (WSDL)\n\n7. Segurança. Modelo de segurança. Autenticação. Controlo de acesso\n\n8. Sistemas de Ficheiros Distribuídos. Arquitecturas de SGF distribuídos. Implementações: NFS e AFS\n\n9. Transações. Modelo transaccional. Propriedades ACID das transacções. Transacções distribuídas. Protocolo 2-phase-commit\n",
+    "metodologia": "A unidade curricular combina metodologias teóricas e práticas de forma integrada. Na vertente teórica, são realizados mini-testes periódicos para garantir o acompanhamento contínuo e um teste final de consolidação de conhecimentos. Na vertente prática, adota-se uma abordagem learning-by-doing, com desenvolvimento progressivo de microsserviços, checkpoints semanais, revisões de código e feedback contínuo, promovendo uma aprendizagem ativa e iterativa. São ainda introduzidas metodologias inovadoras como peer review entre grupos, resolução colaborativa de problemas e utilização de ferramentas de desenvolvimento profissional (GitHub, Docker, CI/CD), aproximando os estudantes das práticas reais da indústria e potenciando competências técnicas e transversais.\n",
+    "bibliografia": "\n\tCoulouris, Dollimore & Kindberg, Distributed Systems: Concepts and Design, 5th\n\n\tEdition, Addison-Wiley, 2011, ISBN 0132143011.\n\n\n \n",
+    "avaliacao": "<p>A avalia&ccedil;&atilde;o da unidade curricular integra componentes te&oacute;rica e pr&aacute;tica, ambas de car&aacute;ter obrigat&oacute;rio:</p>\n\n<ul>\n\t<li>Componente Te&oacute;rica (50%)\n\t<ul>\n\t\t<li>Mini-testes individuais: 20% da nota final.</li>\n\t\t<li>Frequ&ecirc;ncia ou exame individual: 30% da nota final.</li>\n\t</ul>\n\t</li>\n\t<li>Componente Pr&aacute;tica (50%)\n\t<ul>\n\t\t<li>Trabalho pr&aacute;tico em grupo: 50% da nota final, consistindo no desenvolvimento de um sistema distribu&iacute;do completo, com entrega progressiva e defesa final.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>A classifica&ccedil;&atilde;o final resulta da soma ponderada destas componentes, sendo exigido um desempenho m&iacute;nimo &gt;=9,5 em cada componente para aprova&ccedil;&atilde;o</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 25,
+  "fields": {
+    "nome": "Data Science",
+    "sigla": "22513",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "\n\tCaracterizar tipos e estruturas de dados em conjuntos tabulares\n\tCalcular e interpretar estatísticas descritivas\n\tCriar e interpretar visualizações univariadas e bivariadas\n\tRealizar uma análise exploratória de dados estruturada e comunicar conclusões\n\tConstruir e avaliar modelos de base, incluindo regressão linear e logística\n\tAplicar métodos não supervisionados como k-means para agrupamento\n\tSelecionar e interpretar métricas de avaliação, compreendendo o compromisso viés–variância\n\tRelacionar conceitos de pensamento estatístico com a prática de aprendizagem automática (ML)\n\n\n\n",
+    "conteudos": "\n\tIntrodução à Ciência de Dados e funções no campo\n\tTipos de dados e estruturas de dados tabulares\n\tEstatística descritiva: tendência central e dispersão\n\tVisualização univariada: histogramas, KDE, boxplots, outliers, assimetria\n\tAnálise bivariada: gráficos de dispersão e pares, relações lineares e não lineares\n\tCorrelação: Pearson e Spearman, força vs significância\n\tDados categóricos: tabelas de contingência, proporções, resumos agrupados\n\tPipelines de Análise Exploratória de Dados (AED) e narrativa de dados\n\tFundamentos de aprendizagem automática\n\tRegressão linear: ajuste do modelo, resíduos, R², sobreajuste, interpretação\n\tRegressão logística: classificação binária, sigmoide, log-odds, ROC, precisão, F1\n\tClustering: k-means, método do cotovelo, introdução ao clustering hierárquico, aplicações\n\tValidação e avaliação de modelos\n\tPensamento estatístico\n\tRevisão e integração de conceitos\n\n\n\n",
+    "metodologia": "A unidade curricular introduz métodos de ensino inovadores que incluem vibe-coding — sessões práticas de programação em que o docente e os estudantes exploram soluções em tempo real, promovendo a intuição e a criatividade no código. A avaliação privilegia o processo em detrimento do produto final, valorizando a evolução individual, a experimentação e a capacidade de resolver problemas. A abordagem é dialógica, incentivando a interação contínua entre docente e estudantes e o desenvolvimento do raciocínio crítico através de debate e reflexão partilhada.\n",
+    "bibliografia": " \n\n\n\tGrus, J. (2019). Data science from scratch: first principles with python. O'Reilly Media.\n\n\n \n",
+    "avaliacao": "<p>&nbsp;</p>\n\n<table border=\"0.5\" cellpadding=\"5\" cellspacing=\"0\" style=\"width:80%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top; width:60%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Descri&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Data limite</em></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top; width:20%\">\n\t\t\t<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Teste meio termo (teoria)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Semana 7</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">20% Te&oacute;rica</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Frequ&ecirc;ncia final (teoria)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Data definida pela coordena&ccedil;&atilde;o</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">30% (Te&oacute;rica)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Teste I&nbsp;(Pr&aacute;tica)</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Semana 5</p>\n\t\t\t</td>\n\t\t\t<td style=\"vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">10% (Pr&aacute;tica)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Teste II (Pr&aacute;tica)</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Semana 11</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">20% (Pr&aacute;tica)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Teste III (Pr&aacute;tica)</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Semana 14</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">10% (Pr&aacute;tica)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">Participa&ccedil;&atilde;o e presen&ccedil;a nas aulas</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">--</td>\n\t\t\t<td style=\"text-align:center; vertical-align:top\">10%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>Todas as avalia&ccedil;&otilde;es s&atilde;o individuais. N&atilde;o existe aprova&ccedil;&atilde;o de componentes individuais, a cadeira &eacute; aprovada com 50% da nota obtida nas componenrtes vista como um todo. O exame de recurso e sempre s&oacute; um, te&oacute;rico-pr&aacute;tico.</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 26,
+  "fields": {
+    "nome": "Engenharia de Software",
+    "sigla": "7341",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "OA1. Compreender os métodos, técnicas e ferramentas para o completo desenvolvimento de um sistema de software, desde a sua conceção até à sua entrega e manutenção.\n\nOA2. Saber planear, gerir, avaliar e garantir a qualidade do desenvolvimento de projetos de software utilizando os princípios da Engenharia de Software.\n\n \n",
+    "conteudos": "\n\tCP1. Introdução à Engenharia de Software;\n\tCP2. Modelos e processos desenvolvimento de software;\n\t\n\t\t Modelos Clássicos: Cascata (contexto histórico)\n\t\tModelos Ágeis: Agile (framework de Scrum)\n\t\n\t\n\tCP3. Modelação de sistemas;\n\t\n\t\tAnálise de requisitos\n\t\tDiagrama de domínio\n\t\tDiagrama de conceitos\n\t\tCasos de uso\n\t\n\t\n\tCP4. Desenho da arquitectura;\n\t\n\t\tAnálise\n\t\tDesenho\n\t\tAvaliação\n\t\tEvolução\n\t\n\t\n\tCP5. Desenho e implementação;\n\t\n\t\tPadrões UML\n\t\tPrincípios de desenvolvimento orientado a objectos: S.O.L.I.D, KISS, entre outros.\n\t\n\t\n\tCP6. Verificação e validação;\n\t\n\t\tConhecer os diferentes tipos de testes\n\t\tAplicação de testes unitários\n\t\n\t\n\tCP7. Segurança e Confiabilidade\n\tCP8. Integração Contínua\n\t\n\t\tVantagens\n\t\tFerramentas e tecnologias\n\t\n\t\n\n",
+    "metodologia": "A metodologia de ensino inclui o método expositivo (ME1) para apresentar os conteúdos necessários, o demonstrativo (ME2) para ilustrar a sua aplicação a casos práticos e o ativo (ME3) para resolução de exercícios em sala de aula, com e sem recurso ao computador.\n\nA avaliação de conhecimentos é feita por avaliação contínua ou por prova escrita de exame final. A avaliação contínua inclui a realização de dois testes escritos com uma ponderação de 21,25% cada e um de grupo (42,5%) e a participação ativa nas aulas (10%). A assiduidade será um elemento adicional\n\nde avaliação com uma ponderação de 5%.\n\nAo longo do semestre são disponibilizados Quizes após as aulas (acerca do tópico dado) ou com grupo de perguntas referentes a tópicos da matéria dada como forma dos alunos irem aferindo o seu conhecimento das matérias já lecionadas.\n",
+    "bibliografia": "Sommerville, I. (2015). Software Engineering. (10th ed.). Addison-Wesley. ISBN-13: 978-0133943030\n\n \n\n \n",
+    "avaliacao": "<p>Descri&ccedil;&atilde;o dos instrumentos de avalia&ccedil;&atilde;o (individuais e de grupo) - testes, trabalhos pr&aacute;ticos, relat&oacute;rios, projetos... respetivas datas de entrega/apresenta&ccedil;&atilde;o... e pondera&ccedil;&atilde;o na nota final.</p>\n\n<p>Exemplo:</p>\n\n<ul>\n\t<li>21.25% - Teste de avalia&ccedil;&atilde;o 1 (teoricas)</li>\n\t<li>21.25% - Teste de avalia&ccedil;&atilde;o 2&nbsp;(teoricas)</li>\n\t<li>42.50% - Projeto (pr&aacute;ticas)</li>\n\t<li>10% - Assiduidade&nbsp; (M&iacute;nimo de 75% de presen&ccedil;as nas aulas) - Durante o semestre</li>\n\t<li>5% - Participa&ccedil;&atilde;o - Durante o semestre</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p>Quest&otilde;es /&nbsp; Quizzes (Referentes aos cap&iacute;tulos atribu&iacute;dos) - Durante o semestre - poder&aacute; ser contabilizado para a avalia&ccedil;&atilde;o</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 27,
+  "fields": {
+    "nome": "Interação Humano-Máquina",
+    "sigla": "11047",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "\n\t\n\tAdquirir competências em Desenho de Interação e Desenho Inclusivo.\n\t\n\t\n\tCompreender como a perceção humana e funções cognitivas influenciam a interação entre o humano e o computador. Compreender que a diferentes interações correspondem diferentes interfaces utilizador.\n\t\n\t\n\tCompreender o impacto dos públicos heterogéneos e dos fatores culturais no desenho de aplicações\n\t\n\t\n\tAprender metodologias de projeto que facilitem o desenho de experiências satisfatórias para o utilizador;\n\t\n\t\n\tCriar protótipos de alta fidelidade e recolher feed-back junto do Público-Alvo;\n\t\n\t\n\tAprender a planear, desenhar e realizar estudos de avaliação da usabilidade ao longo do ciclo de desenvolvimento de software. Saber tratar e analisar dados, bem como apresentar resultados de forma sucinta.\n\t\n\t\n\tAplicar as competências adquiridas ao desenvolvimento de sistemas de informação.\n\t\n\n",
+    "conteudos": "O que é o Desenho de Interação? Compreender e conceptualizar a interação. O impacto da Teoria da Actividade. Desenhar com a acessibilidade em mente. Princípios para  inclusão. Os contributos da psicologia cognitiva no estudo da interação humano-máquina. Perceção humana e funções cognitivas que influenciam o desempenho do utilizador e a satisfação. Desenvolvimento e Avaliação de Protótipos iniciais. Tipos de estudos em user experience, ao longo do ciclo de vida do projeto. Análise crítica aos resultados do estudo para melhorias no protótipo.\n",
+    "metodologia": "\n\nAs metodologias utilizadas podem ser consideradas de aprendizagem baseada em projetos, e/ou aprendizagem experiencial em que várias competências são adquiridas através de pesquisa/exploração, implementação e análise crítica do que foi alcançado.\n",
+    "bibliografia": "Norman, D. (2003). Emotional Design: Why We Love (or Hate) Everyday Things. Basic Books. Kindle Edition.\n\nDavis, G. (2004). Characteristics of attention and visual short-term memory: implications for visual interface design. Philosophical Transactions of a Royal Society: Mathematical Physical Engineering Sciences, 362(1825). https://doi.org/10.1098/rsta.2004.1462\n\nGilbert, R. (2019). Inclusive Design for a Digital World: Design with Accessibility in Mind. Apress.\n\nPreece, J.   Rogers, Y., & Sharp, H. (2015). Interaction design - Beyond human computer interaction (4th ed). Chichester: John Wiley & Sons. \n\nWorld Wide Web Consortium. (2021). Accessibility Guidelines (WCAG) 3.0. W3C. https://www.w3.org/TR/wcag-3.0/#about-wcag-3-0\n",
+    "avaliacao": "<p>&nbsp;</p>\n\n<p style=\"text-align:center\"><em>Projeto em grupo; prot&oacute;tipo e avalia&ccedil;&atilde;o com utilizadores</em></p>\n\n<p style=\"text-align:center\"><em>Data limite</em></p>\n\n<p style=\"text-align:center\"><em>avalia&ccedil;&atilde;o cont&iacute;nua, com entregas parcelares. Consultar Enunciado do projeto no moodle (detalhe)</em></p>\n\n<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\n<p style=\"text-align:center\"><em>70%</em></p>\n\n<p style=\"text-align:center\">Projeto individual: Avalia&ccedil;&atilde;o Heur&iacute;stica</p>\n\n<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\n<p style=\"text-align:center\"><em>20%</em></p>\n\n<p style=\"text-align:center\">Assiduidade e participa&ccedil;&atilde;o nas aulas e no projeto</p>\n\n<p style=\"text-align:center\"><strong><em>Pondera&ccedil;&atilde;o</em></strong></p>\n\n<p style=\"text-align:center\">10%</p>\n\n<p style=\"text-align:center\"><meta charset=\"utf-8\"></p>\n\n<p dir=\"ltr\" id=\"docs-internal-guid-61ff9fcc-7fff-f048-2768-6eb4668a3c68\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Cada grupo tem de planificar o projeto e fazer um relat&oacute;rio no final, assinado por todos os elementos do grupo sobre os contributos de cada.</span></p>\n\n<p style=\"text-align:center\">&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 28,
+  "fields": {
+    "nome": "Computação Móvel",
+    "sigla": "16925",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais da computação móvel. O aluno deverá ser capaz de perceber como tirar o máximo partido das vantagens da computação móvel (localização, sensores, contextual), quando aplicados à resolução de problema concretos. O aluno deverá estar sensibilizado para os constrangimentos típicos de uma aplicação móvel (autonomia, conectividade, usabilidade) e conhecer os mecanismos que permitem ultrapassar esses constrangimentos.\n\nConcretamente, o aluno deverá conhecer os 4 modelos de desenvolvimento de aplicações móveis (Web, Híbrido-Web, Híbrido-Nativo e Nativo) e saber aplicar os conceitos utilizando pelo menos 2 destes modelos - nomeadamente Híbrido-Nativo (Flutter) e Nativo (Android Kotlin).\n",
+    "conteudos": "Faceta \"conceptual\"\n\n\n\tComputação Móvel / Sistemas Ubíquos / IoT\n\tArquitetura e desenvolvimento de aplicações móveis (Web, Híbridas, Nativas) - Usabilidade e Interação\n\tConectividade\n\tGeo-localização\n\tAutonomia\n\tSensores\n\tIntegração com serviços externos\n\tModelos de negócio\n\n\nFaceta \"prática\"\n\n\n\tArquitetura de aplicações móveis\n\t\n\t\tSeparação UI/Lógica de Negócio\n\t\tProgramação de widgets\n\t\tGestão de estado\n\t\tTestes unitários / integração\n\t\tInjeção de dependências\n\t\tProgramação assíncrona\n\t\tPadrão repositório\n\t\n\t\n\n",
+    "metodologia": "As aulas teóricas incluem muitos exercícios de \"brainstorming\" em que os alunos são expostos a um problema de computação móvel e têm que o resolver colaborativamente, em grupos formados espontâneamente na aula. Os resultados são partilhados com todos através da ferramenta padlet.\n\nExiste um exercício teórico em que os alunos têm que preparar um vídeo durante o qual analisam criticamente uma aplicação móvel à sua escolha. A preparação do vídeo e gravação do mesmo trabalha a capacidade de análise, espírito crítico e criatividade, sem descurar a capacidade de comunicação.\n\nHá uma aula com oradores convidados da indústria, que trabalham na área da computação móvel.\n\nNas aulas práticas, usa-se o modelo de \"flipped learning\" - são publicados vídeos a explicar os conceitos antes da aula prática, de forma a que os alunos possam usar o tempo das aulas para praticar e tirar dúvidas.\n\nO projeto é sempre uma aplicação \"realista\", que poderia perfeitamente estar disponível na app store e google play.  \n",
+    "bibliografia": "\n\tPoslad, S. (2011). Ubiquitous computing: smart devices, environments and interactions. John Wiley & Sons.\n\tGriffiths, D., & Griffiths, D. (2021). Head First Android Development. Third edition. O'Reilly Media, Inc.\n\tMota, C. (2020). Android Training Program (curso online) -  https://www.youtube.com/channel/UCIEBWb2nz2huEllUHhH4Lfg\n\n\n \n",
+    "avaliacao": "<p><strong>Componente te&oacute;rica</strong> (40%, min: 9,5)</p>\n\n<ul>\n\t<li><strong>Participa&ccedil;&atilde;o</strong>&nbsp;(5%) - quizzes feitos ap&oacute;s&nbsp;a aula,&nbsp;a&nbsp;nota final &eacute; calculada a partir do n&uacute;mero de exerc&iacute;cios submetidos dentro do prazo (n&atilde;o interessa se acertam ou n&atilde;o)</li>\n\t<li><strong>Trabalho + apresenta&ccedil;&atilde;o individual</strong> (25%) - an&aacute;lise de uma aplica&ccedil;&atilde;o m&oacute;vel e apresenta&ccedil;&atilde;o dos resultados em v&iacute;deo</li>\n\t<li><strong>Frequ&ecirc;ncia final presencial&nbsp;</strong>(70%) - nota m&iacute;nima: 8 valores</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p><strong>Componente pr&aacute;tica</strong> (60%, min: 9,5)</p>\n\n<ul>\n\t<li><strong>Projecto</strong>&nbsp;- aplica&ccedil;&atilde;o&nbsp;em Dart/Flutter, desenvolvida em grupos de 2 alunos com defesa individual presencial.<br />\n\tO projeto exercita diversas componentes do desenvolvimento m&oacute;vel: navega&ccedil;&atilde;o e layout, formul&aacute;rios, persist&ecirc;ncia, comunica&ccedil;&atilde;o com webservices, funcionamento em offline, geo-localiza&ccedil;&atilde;o.</li>\n\t<li><strong>Pontos extra</strong> -&nbsp;Algumas fichas pr&aacute;ticas/ desafios opcionais, podem acrescentar valores a somar &agrave; nota final pr&aacute;tica<br />\n\t&nbsp;</li>\n</ul>\n\n<p>A defesa do projeto &eacute; presencial e individual e resulta numa percentagem entre 0 e 100% que &eacute; aplicada &agrave; nota do projeto.</p>\n\n<p>Em &eacute;poca de recurso e especial mant&ecirc;m-se a nota m&iacute;nima em cada um dos componentes e a propor&ccedil;&atilde;o entre as mesmas (te&oacute;rica: 40%, pr&aacute;tica: 60%).</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 29,
+  "fields": {
+    "nome": "Inteligência Artificial",
+    "sigla": "2129",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "Os objectivos de aprendizagem desta cadeira incluem (1) Entendimento profundo dos aspectos conceituais que dão origem à IA, nomeadamente a formalização do conceito de computação universal via manipulação de símbolos, e a computação baseada em redes de neurónios; (2) os métodos e representações usados para estudar o funcionamento de qualquer máquina; (3) Desenho e implementação de agentes racionais e o conceito de \"processamento de informação\"; (4) Algoritmos clássicos de busca não informada: British Museum, DFS e BFS; (5) Busca informada: Dijkstra e A*; (6) Formalização e resolução de problemas de satisfação de restrições (CSP); (7) conhecimentos básicos de técnicas avançadas de inteligência artificial nos domínios de machine learning e data science; e (8) Conhecimentos sobre os usos da inteligência artificial na sociedade incluindo aspectos relacionados com ética e o futuro de IA.\n",
+    "conteudos": "\n\tConceitos Básicos\n\t\n\t\tDefinições de IA\n\t\tMáquina de Turing\n\t\tRedes neuronais de McCulloch e Pitts\n\t\tCómo analisar máquinas? diagramas de transição de estados\n\t\n\t\n\tBusca\n\t\n\t\tO conceito de agente de busca em IA\n\t\tEspaços e Grafos de busca\n\t\tBusca não informada: British Museum, DFS, BFS\n\t\tBusca Informada: Dijkstra e A*\n\t\tBusca adversária\n\t\n\t\n\tProblemas de satisfação de restrições\n\tNocões básicas de sistemas de recomendação\n\tO futuro de IA\n\t\n\t\tAnalise critica de artigos recentes em IA\n\t\n\t\n\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\tRussell, S., & Norvig, P. (2020). Artificial intelligence: a modern approach. 4th edition. http://aima.cs.berkeley.edu\n\n\n \n",
+    "avaliacao": "<p><strong><big>Componente te&oacute;rica</big></strong></p>\n\n<p>&nbsp;</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Teste MidTerm</td>\n\t\t\t<td style=\"text-align: center;\">Semana 8</td>\n\t\t\t<td style=\"text-align: center;\">30%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Teste final</td>\n\t\t\t<td style=\"text-align: center;\">Data definida pela coordena&ccedil;&atilde;o</td>\n\t\t\t<td style=\"text-align: center;\">40%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Participa&ccedil;&atilde;o e quizzes</td>\n\t\t\t<td style=\"text-align: center;\">Cont&iacute;nua</td>\n\t\t\t<td style=\"text-align: center;\">30%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p><strong><big>Componente pr&aacute;tica</big></strong></p>\n\n<p>&nbsp;</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Avalia&ccedil;&atilde;o continua fichas pr&aacute;ticas&nbsp;</td>\n\t\t\t<td style=\"text-align: center;\">Cont&iacute;nua</td>\n\t\t\t<td style=\"text-align: center;\">60%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Participa&ccedil;&atilde;o e quizzes</td>\n\t\t\t<td style=\"text-align: center;\">Cont&iacute;nua</td>\n\t\t\t<td style=\"text-align: center;\">20%</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">Projeto</td>\n\t\t\t<td style=\"text-align: center;\">Cont&iacute;nua</td>\n\t\t\t<td style=\"text-align: center;\">20%</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>A nota final &eacute; a m&eacute;dia das duas componentes no caso do aluno/a ter aprovado ambas componentes. Caso o aluno/a n&atilde;o aprove pelo menos umas&nbsp;das componentes a cadeira &eacute; reprovada. Os exames de recurso s&atilde;o especificos por componente.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 30,
+  "fields": {
+    "nome": "Segurança Informática",
+    "sigla": "11194",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "No final da cadeira, os estudantes deverão: Identificar os diferentes domínios e aplicações da segurança informática. Perceber e utilizar os principais algoritmos de encriptação, assim como quantificar os níveis de segurança que permitem assegurar. Conhecer e perceber as actuais ameaças à segurança em redes de dados e as boas práticas necessárias para as evitar. Conceber e implementar aplicações em rede obedecendo a elevados requisitos de segurança mesmo utilizando canais de comunicação inseguros Utilizar os conceitos adquiridos em cenários reais, no contexto do projecto / estágio profissional a realizar no ano lectivo.\n",
+    "conteudos": "¿Introdução à Segurança Informática ¿Conceitos fundamentais de Segurança Informática ¿Paradigmas de Segurança ¿Criptografia ¿Algoritmos de segurança ¿Autenticação e autorização ¿Gestão de chaves ¿Segurança de Redes ¿Firewalls ¿IDS/IPS ¿Redes sem fios ¿Arquitecturas de Segurança ¿Protocolos de comunicação segura ¿Tipificação de vulnerabilidades e ataques ¿Segurança de Software ¿Políticas e gestão de segurança\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\tMatt Bishop (2004), Introduction to Computer Security. Addison Wesley Professional.\n\tWilliam Stallings (2003), Network Security Essentials Applications and Standards, Prentice Hall, 2 Ed.\n\tWilliam Stallings (2005), Cryptography and Network Security Principles and Practices. Prentice Hall, 4 Ed.\n\tC. P. Pfleeger, S. L. Pfleeger (2006), Security in Computing, Prentice Hall, 4 Ed\n\tBruce Schneier (1996), Applied Cryptography. John Wiley & Sons, 2 Ed.\n\tA. Zúquete (2006) Segurança em redes informáticas. FCA.\n\tM. Correia, P. Sousa (2017) Segurança no software. FCA\n\n\n \n",
+    "avaliacao": "<p>Exame: 50%</p>\n\n<p>Projecto pr&aacute;tico: 50%</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 31,
+  "fields": {
+    "nome": "Sistemas de Informação na Nuvem",
+    "sigla": "22514",
+    "ano": 3,
+    "semestre": 2,
+    "creditos": 5,
+    "imagem": "",
+    "objetivos": "\n\tEntenda por que as empresas estão migrando para serviços em nuvem para apoiar seus negócios\n\tQuais são os modelos de negócios\n\tQuais são os principais provedores de serviços\n\tPrincipais conceitos da arquitetura em nuvem\n\tRecursos práticos para criar e implantar um serviço em nuvem\n\n",
+    "conteudos": "Aulas teóricas:\n\n\n\tVisão geral: história, mercado, tendências\n\tRevisão de arquiteturas distribuídas: SOA, orientado a eventos Componentes e Serviços\n\tO que é uma nuvem? Privado, público, híbrido\n\tTecnologias, modelos de negócios, principais fornecedores de serviços nacionais e internacionais\n\t\n\t\tIaaS\n\t\tBaaS\n\t\tPaaS\n\t\tSaaS\n\t\toutras\n\t\n\t\n\n\nAgenda Prática:\n\n\n\t1º Trabalho - IaaS e PaaS\n\t\n\t\tAWS EC2 - Implante e execute o servidor ubuntu\n\t\tDocker PaaS - AWS Beanstalk\n\t\tHeroku - implantação de 2 aplicativos, cada um por serviço\n\t\n\t\n\t2º Trabalho - SaaS e BaaS\n\t\n\t\tTrello Board\n\t\tAWS BaaS\n\t\tFirebase (armazenar dados e média)\n\t\n\t\n\n\nCada trabalho tem um planeamento prático de 6 aulas\n",
+    "metodologia": "Por descrever\n",
+    "bibliografia": "\n\tAbdula, M., Averdunk, I., Barcia, R., Brown, K., & Emuchay, N. (2018). The Cloud Adoption Playbook: Proven Strategies for Transforming Your Organization with the Cloud (1 edition). Wiley.\n\tBagley, R. O. (2014). How The Cloud And Big Data Are Changing Small Business. Forbes. https://www.forbes.com/sites/rebeccabagley/2014/07/15/how-the-cloud-and-big-data-are-changing-small-business/\n\tBond, J. (2015). The Enterprise Cloud: Best Practices for Transforming Legacy IT (1 edition). O'Reilly Media.\n\tJackson, K. L., & Goessling, S. (2018). Architecting Cloud Computing Solutions: Build cloud strategies that align technology and economics while effectively managing risk (1 edition). Packt Publishing.\n\tRafaels, M. R. J. (2015). Cloud Computing: From Beginning to End. CreateSpace Independent Publishing Platform\n\n",
+    "avaliacao": "<p><strong>Teoria - 50%</strong></p>\n\n<ul>\n\t<li>Participa&ccedil;&atilde;o - 5%</li>\n\t<li>Testes online durante as aulas - 10%</li>\n\t<li>Trabalho de grupo + apresenta&ccedil;&atilde;o - 15%</li>\n</ul>\n\n<p><strong>Teste final - 20%</strong></p>\n\n<ul>\n\t<li>Projetos - 50%\n\t<ul>\n\t\t<li>2 projetos: IaaS, PaaS, SaaS, BaaS</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Nota m&iacute;nima em cada componente 9,5 valores em 20.</p>\n",
+    "natureza": "Obrigatório",
+    "licenciatura": 1,
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 1,
+  "fields": {
+    "nome": "Python",
+    "logo": "",
+    "link_oficial": "https://www.python.org",
+    "descricao": "Linguagem de programação de alto nível, versátil e amplamente utilizada em desenvolvimento web, ciência de dados e automação.",
+    "nivel_interesse": 5
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 2,
+  "fields": {
+    "nome": "Django",
+    "logo": "",
+    "link_oficial": "https://www.djangoproject.com",
+    "descricao": "Framework web em Python que incentiva o desenvolvimento rápido e design pragmático. Usado neste portfólio.",
+    "nivel_interesse": 5
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 3,
+  "fields": {
+    "nome": "HTML5",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "descricao": "Linguagem de marcação base da web para estruturação de conteúdo.",
+    "nivel_interesse": 4
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 4,
+  "fields": {
+    "nome": "CSS3",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "descricao": "Linguagem de estilos para definição visual de páginas web.",
+    "nivel_interesse": 4
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 5,
+  "fields": {
+    "nome": "JavaScript",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "descricao": "Linguagem de programação da web para adicionar interatividade e dinamismo às páginas.",
+    "nivel_interesse": 4
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 6,
+  "fields": {
+    "nome": "Java",
+    "logo": "",
+    "link_oficial": "https://www.java.com",
+    "descricao": "Linguagem orientada a objetos amplamente utilizada em desenvolvimento empresarial e mobile.",
+    "nivel_interesse": 3
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 7,
+  "fields": {
+    "nome": "C",
+    "logo": "",
+    "link_oficial": "https://en.wikipedia.org/wiki/C_(programming_language)",
+    "descricao": "Linguagem de programação de baixo nível fundamental para sistemas operativos e software embarcado.",
+    "nivel_interesse": 3
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 8,
+  "fields": {
+    "nome": "SQL / SQLite",
+    "logo": "",
+    "link_oficial": "https://www.sqlite.org",
+    "descricao": "Linguagem de consulta para bases de dados relacionais.",
+    "nivel_interesse": 4
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 9,
+  "fields": {
+    "nome": "Git",
+    "logo": "",
+    "link_oficial": "https://git-scm.com",
+    "descricao": "Sistema de controlo de versões distribuído.",
+    "nivel_interesse": 5
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 10,
+  "fields": {
+    "nome": "Linux",
+    "logo": "",
+    "link_oficial": "https://www.linux.org",
+    "descricao": "Sistema operativo open-source usado em desenvolvimento e backend.",
+    "nivel_interesse": 3
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 1,
+  "fields": {
+    "nome": "Portfólio Web Pessoal",
+    "descricao": "Aplicação web desenvolvida em Django para apresentação do percurso académico e projetos.",
+    "conceitos_aplicados": "Framework Django, ORM, templates, admin, migrações, HTML/CSS e media files.",
+    "unidade_curricular": 20,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/PedroP0202/Projecto_Programacao_web_.git",
+    "url_deploy": "",
+    "tecnologias": [
+      1,
+      2,
+      3,
+      4,
+      8
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 2,
+  "fields": {
+    "nome": "Sistema de Gestão de Biblioteca",
+    "descricao": "Aplicação de gestão de livros, autores e empréstimos com interface web básica em Django.",
+    "conceitos_aplicados": "Modelação relacional, ForeignKey, ManyToMany, Django ORM e SQL.",
+    "unidade_curricular": 13,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/pedropiedade/biblioteca-django",
+    "url_deploy": "",
+    "tecnologias": [
+      1,
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 3,
+  "fields": {
+    "nome": "Jogo da Forca em Java",
+    "descricao": "Jogo da forca em modo texto implementado em Java com programação orientada a objetos.",
+    "conceitos_aplicados": "POO, herança, polimorfismo, encapsulamento, ArrayList e exceções.",
+    "unidade_curricular": 15,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/pedropiedade/jogo-forca-java",
+    "url_deploy": "",
+    "tecnologias": [
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 4,
+  "fields": {
+    "nome": "Simulador de Mundo — DeisiWorld",
+    "descricao": "Aplicação Java para simulação de um mundo com países e cidades. Carregamento de dados em CSV, análise estatística e filtragem.",
+    "conceitos_aplicados": "Parsing CSV, Arrays, ArrayList, HashMap, encapsulamento, JUnit testing, Checkstyle",
+    "unidade_curricular": 15,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/pedropiedade/deisiworld",
+    "url_deploy": "",
+    "tecnologias": [
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 5,
+  "fields": {
+    "nome": "Aplicação de Desenvolvimento de Interfaces",
+    "descricao": "Projeto prático de interfaces web responsivas com foco em usabilidade.",
+    "conceitos_aplicados": "HTML semântico, CSS Grid, Flexbox, media queries, acessibilidade e UX.",
+    "unidade_curricular": 14,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/pedropiedade/interfaces-web",
+    "url_deploy": "",
+    "tecnologias": [
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 6,
+  "fields": {
+    "nome": "Simulador de Mundo - DeisiWorld",
+    "descricao": "Aplicação Java para simulação de um mundo com países e cidades.",
+    "conceitos_aplicados": "Parsing CSV, Arrays, ArrayList, HashMap, encapsulamento e testes.",
+    "unidade_curricular": 15,
+    "imagem": "",
+    "video_link": null,
+    "repositorio_git": "https://github.com/pedropiedade/deisiworld",
+    "url_deploy": "",
+    "tecnologias": [
+      6
+    ]
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 1,
+  "fields": {
+    "titulo": "Desenvolvimento Web",
+    "categoria": "Hard Skill",
+    "descricao": "Capacidade de criar aplicações web full-stack usando Django, HTML, CSS e JavaScript.",
+    "nivel": 3
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 2,
+  "fields": {
+    "titulo": "Programação Orientada a Objetos",
+    "categoria": "Hard Skill",
+    "descricao": "Domínio de conceitos como herança, polimorfismo e encapsulamento em Java e Python.",
+    "nivel": 3
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 3,
+  "fields": {
+    "titulo": "Gestão de Bases de Dados",
+    "categoria": "Hard Skill",
+    "descricao": "Modelação relacional, escrita de queries SQL e utilização de ORMs como o Django ORM.",
+    "nivel": 3
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 4,
+  "fields": {
+    "titulo": "Controlo de Versões com Git",
+    "categoria": "Hard Skill",
+    "descricao": "Uso diário de Git para gestão de código e colaboração em equipa.",
+    "nivel": 4
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 5,
+  "fields": {
+    "titulo": "Sistemas Operativos Linux",
+    "categoria": "Hard Skill",
+    "descricao": "Comandos shell, gestão de processos e scripting bash básico.",
+    "nivel": 2
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 6,
+  "fields": {
+    "titulo": "Algoritmos e Estruturas de Dados",
+    "categoria": "Hard Skill",
+    "descricao": "Implementação e análise de algoritmos de ordenação, pesquisa e estruturas de dados.",
+    "nivel": 2
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 7,
+  "fields": {
+    "titulo": "Trabalho em Equipa",
+    "categoria": "Soft Skill",
+    "descricao": "Experiência em projetos colaborativos académicos com Git e metodologias simples.",
+    "nivel": 4
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 8,
+  "fields": {
+    "titulo": "Resolução de Problemas",
+    "categoria": "Soft Skill",
+    "descricao": "Abordagem sistemática a problemas técnicos, com capacidade de depuração.",
+    "nivel": 4
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 9,
+  "fields": {
+    "titulo": "Comunicação Técnica",
+    "categoria": "Soft Skill",
+    "descricao": "Capacidade de documentar código e apresentar projetos.",
+    "nivel": 3
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 10,
+  "fields": {
+    "titulo": "Aprendizagem Contínua",
+    "categoria": "Soft Skill",
+    "descricao": "Motivação para explorar novas tecnologias e manter-se atualizado.",
+    "nivel": 5
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 11,
+  "fields": {
+    "titulo": "Gestão do Tempo",
+    "categoria": "Soft Skill",
+    "descricao": "Capacidade de gerir múltiplos projetos com prazos definidos.",
+    "nivel": 3
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 1,
+  "fields": {
+    "titulo": "Inteligência Artificial e Machine Learning",
+    "descricao": "Interesse pelo potencial da IA para resolver problemas reais, com foco especial em NLP e modelos generativos.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 2,
+  "fields": {
+    "titulo": "Desenvolvimento Web Full-Stack",
+    "descricao": "Gosto por criar aplicações web completas, desde o backend até à interface.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 3,
+  "fields": {
+    "titulo": "Open Source",
+    "descricao": "Interesse em contribuir para projetos da comunidade e aprender com código aberto.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 4,
+  "fields": {
+    "titulo": "Cibersegurança",
+    "descricao": "Curiosidade crescente sobre proteção de sistemas, criptografia e ethical hacking introdutório.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 5,
+  "fields": {
+    "titulo": "Ciência de Dados",
+    "descricao": "Interesse em extrair conhecimento de dados através de visualização, estatística e machine learning.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 6,
+  "fields": {
+    "titulo": "Desporto e Bem-estar",
+    "descricao": "A prática regular de desporto ajuda a manter equilíbrio durante o percurso académico.",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 1,
+  "fields": {
+    "titulo": "Licenciatura em Engenharia Informática",
+    "instituicao": "Universidade Lusófona de Humanidades e Tecnologias",
+    "data_inicio": "2022-09-01",
+    "data_fim": null,
+    "descricao": "Curso focado em desenvolvimento de software, sistemas de informação, redes e inteligência artificial.",
+    "local": "Lisboa, Portugal"
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 2,
+  "fields": {
+    "titulo": "CS50: Introduction to Computer Science",
+    "instituicao": "Harvard University (edX)",
+    "data_inicio": "2023-06-01",
+    "data_fim": "2023-08-31",
+    "descricao": "Curso introdutório de ciência da computação cobrindo C, Python, SQL, HTML/CSS e Flask.",
+    "local": "Online"
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 3,
+  "fields": {
+    "titulo": "Python para Ciência de Dados",
+    "instituicao": "Coursera / IBM",
+    "data_inicio": "2024-01-01",
+    "data_fim": "2024-03-31",
+    "descricao": "Curso de análise de dados com Python, Pandas, NumPy e Matplotlib.",
+    "local": "Online"
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 4,
+  "fields": {
+    "titulo": "Git e GitHub para Iniciantes",
+    "instituicao": "Udemy",
+    "data_inicio": "2022-10-01",
+    "data_fim": "2022-10-31",
+    "descricao": "Formação prática em controlo de versões com Git e GitHub.",
+    "local": "Online"
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 1,
+  "fields": {
+    "titulo": "Implementação de um Sistema de Domótica Seguro",
+    "autores": "João Silva, Maria Santos",
+    "orientadores": "Dr. Carlos Oliveira",
+    "ano": 2025,
+    "resumo": "Este projeto explora a segurança em sistemas IoT residenciais...",
+    "imagem": "",
+    "destaque": true,
+    "link_repositorio": null
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 2,
+  "fields": {
+    "titulo": "Análise de Sentimento em Redes Sociais com IA",
+    "autores": "Ana Pereira",
+    "orientadores": "Dra. Luísa Costa",
+    "ano": 2025,
+    "resumo": "Utilização de modelos de linguagem para processamento de texto natural...",
+    "imagem": "",
+    "destaque": false,
+    "link_repositorio": null
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 1,
+  "fields": {
+    "data": "2026-04-15T12:23:53.196Z",
+    "titulo": "Decisões de Modelação e Importação de Dados",
+    "descricao": "Documentação das decisões tomadas durante a modelação e importação dos dados do portfólio.",
+    "imagem_caderno": "",
+    "decisoes_tomadas": "1. Modelos académicos e pessoais mantidos separados para facilitar navegação e administração.\n2. Dados das UCs e TFCs preparados para seed automático no deploy.\n3. Deploy configurado para usar Postgres em produção em vez de SQLite.",
+    "erros_e_correcoes": "- Ajuste da configuração para produção com ALLOWED_HOSTS e SECRET_KEY por ambiente.\n- Remoção da dependência da base de dados local para deploy.\n- Campo de imagem do Making Of tornado opcional para não bloquear o admin.",
+    "uso_ia": "A IA foi utilizada para acelerar a preparação do deploy, refatorar configurações e consolidar a seed de dados."
+  }
+}
+]

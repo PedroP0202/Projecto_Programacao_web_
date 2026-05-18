@@ -12,7 +12,7 @@ class ArtigoForm(forms.ModelForm):
 class ComentarioForm(forms.ModelForm):
     class Meta:
         model = Comentario
-        fields = ['texto']
+        fields = ['nome_autor', 'texto']
         labels = {
             'texto': 'Comentário',
         }

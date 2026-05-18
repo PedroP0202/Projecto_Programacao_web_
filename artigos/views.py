@@ -1,12 +1,12 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.core.exceptions import PermissionDenied
-from django.db.models import Count, Exists, OuterRef
+from django.db.models import Avg, Count, Exists, OuterRef
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 
 from .forms import ArtigoForm, ComentarioForm
-from .models import Artigo, Like
+from .models import Artigo, Like, Rating
 from .utils import user_is_author
 
 
@@ -20,6 +20,7 @@ def lista_artigos(request):
         .prefetch_related('comentarios__autor')
         .annotate(likes_count=Count('likes', distinct=True))
         .annotate(user_liked=Exists(liked_filter.filter(artigo=OuterRef('pk'))))
+        .annotate(rating_avg=Avg('ratings__valor'))
     )
     for artigo in artigos:
         artigo.comentario_form = ComentarioForm(prefix=f'comentario-{artigo.pk}')
@@ -98,7 +99,6 @@ def gostar_artigo(request, pk):
     return redirect('artigos:lista')
 
 
-@login_required
 @require_POST
 def comentar_artigo(request, pk):
     artigo = get_object_or_404(Artigo, pk=pk)
@@ -107,11 +107,31 @@ def comentar_artigo(request, pk):
     if form.is_valid():
         comentario = form.save(commit=False)
         comentario.artigo = artigo
-        comentario.autor = request.user
+        if request.user.is_authenticated:
+            comentario.autor = request.user
         comentario.save()
         messages.success(request, 'Comentário publicado com sucesso.')
     else:
         messages.error(request, 'Não foi possível publicar o comentário.')
+
+    return redirect('artigos:lista')
+
+
+@require_POST
+def rating_artigo(request, pk):
+    artigo = get_object_or_404(Artigo, pk=pk)
+    valor = request.POST.get('valor')
+    
+    if valor and valor.isdigit() and 1 <= int(valor) <= 5:
+        rating_kwargs = get_like_kwargs(request)  # We can reuse this logic
+        Rating.objects.update_or_create(
+            artigo=artigo,
+            **rating_kwargs,
+            defaults={'valor': int(valor)}
+        )
+        messages.success(request, 'Rating submetido com sucesso.')
+    else:
+        messages.error(request, 'Valor de rating inválido.')
 
     return redirect('artigos:lista')
 

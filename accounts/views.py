@@ -54,8 +54,8 @@ def register_view(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             user = form.save()
-            autores_group, _ = Group.objects.get_or_create(name='autores')
-            user.groups.add(autores_group)
+            bloggers_group, _ = Group.objects.get_or_create(name='bloggers')
+            user.groups.add(bloggers_group)
             login(request, user)
             messages.success(request, 'Registo efetuado com sucesso.')
             return redirect('home')

@@ -155,19 +155,55 @@
             padding-top: 16px;
         }
 
-        .comment {
-            background: #f8fafc;
-            border-left: 4px solid #0f766e;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            padding: 10px 12px;
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .header-top h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #0f766e;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .mostrar {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+                color: #0f766e;
+            }
+            nav .auth {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="header-top">
+            <h1><a href="{% url 'landing_page' %}" style="text-decoration: none; color: inherit;">Portfólio</a></h1>
+            <span class="hamburger">&#9776;</span>
+        </div>
         <nav>
-            <a href="{% url 'home' %}">Início</a>
+            <a href="{% url 'sobre' %}">Sobre</a>
+            <a href="{% url 'home' %}">Dashboard</a>
             <a href="{% url 'licenciatura' %}">Licenciatura</a>
             <a href="{% url 'ucs' %}">Disciplinas</a>
             <a href="{% url 'docentes' %}">Docentes</a>
@@ -178,6 +214,7 @@
             <a href="{% url 'interesses' %}">Interesses</a>
             <a href="{% url 'tfcs' %}">TFCs</a>
             <a href="{% url 'makingof' %}">Making Of</a>
+            <a href="{% url 'videotutoriais' %}">Videotutoriais</a>
             <a href="{% url 'artigos:lista' %}">Artigos</a>
             <a href="{% url 'cursos' %}">Escola Online</a>
             {% if request.user.is_authenticated %}
@@ -200,5 +237,12 @@
         {% endif %}
         {% block content %}{% endblock %}
     </main>
+    <script>
+        const menu = document.querySelector('nav');
+        const botao = document.querySelector('.hamburger');
+        botao.addEventListener('click', () => {
+            menu.classList.toggle('mostrar');
+        });
+    </script>
 </body>
 </html>

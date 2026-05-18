@@ -1,0 +1,74 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Bem-vindo ao meu Portfólio{% endblock %}
+
+{% block content %}
+<style>
+    /* Remover paddings do main apenas na landing page */
+    main {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .hero {
+        height: 80vh;
+        background: linear-gradient(rgba(15, 118, 110, 0.7), rgba(15, 23, 42, 0.8)), 
+                    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        max-width: 800px;
+    }
+    
+    .hero-menu {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-btn {
+        background: #ffffff;
+        color: #0f766e;
+        padding: 12px 24px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .hero-btn:hover {
+        background: #0f766e;
+        color: white;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+</style>
+
+<div class="hero">
+    <h2>Bem-vindo ao meu Portfólio Web</h2>
+    <p>Explore o meu percurso académico, os projetos que desenvolvi ao longo da licenciatura e as tecnologias que domino.</p>
+    
+    <div class="hero-menu">
+        <a href="{% url 'sobre' %}" class="hero-btn">Sobre Mim</a>
+        <a href="{% url 'projetos' %}" class="hero-btn">Projetos</a>
+        <a href="{% url 'artigos:lista' %}" class="hero-btn">Blog / Artigos</a>
+    </div>
+</div>
+{% endblock %}

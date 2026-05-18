@@ -28,6 +28,7 @@ from .models import (
     Tecnologia,
     TFC,
     UnidadeCurricular,
+    Videotutorial,
 )
 
 
@@ -257,3 +258,17 @@ def get_crud_config(model_slug):
         return PORTFOLIO_CRUD[model_slug]
     except KeyError as exc:
         raise Http404('Tipo de conteúdo não encontrado.') from exc
+
+
+def landing_page_view(request):
+    return render(request, 'portfolio/landing_page.html')
+
+
+def sobre_view(request):
+    return render(request, 'portfolio/sobre.html')
+
+
+def videotutoriais_view(request):
+    videotutoriais = Videotutorial.objects.all()
+    return render(request, 'portfolio/videotutoriais.html', {'videotutoriais': videotutoriais})
+

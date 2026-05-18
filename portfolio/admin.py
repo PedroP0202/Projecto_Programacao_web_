@@ -10,7 +10,7 @@ from .models import (
     Tecnologia,
     TFC,
     UnidadeCurricular,
-
+    Videotutorial,
 )
 
 admin.site.register([
@@ -24,4 +24,5 @@ admin.site.register([
     Formacao,
     TFC,
     MakingOf,
+    Videotutorial,
 ])

@@ -1,0 +1,30 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Videotutoriais{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Videotutoriais</h2>
+    <p>Aqui estão alguns dos vídeos criados por mim ao longo da cadeira para demonstrar o processo de desenvolvimento e a arquitetura desta aplicação.</p>
+    
+    <div class="grid">
+        {% for video in videotutoriais %}
+            <article>
+                <h3>{{ video.titulo }}</h3>
+                <p class="muted">{{ video.data_publicacao|date:"d M, Y" }}</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/{{ video.youtube_id }}" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p style="margin-top: 15px;">{{ video.descricao }}</p>
+            </article>
+        {% empty %}
+            <p>Nenhum videotutorial disponível no momento.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

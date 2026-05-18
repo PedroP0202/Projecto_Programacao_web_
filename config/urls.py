@@ -25,6 +25,7 @@ urlpatterns = [
     path('artigos/', include('artigos.urls')),
     path('escola/', include('escola_online.urls')),
     path('', include('portfolio.urls')),
+    path('accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:
