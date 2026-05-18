@@ -58,7 +58,7 @@ SECRET_KEY = os.getenv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = get_bool_env('DJANGO_DEBUG', 'DEBUG', default=True)
 
-ALLOWED_HOSTS = get_list_env('ALLOWED_HOSTS', ['127.0.0.1', 'localhost', 'testserver', '.vercel.app'])
+ALLOWED_HOSTS = get_list_env('ALLOWED_HOSTS', ['127.0.0.1', 'localhost', 'testserver', '.vercel.app', '.pythonanywhere.com'])
 VERCEL_URL = os.getenv('VERCEL_URL')
 if VERCEL_URL and VERCEL_URL not in ALLOWED_HOSTS:
     ALLOWED_HOSTS.append(VERCEL_URL)
