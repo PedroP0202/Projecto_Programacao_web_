@@ -83,6 +83,7 @@ INSTALLED_APPS = [
     'artigos.apps.ArtigosConfig',
     'portfolio',
     'escola_online.apps.EscolaOnlineConfig',
+    'ginasio_app',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

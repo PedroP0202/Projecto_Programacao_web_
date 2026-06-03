@@ -26,6 +26,7 @@ urlpatterns = [
     path('escola/', include('escola_online.urls')),
     path('', include('portfolio.urls')),
     path('accounts/', include('allauth.urls')),
+    path('api/', include('ginasio_app.urls')),
 ]
 
 if settings.DEBUG:

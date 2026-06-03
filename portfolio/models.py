@@ -97,9 +97,15 @@ class Competencia(models.Model):
 
 
 class Interesse(models.Model):
-    titulo = models.CharField(max_length=100)
-    descricao = models.TextField()
-    imagem = models.ImageField(upload_to='interesses/', null=True, blank=True)
+    nome = models.CharField(max_length= 100)
+    descricao = models.TextField(verbose_name='Descricao', default="")
+    
+
+   # imagem = models.ImageField(upload_to='interesses/', null=True, blank=True)
+
+    projetos = models.ManyToManyField(Projeto)
+   
+    
 
     def __str__(self):
         return self.titulo
@@ -157,3 +163,5 @@ class Videotutorial(models.Model):
 
     def __str__(self):
         return self.titulo
+
+
