@@ -1,0 +1,36 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Editar Participante #{{ participante_id }}{% endblock %}
+{% block content %}
+<div class="actions">
+  <a class="button secondary" href="{% url 'colega_participantes_lista' %}">← Voltar</a>
+</div>
+<section>
+  <h1>✏️ Editar Participante</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;">
+      <div>
+        <label for="ep-name">Nome *</label>
+        <input id="ep-name" name="name" type="text" required value="{{ dados.name|default:'' }}">
+      </div>
+      <div>
+        <label for="ep-email">Email *</label>
+        <input id="ep-email" name="email" type="email" required value="{{ dados.email|default:'' }}">
+      </div>
+      <div>
+        <label for="ep-age">Idade *</label>
+        <input id="ep-age" name="age" type="number" min="1" max="120" required value="{{ dados.age|default:'' }}">
+      </div>
+      <div>
+        <label for="ep-event_id">Evento *</label>
+        <select id="ep-event_id" name="event_id" required>
+          {% for ev in eventos %}
+          <option value="{{ ev.id }}" {% if dados.event_id == ev.id %}selected{% endif %}>{{ ev.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <button type="submit">💾 Guardar</button>
+  </form>
+</section>
+{% endblock %}

@@ -18,6 +18,17 @@ from .views import (
     landing_page_view,
     sobre_view,
     videotutoriais_view,
+    # Colega — Paintball Events API
+    colega_eventos_lista,
+    colega_evento_detalhe,
+    colega_evento_editar,
+    colega_evento_apagar,
+    colega_participantes_lista,
+    colega_participante_editar,
+    colega_participante_apagar,
+    colega_equipas_lista,
+    colega_equipa_editar,
+    colega_equipa_apagar,
 )
 
 urlpatterns = [
@@ -38,4 +49,19 @@ urlpatterns = [
     path('gestao/<str:model_slug>/novo/', portfolio_create, name='portfolio_create'),
     path('gestao/<str:model_slug>/<int:pk>/editar/', portfolio_update, name='portfolio_update'),
     path('gestao/<str:model_slug>/<int:pk>/apagar/', portfolio_delete, name='portfolio_delete'),
+
+    # ── API do Colega: Paintball Events ──
+    # Events
+    path('paintball/', colega_eventos_lista, name='colega_eventos_lista'),
+    path('paintball/eventos/<int:evento_id>/', colega_evento_detalhe, name='colega_evento_detalhe'),
+    path('paintball/eventos/<int:evento_id>/editar/', colega_evento_editar, name='colega_evento_editar'),
+    path('paintball/eventos/<int:evento_id>/apagar/', colega_evento_apagar, name='colega_evento_apagar'),
+    # Participants
+    path('paintball/participantes/', colega_participantes_lista, name='colega_participantes_lista'),
+    path('paintball/participantes/<int:participante_id>/editar/', colega_participante_editar, name='colega_participante_editar'),
+    path('paintball/participantes/<int:participante_id>/apagar/', colega_participante_apagar, name='colega_participante_apagar'),
+    # Teams
+    path('paintball/equipas/', colega_equipas_lista, name='colega_equipas_lista'),
+    path('paintball/equipas/<int:equipa_id>/editar/', colega_equipa_editar, name='colega_equipa_editar'),
+    path('paintball/equipas/<int:equipa_id>/apagar/', colega_equipa_apagar, name='colega_equipa_apagar'),
 ]

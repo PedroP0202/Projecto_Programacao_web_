@@ -1,0 +1,124 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Participantes – Paintball Events{% endblock %}
+
+{% block content %}
+<section>
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+    <h1 style="margin:0;">👥 Participantes</h1>
+    <a class="button secondary" href="{% url 'colega_eventos_lista' %}">← Eventos</a>
+    <a class="button secondary" href="{{ swagger_url }}" target="_blank" rel="noopener">📄 Swagger Docs</a>
+  </div>
+</section>
+
+{% if erro %}
+<section style="border-left:4px solid #b91c1c;">
+  <strong>⚠️ Erro:</strong> {{ erro }}
+</section>
+{% endif %}
+
+<!-- Filtros -->
+<section>
+  <h2>🔍 Filtrar Participantes</h2>
+  <form method="get" id="filtros-participantes" style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;max-width:900px;">
+    <div>
+      <label for="pesq-part">Pesquisar</label>
+      <input id="pesq-part" name="pesquisa" type="text" placeholder="Nome ou email…" value="{{ pesquisa }}">
+    </div>
+    <div>
+      <label for="event_id">Evento</label>
+      <select id="event_id" name="event_id">
+        <option value="">Todos os eventos</option>
+        {% for ev in eventos %}
+        <option value="{{ ev.id }}" {% if event_id == ev.id|stringformat:"d" %}selected{% endif %}>{{ ev.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="ord-part">Ordenar por</label>
+      <select id="ord-part" name="order_by">
+        <option value="name" {% if order_by == 'name' %}selected{% endif %}>Nome</option>
+        <option value="age" {% if order_by == 'age' %}selected{% endif %}>Idade</option>
+        <option value="email" {% if order_by == 'email' %}selected{% endif %}>Email</option>
+      </select>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:8px;">
+      <button type="submit">Filtrar</button>
+      <a class="button secondary" href="{% url 'colega_participantes_lista' %}">Limpar</a>
+    </div>
+  </form>
+</section>
+
+<!-- Lista -->
+{% if dados %}
+<section>
+  <h2>📋 Participantes ({{ dados|length }})</h2>
+  <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="background:#ecfeff;text-align:left;">
+          <th style="padding:10px 12px;">ID</th>
+          <th style="padding:10px 12px;">Nome</th>
+          <th style="padding:10px 12px;">Email</th>
+          <th style="padding:10px 12px;">Idade</th>
+          <th style="padding:10px 12px;">Evento</th>
+          <th style="padding:10px 12px;">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in dados %}
+        <tr style="border-top:1px solid #e5e7eb;">
+          <td style="padding:10px 12px;color:#6b7280;">{{ p.id }}</td>
+          <td style="padding:10px 12px;font-weight:700;">{{ p.name }}</td>
+          <td style="padding:10px 12px;">{{ p.email }}</td>
+          <td style="padding:10px 12px;">{{ p.age }}</td>
+          <td style="padding:10px 12px;">
+            <a href="{% url 'colega_evento_detalhe' p.event_id %}" style="color:#0f766e;">#{{ p.event_id }}</a>
+          </td>
+          <td style="padding:10px 12px;">
+            <div class="actions" style="margin:0;gap:6px;">
+              <a class="button secondary" href="{% url 'colega_participante_editar' p.id %}" style="padding:5px 10px;font-size:13px;">Editar</a>
+              <a class="button danger" href="{% url 'colega_participante_apagar' p.id %}" style="padding:5px 10px;font-size:13px;">Apagar</a>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% elif not erro %}
+<section><p class="muted">Nenhum participante encontrado.</p></section>
+{% endif %}
+
+<!-- Criar participante -->
+<section>
+  <h2>➕ Inscrever Participante</h2>
+  <form method="post" id="criar-participante-form">
+    {% csrf_token %}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;">
+      <div>
+        <label for="p-name">Nome *</label>
+        <input id="p-name" name="name" type="text" required placeholder="Nome completo">
+      </div>
+      <div>
+        <label for="p-email">Email *</label>
+        <input id="p-email" name="email" type="email" required placeholder="email@exemplo.com">
+      </div>
+      <div>
+        <label for="p-age">Idade *</label>
+        <input id="p-age" name="age" type="number" min="1" max="120" required placeholder="Ex: 25">
+      </div>
+      <div>
+        <label for="p-event_id">Evento *</label>
+        <select id="p-event_id" name="event_id" required>
+          {% for ev in eventos %}
+          <option value="{{ ev.id }}">{{ ev.name }} ({{ ev.date }})</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <button type="submit">Inscrever</button>
+  </form>
+</section>
+{% endblock %}

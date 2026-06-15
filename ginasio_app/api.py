@@ -1,8 +1,9 @@
 from django.shortcuts import get_object_or_404
 from ninja import NinjaAPI
+from ninja.security import APIKeyHeader
 from typing import List
 
-from .models import Exercicio, GrupoMuscular, PlanoTreino
+from .models import APIKey, Exercicio, GrupoMuscular, PlanoTreino
 from .schemas import (
     ErrorSchema,
     ExercicioIn,
@@ -13,9 +14,28 @@ from .schemas import (
     PlanoTreinoOut,
 )
 
+
+class AuthAPIKey(APIKeyHeader):
+    """Valida a API Key enviada no header HTTP X-API-Key."""
+    param_name = "X-API-Key"
+
+    def authenticate(self, request, key):
+        try:
+            api_key = APIKey.objects.get(key=key)
+            if api_key.is_valid():
+                return api_key.name
+        except APIKey.DoesNotExist:
+            pass
+        return None  # Ninja devolve 401 Unauthorized
+
+
 api = NinjaAPI(
     title="API RESTful Ginásio",
-    description="API para gestão de ginásio: grupos musculares, planos e exercícios.",
+    description=(
+        "API para gestão de ginásio: grupos musculares, planos e exercícios.\n\n"
+        "**Endpoints de escrita (POST/PUT/DELETE) requerem autenticação.**\n\n"
+        "Envie o header `X-API-Key: <sua_chave>` nos pedidos protegidos."
+    ),
     version="1.0.0",
 )
 
@@ -41,6 +61,7 @@ def lista_grupos(request, nome: str = None, limit: int = 10, offset: int = 0):
     response={201: GrupoMuscularOut},
     tags=["Grupos Musculares"],
     description="Cria um novo grupo muscular",
+    auth=AuthAPIKey(),
 )
 def cria_grupo(request, data: GrupoMuscularIn):
     return 201, GrupoMuscular.objects.create(**data.dict())
@@ -61,6 +82,7 @@ def ver_grupo(request, grupo_id: int):
     response={200: GrupoMuscularOut, 404: ErrorSchema},
     tags=["Grupos Musculares"],
     description="Atualiza um grupo muscular",
+    auth=AuthAPIKey(),
 )
 def atualiza_grupo(request, grupo_id: int, data: GrupoMuscularIn):
     grupo = get_object_or_404(GrupoMuscular, id=grupo_id)
@@ -75,6 +97,7 @@ def atualiza_grupo(request, grupo_id: int, data: GrupoMuscularIn):
     response={204: None, 404: ErrorSchema},
     tags=["Grupos Musculares"],
     description="Remove um grupo muscular",
+    auth=AuthAPIKey(),
 )
 def apaga_grupo(request, grupo_id: int):
     grupo = get_object_or_404(GrupoMuscular, id=grupo_id)
@@ -103,6 +126,7 @@ def lista_planos(request, nome: str = None, limit: int = 10, offset: int = 0):
     response={201: PlanoTreinoOut},
     tags=["Planos de Treino"],
     description="Cria um novo plano de treino",
+    auth=AuthAPIKey(),
 )
 def cria_plano(request, data: PlanoTreinoIn):
     return 201, PlanoTreino.objects.create(**data.dict())
@@ -123,6 +147,7 @@ def ver_plano(request, plano_id: int):
     response={200: PlanoTreinoOut, 404: ErrorSchema},
     tags=["Planos de Treino"],
     description="Atualiza um plano de treino",
+    auth=AuthAPIKey(),
 )
 def atualiza_plano(request, plano_id: int, data: PlanoTreinoIn):
     plano = get_object_or_404(PlanoTreino, id=plano_id)
@@ -137,6 +162,7 @@ def atualiza_plano(request, plano_id: int, data: PlanoTreinoIn):
     response={204: None, 404: ErrorSchema},
     tags=["Planos de Treino"],
     description="Remove um plano de treino",
+    auth=AuthAPIKey(),
 )
 def apaga_plano(request, plano_id: int):
     plano = get_object_or_404(PlanoTreino, id=plano_id)
@@ -173,6 +199,7 @@ def lista_exercicios(
     response={201: ExercicioOut},
     tags=["Exercícios"],
     description="Cria um novo exercício",
+    auth=AuthAPIKey(),
 )
 def cria_exercicio(request, data: ExercicioIn):
     grupo = get_object_or_404(GrupoMuscular, id=data.grupo_muscular)
@@ -200,6 +227,7 @@ def ver_exercicio(request, exercicio_id: int):
     response={200: ExercicioOut, 404: ErrorSchema},
     tags=["Exercícios"],
     description="Atualiza um exercício",
+    auth=AuthAPIKey(),
 )
 def atualiza_exercicio(request, exercicio_id: int, data: ExercicioIn):
     exercicio = get_object_or_404(Exercicio, id=exercicio_id)
@@ -217,6 +245,7 @@ def atualiza_exercicio(request, exercicio_id: int, data: ExercicioIn):
     response={204: None, 404: ErrorSchema},
     tags=["Exercícios"],
     description="Remove um exercício",
+    auth=AuthAPIKey(),
 )
 def apaga_exercicio(request, exercicio_id: int):
     exercicio = get_object_or_404(Exercicio, id=exercicio_id)

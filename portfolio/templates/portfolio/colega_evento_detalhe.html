@@ -1,0 +1,86 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Evento #{{ evento_id }} – Paintball Events{% endblock %}
+
+{% block content %}
+<div class="actions">
+  <a class="button secondary" href="{% url 'colega_eventos_lista' %}">← Voltar aos Eventos</a>
+  {% if dados %}
+  <a class="button secondary" href="{% url 'colega_evento_editar' evento_id %}">✏️ Editar</a>
+  <a class="button danger" href="{% url 'colega_evento_apagar' evento_id %}">🗑️ Apagar</a>
+  {% endif %}
+</div>
+
+{% if erro %}
+<section style="border-left:4px solid #b91c1c;">
+  <strong>⚠️ Erro:</strong> {{ erro }}
+</section>
+{% endif %}
+
+{% if dados %}
+<section>
+  <h1>🎯 {{ dados.name }}</h1>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px;">
+    <div class="stat">
+      <div class="muted" style="font-size:12px;">📅 DATA</div>
+      <strong>{{ dados.date }}</strong>
+    </div>
+    <div class="stat">
+      <div class="muted" style="font-size:12px;">📍 LOCALIZAÇÃO</div>
+      <strong>{{ dados.location }}</strong>
+    </div>
+    <div class="stat">
+      <div class="muted" style="font-size:12px;">💶 PREÇO</div>
+      <strong>€{{ dados.price }}</strong>
+    </div>
+    <div class="stat">
+      <div class="muted" style="font-size:12px;"># ID</div>
+      <strong>{{ dados.id }}</strong>
+    </div>
+  </div>
+  {% if dados.description %}
+  <h2>Descrição</h2>
+  <p>{{ dados.description }}</p>
+  {% endif %}
+</section>
+
+<!-- Participantes do evento -->
+<section>
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px;">
+    <h2 style="margin:0;">👥 Participantes</h2>
+    <a class="button" href="{% url 'colega_participantes_lista' %}?event_id={{ dados.id }}" style="padding:5px 10px;font-size:13px;">Ver todos</a>
+  </div>
+  {% if participantes %}
+  <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="background:#ecfeff;text-align:left;">
+          <th style="padding:8px 12px;">ID</th>
+          <th style="padding:8px 12px;">Nome</th>
+          <th style="padding:8px 12px;">Email</th>
+          <th style="padding:8px 12px;">Idade</th>
+          <th style="padding:8px 12px;">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in participantes %}
+        <tr style="border-top:1px solid #e5e7eb;">
+          <td style="padding:8px 12px;color:#6b7280;">{{ p.id }}</td>
+          <td style="padding:8px 12px;font-weight:600;">{{ p.name }}</td>
+          <td style="padding:8px 12px;">{{ p.email }}</td>
+          <td style="padding:8px 12px;">{{ p.age }}</td>
+          <td style="padding:8px 12px;">
+            <a class="button secondary" href="{% url 'colega_participante_editar' p.id %}" style="padding:4px 8px;font-size:12px;">Editar</a>
+            <a class="button danger" href="{% url 'colega_participante_apagar' p.id %}" style="padding:4px 8px;font-size:12px;">Apagar</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p class="muted">Nenhum participante inscrito neste evento.</p>
+  {% endif %}
+</section>
+{% endif %}
+{% endblock %}

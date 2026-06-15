@@ -1,0 +1,88 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Equipas – Paintball Events{% endblock %}
+
+{% block content %}
+<section>
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+    <h1 style="margin:0;">🛡️ Equipas</h1>
+    <a class="button secondary" href="{% url 'colega_eventos_lista' %}">← Eventos</a>
+    <a class="button secondary" href="{{ swagger_url }}" target="_blank" rel="noopener">📄 Swagger Docs</a>
+  </div>
+</section>
+
+{% if erro %}
+<section style="border-left:4px solid #b91c1c;">
+  <strong>⚠️ Erro:</strong> {{ erro }}
+</section>
+{% endif %}
+
+<!-- Filtros -->
+<section>
+  <h2>🔍 Filtrar Equipas</h2>
+  <form method="get" id="filtros-equipas" style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;max-width:900px;">
+    <div>
+      <label for="pesq-eq">Pesquisar</label>
+      <input id="pesq-eq" name="pesquisa" type="text" placeholder="Nome da equipa…" value="{{ pesquisa }}">
+    </div>
+    <div>
+      <label for="color-eq">Cor</label>
+      <input id="color-eq" name="color" type="text" placeholder="Ex: red, blue…" value="{{ color }}">
+    </div>
+    <div>
+      <label for="ord-eq">Ordenar por</label>
+      <select id="ord-eq" name="order_by">
+        <option value="name" {% if order_by == 'name' %}selected{% endif %}>Nome</option>
+        <option value="color" {% if order_by == 'color' %}selected{% endif %}>Cor</option>
+      </select>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:8px;">
+      <button type="submit">Filtrar</button>
+      <a class="button secondary" href="{% url 'colega_equipas_lista' %}">Limpar</a>
+    </div>
+  </form>
+</section>
+
+<!-- Lista -->
+{% if dados %}
+<section>
+  <h2>📋 Equipas ({{ dados|length }})</h2>
+  <div style="display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));">
+    {% for eq in dados %}
+    <article>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:18px;height:18px;border-radius:50%;background:{{ eq.color }};border:2px solid #cbd5e1;flex-shrink:0;"></div>
+        <h2 style="margin:0;font-size:18px;">{{ eq.name }}</h2>
+      </div>
+      <p class="muted" style="margin:6px 0;">Cor: <strong>{{ eq.color }}</strong></p>
+      <div class="actions" style="margin-top:10px;">
+        <a class="button secondary" href="{% url 'colega_equipa_editar' eq.id %}" style="padding:5px 10px;font-size:13px;">Editar</a>
+        <a class="button danger" href="{% url 'colega_equipa_apagar' eq.id %}" style="padding:5px 10px;font-size:13px;">Apagar</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% elif not erro %}
+<section><p class="muted">Nenhuma equipa encontrada.</p></section>
+{% endif %}
+
+<!-- Criar equipa -->
+<section>
+  <h2>➕ Criar Equipa</h2>
+  <form method="post" id="criar-equipa-form">
+    {% csrf_token %}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;">
+      <div>
+        <label for="eq-name">Nome *</label>
+        <input id="eq-name" name="name" type="text" required placeholder="Ex: Alpha Team">
+      </div>
+      <div>
+        <label for="eq-color">Cor *</label>
+        <input id="eq-color" name="color" type="text" required placeholder="Ex: red, blue, #ff0000">
+      </div>
+    </div>
+    <button type="submit">Criar Equipa</button>
+  </form>
+</section>
+{% endblock %}

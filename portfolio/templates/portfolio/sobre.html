@@ -4,35 +4,66 @@
 
 {% block content %}
 <article>
-    <h2>Sobre a Aplicação</h2>
+    <h1>Sobre a Aplicação</h1>
     <p>Esta é uma aplicação desenvolvida com a framework <strong>Django</strong>, que serve como um portfólio digital, diário de bordo e blog para documentar o meu percurso académico e profissional.</p>
-    
-    <h3>Tecnologias Usadas</h3>
+
+    <h2>Tecnologias Usadas</h2>
     <ul>
-        <li><strong>Backend:</strong> Python, Django</li>
+        <li><strong>Backend:</strong> Python, Django, Django Ninja (REST API)</li>
         <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript Vanilla</li>
-        <li><strong>Base de Dados:</strong> Neon (PostgreSQL) para ambiente Cloud e SQLite para desenvolvimento local</li>
+        <li><strong>Base de Dados:</strong> Neon (PostgreSQL) em produção; SQLite para desenvolvimento local</li>
         <li><strong>Armazenamento (Media):</strong> Cloudinary</li>
+        <li><strong>Integração Externa:</strong> biblioteca <code>requests</code> para consumo de APIs externas</li>
     </ul>
 
-    <h3>Arquitetura da Solução & CI/CD</h3>
+    <h2>Arquitetura da Solução &amp; CI/CD</h2>
     <p>A aplicação está alojada de forma contínua através de um pipeline CI/CD (Continuous Integration / Continuous Deployment). O código está num repositório GitHub e qualquer alteração (commit) desencadeia um fluxo automatizado que:</p>
     <ol>
         <li>Testa a aplicação garantindo a ausência de erros (linting, testes unitários).</li>
         <li>Compila os <em>assets</em> estáticos utilizando o WhiteNoise para servir ficheiros eficazmente.</li>
         <li>Publica os novos ficheiros no servidor de produção de forma automática.</li>
     </ol>
-    
-    <p>Os ficheiros multimédia (fotografias de artigos, logos de projetos, etc) não ficam armazenados localmente no servidor de alojamento web, sendo antes descarregados diretamente para o serviço cloud <strong>Cloudinary</strong>. A base de dados principal, outrora em ficheiro local, encontra-se escalonada no serviço gerido <strong>Neon</strong>, proporcionando escalabilidade horizontal e resiliência a perdas de dados.</p>
-    
+    <p>Os ficheiros multimédia ficam armazenados no serviço cloud <strong>Cloudinary</strong>. A base de dados principal encontra-se escalada no serviço gerido <strong>Neon</strong>, proporcionando escalabilidade horizontal e resiliência a perdas de dados.</p>
+
     <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
 
-    <h3>Links Importantes</h3>
+    <h2>🔑 API Key – Segurança da API</h2>
+    <p>Esta aplicação expõe uma <strong>API RESTful</strong> (construída com <a href="https://django-ninja.dev" target="_blank" rel="noopener">Django Ninja</a>) para gerir dados de ginásio: grupos musculares, planos de treino e exercícios.</p>
+    <p>Para proteger os endpoints de escrita (criação, edição e eliminação de dados), é utilizado um mecanismo de autenticação por <strong>API Key</strong>:</p>
+    <ul>
+        <li>Cada chave de acesso é armazenada na base de dados como um objeto <code>APIKey</code>, com nome, estado ativo/inativo e data de validade.</li>
+        <li>A chave é gerada automaticamente de forma segura com <code>secrets.token_urlsafe(32)</code>.</li>
+        <li>Quem faz pedidos à API deve incluir o header HTTP <code>X-API-Key: &lt;chave&gt;</code>.</li>
+        <li>O Django Ninja valida a chave em cada pedido: se não for válida ou tiver expirado, devolve <code>401 Unauthorized</code>.</li>
+        <li>Os endpoints <strong>GET</strong> (leitura) são públicos; os de <strong>escrita</strong> são privados.</li>
+    </ul>
+    <p>A documentação interativa (Swagger) da API está disponível em <a href="/api/docs" target="_blank">/api/docs</a>.</p>
+
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
+
+    <h2>🌐 Integração com APIs Externas – biblioteca <code>requests</code></h2>
+    <p>Para além de produzir a sua própria API, esta aplicação <strong>consome uma API externa</strong> de um colega — a <em>Paintball Events API</em> — utilizando a biblioteca Python <a href="https://requests.readthedocs.io" target="_blank" rel="noopener"><code>requests</code></a>.</p>
+    <p>O fluxo de integração funciona assim:</p>
+    <ol>
+        <li>A view Django chama <code>requests.get()</code>, <code>requests.post()</code>, <code>requests.put()</code> ou <code>requests.delete()</code> com o URL da API externa.</li>
+        <li>A API Key do colega é incluída no header <code>X-API-Key</code> de cada pedido.</li>
+        <li>A chave é lida de uma variável de ambiente (<code>.env</code>) e <strong>nunca</strong> está hardcoded no código-fonte.</li>
+        <li>A resposta JSON é parseada e passada ao template Django para visualização.</li>
+    </ol>
+    <p>Esta integração permite realizar as 5 operações CRUD (listar, ver, criar, editar, apagar) sobre eventos, participantes e equipas de paintball, diretamente a partir deste portfolio.</p>
+    <p>Acede à página de integração: <a href="/paintball/">🎯 Paintball API</a></p>
+
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #e5e7eb;">
+
+    <h2>Links Importantes</h2>
     <div class="actions">
-        <!-- Substituir links pelos respetivos perfis -->
         <a href="https://github.com/PedroP0202/Projecto_Programacao_web_" target="_blank" class="button">GitHub do Projeto</a>
+        <a href="/api/docs" target="_blank" class="button secondary">Swagger API Docs</a>
+        <a href="/paintball/" class="button secondary">🎯 Paintball API</a>
         <a href="https://linkedin.com/in/" target="_blank" class="button secondary">LinkedIn</a>
-        <a href="https://discord.com/" target="_blank" class="button secondary">Discord</a>
     </div>
 </article>
 {% endblock %}
+
+    
+    <h3>Tecnologias Usadas</h3>
